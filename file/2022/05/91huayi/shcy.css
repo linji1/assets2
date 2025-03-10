@@ -1,0 +1,88 @@
+.evaluation
+{
+    margin: 0px auto 10px auto;
+    text-align: left;
+    font-size: 12px;
+}
+.tab
+{
+    padding: 0;
+    margin: 0;
+}
+.tab li
+{
+    list-style: none;
+    float: left;
+    padding: 0;
+    margin-right: 10px;
+    line-height: 30px;
+    height: 30px;
+    width: 65px;
+    text-align: center;
+}
+.content
+{
+    float: none;
+    padding-top: 0px;
+    /*border-top: solid 2px #ccc;*/
+    clear: both;
+}
+
+/*
+.content div
+{
+	border-top: 0px;
+	height: 60px;
+}
+*/
+.tab ul li
+{
+    font-size: 18px;
+    color: #333;
+    font-family: 微软雅黑;
+}
+.tab_selected
+{
+    border-left: solid 1px #ccc;
+    background-color: #ffffff;
+    border-right: solid 1px #ccc;
+    border-top: solid 2px #00567e;
+    border-bottom: 0px;
+    bottom: -2px;
+    position: relative;
+    z-index: 1;
+}
+.tab_current
+{
+    text-decoration: underline;
+}
+
+#SOHUCS #SOHU_MAIN #SOHU-comment-main .section-title-w .user-wrap-w
+{
+    display: none !important;
+}
+
+#SOHUCS #SOHU_MAIN #SOHU-comment-main #powerby_sohu
+{
+    display: none !important;
+}
+/*去掉参与和评论数*/
+#SOHUCS #SOHU_MAIN #SOHU-comment-main .section-title-w .title-join-w
+{
+    display: none !important;
+}
+#SOHUCS #SOHU_MAIN #SOHU-comment-main .section-title-w
+{
+    padding-top:0px;
+    padding-bottom:0px;
+    height:20px;
+}
+
+*{padding:0; margin:0; }
+.zj{width:98%; margin: 0px auto 10px auto;}
+/*.zj-top{ background:url(../../images/zj_top.png) no-repeat; height:11px; margin-top:15px;}*/
+.zj-mid{ background:url(../../images/zj_mid.png) repeat-y; overflow:auto; }
+.zj-bottom{ background:url(../../images/zj_bottom.png) no-repeat; height:9px;}
+.zj-left{width:90px; text-align:center; float:left;}
+.zj-right{width:540px; text-align:left; float:left;}
+.zj-right p{ font-size:12px; font-family: "宋体"; line-height:24px;color#404040;}

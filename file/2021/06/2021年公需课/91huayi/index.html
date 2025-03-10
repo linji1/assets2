@@ -1,0 +1,1864 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Keywords" content="继续医学教育,医学教育,继续医学教育学分证书,学分证书,学分,医学学分,市级二类学分,市级Ⅱ类学分,市级Ⅰ类学分,二类学分,国家级继续医学教育项目,省级继续医学教育项目,医学学分证书,医学培训,远程医学教育,远程医学培训,医学课件,医学视频课件,全员培训,专项培训,CME,CPD,继教,教育,远程,远程教育,国家一类学分,国家Ⅰ类学分,Ⅱ类学分,Ⅰ类学分,一类学分,二类学分,医学,国家级学分" />
+	<meta name="description" content="华医网继续医学教育：用教育推动医疗发展。包括：国家级继续医学教育、省市级继续医学教育、医学知识库、适宜技术、人文知识、医德医风专题、医学管理、医学新进展等医学教育课程。" />
+	<title>华医网—继续医学教育•用教育推动医疗发展</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<link href="shcy.css" rel="stylesheet" type="text/css" />
+	<link href="common2.css?v=2" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<script type="text/javascript">
+		$(function () {
+			$(".content>div:gt(0)").hide();
+			$(".tab li").css("cursor", "pointer");
+			$(".tab li").hover(function () {
+				$(this).addClass("tab_current");
+			}, function () {
+				$(this).removeClass("tab_current");
+			}).click(
+				function () {
+					$(this).addClass("tab_selected").siblings().removeClass("tab_selected");
+					$(".content>div").eq($(this).index()).siblings().hide().end().show();
+				}
+			)
+		});
+
+
+		//浮动广告
+		var tips; var tips1; var theTop = 185/*这是默认高度*/; var old = theTop;
+		function initFloatTips() {
+			tips = document.getElementById('floatTips');
+			tips1 = document.getElementById('floatTips3');
+			moveTips();
+			moveTips1();
+		};
+		function moveTips1() {
+			var tt = 50;
+			if (window.innerHeight) {//返回窗口的文档显示区的高度
+				pos = window.pageYOffset//设置或返回当前页面相对于窗口显示区左上角的 Y 位置
+			}
+			else if (document.documentElement && document.documentElement.scrollTop) {
+				pos = document.documentElement.scrollTop//垂直方向滚动的值
+			}
+			else if (document.body) {
+				pos = document.body.scrollTop; //网页被卷去的高
+			}
+			pos = pos - tips1.offsetTop + theTop;
+			pos = tips1.offsetTop + pos / 10;
+			if (pos < theTop) pos = theTop;
+			if (pos != old) {
+				tips1.style.top = pos + "px";
+				tt = 10;
+			}
+			old = pos;
+			setTimeout(moveTips1, tt);
+		}
+		function moveTips() {
+			var tt = 50;
+			if (window.innerHeight) {//返回窗口的文档显示区的高度
+				pos = window.pageYOffset//设置或返回当前页面相对于窗口显示区左上角的 Y 位置
+			}
+			else if (document.documentElement && document.documentElement.scrollTop) {
+				pos = document.documentElement.scrollTop//垂直方向滚动的值
+			}
+			else if (document.body) {
+				pos = document.body.scrollTop; //网页被卷去的高
+			}
+			pos = pos - tips.offsetTop + theTop;
+			pos = tips.offsetTop + pos / 180;
+			if (pos < theTop) pos = theTop;
+			if (pos != old) {
+				tips.style.top = pos + "px";
+				tt = 10;
+			}
+			old = pos;
+			setTimeout(moveTips, tt);
+		}
+		function closeFloatTips() {
+			tips = document.getElementById('floatTips1');
+			GSetCookie("ifShowFloatTips", "0");
+			tips.style.display = "none";
+		}
+		function showFloatTips() {
+			tips = document.getElementById('floatTips');
+			tips.style.display = "";
+		}
+		function closeFloatTips2() {
+			tips = document.getElementById('floatTips2');
+			GSetCookie("ifShowFloatTips2", "0");
+			tips.style.display = "none";
+		}
+		function showFloatTips2() {
+			tips = document.getElementById('floatTips2');
+			tips.style.display = "";
+		}
+		function closeFloatTips3() {
+			tips1 = document.getElementById('floatTips3');
+			GSetCookie("ifShowFloatTips3", "0");
+			tips1.style.display = "none";
+		}
+	</script>
+	<script type="text/javascript">
+
+		function GetCookie(name) {
+			var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+			if (arr != null) return unescape(arr[2]); return null;
+		}
+		function SetCookie(sName, sValue) {
+			document.cookie = sName + "=" + escape(sValue) + "; ";
+		}
+		function GSetCookie(sName, sValue) {
+			document.cookie = sName + "=" + escape(sValue) + "; path=/";
+		}
+	</script>
+	<script type="text/javascript">
+		var cid = 'dd0a8761-9d6a-465c-8898-de9856eb8a5a';
+		var cwid = "";
+		$(document).ready(function () {
+			if (GetCookie("ifShowFloatTips") != "0") {
+				showFloatTips();
+
+			}
+			if (GSetCookie("ifShowFloatTips") != "0") {
+				showFloatTips2();
+			}
+			//loadHyy();
+			//load();
+		})
+		$(function () {
+			topbntalert();
+		});
+		function topbntalert() {
+			var input = $(".btn_fn").find("a");
+			input.each(function (i) {
+				//alert(i);
+				$(this).hover(
+					function () {
+						var obj = $(this).attr("class");
+						var pot = $(this).offset();
+						$("#" + obj).removeClass("h").addClass("hover");
+						$("#" + obj).css({ top: 236 + "px", left: pot.left + "px" });
+					}, function () {
+						var obj = $(this).attr("class");
+						$("#" + obj).removeClass("hover").addClass("h");
+					});
+				if (i > input.lenght)
+					return false;
+			});
+		}
+	</script>
+	<style type="text/css">
+		.top {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			height: 38px;
+			background: url(images/topgb.gif) repeat-x;
+		}
+
+		.crul {
+			clear: both;
+			line-height: 0;
+			font-size: 0;
+			margin: 0;
+			padding: 0;
+		}
+
+		.top div {
+			width: 950px;
+			margin: 0 auto;
+		}
+
+			.top div img {
+				vertical-align: middle;
+				border: 0;
+			}
+
+			.top div span {
+				float: left;
+				display: block;
+			}
+
+			.top div .flashbnt {
+				float: right;
+			}
+
+			.top div label {
+				display: block;
+				width: 400px;
+				height: 23px;
+				text-align: center;
+				margin: 5px 0 20px 0;
+				padding: 0;
+				float: left;
+			}
+
+				.top div label input {
+					vertical-align: middle;
+					border: 0;
+					height: 23px;
+					width: 89px;
+					color: #FFF;
+				}
+
+			.top div a {
+				float: right;
+				display: block;
+				text-align: right;
+				text-decoration: none;
+				color: #666;
+				font-size: 12px;
+			}
+
+		.bntgb {
+			background: url(images/bntgb.png) no-repeat;
+			border: 0;
+			width: 64px;
+			height: 25px;
+			line-height: 22px;
+			color: #0075B2;
+			font-size: 12px;
+		}
+
+		.hover {
+			position: absolute;
+			background: url(alert.gif) no-repeat;
+			width: 193px;
+			height: 86px;
+			color: #0075b2;
+			display: block;
+			font-size: 12px;
+			text-align: left;
+		}
+
+			.hover span {
+				text-indent: 30px;
+				display: block;
+				width: 170px;
+				height: 50px;
+				margin: 25px auto 0 auto;
+				line-height: 18px;
+			}
+
+		.h {
+			display: none;
+		}
+
+		.peve {
+			background: url(pvenet.jpg) no-repeat;
+			margin: 0 100px 0 0px;
+			width: 89px;
+			height: 23px;
+			display: block;
+			color: #fff;
+			text-indent: 2.3em;
+			line-height: 23px;
+		}
+
+		.nxest {
+			background: url(nxet.jpg) no-repeat;
+			width: 89px;
+			height: 23px;
+			display: block;
+			color: #fff;
+			text-indent: 2em;
+			line-height: 23px;
+		}
+
+		.top span {
+			color: #666;
+			font-size: 12px;
+		}
+
+		.coent {
+			width: 950px;
+			margin: 0 auto;
+			padding: 0;
+			background: #FFF;
+		}
+
+			.coent .l {
+				float: left;
+				width: 680px;
+				margin: 7px 0 0 0;
+				display: inline;
+			}
+
+				.coent .l .hide {
+					position: absolute;
+					background: url(images/listgb.png) no-repeat;
+					width: 282px;
+					height: 277px;
+					display: none;
+					text-align: left;
+					text-indent: 2em;
+					font-size: 12px;
+					font-weight: normal;
+				}
+
+		.emhver {
+			margin: 6px 6px;
+			padding: 0;
+			width: 16px;
+			height: 16px;
+			background: url(images/clos1.png) no-repeat;
+			float: right;
+			cursor: pointer;
+		}
+
+		.bntem {
+			margin: 6px 6px;
+			padding: 0;
+			width: 16px;
+			height: 16px;
+			background: url(images/clos2.png) no-repeat;
+			float: right;
+			cursor: pointer;
+		}
+
+		.coent .l .hide h4 {
+			color: #525C68;
+			font-size: 14px;
+			margin: 10px 0 15px 15px;
+		}
+
+		.coent .l .hide span {
+			display: block;
+			margin: 0 0 0 6px;
+		}
+
+		.coent .l .hide ul {
+			margin: 0 0 0 20px;
+		}
+
+		.coent .l .hide li {
+			font-size: 12px;
+			line-height: 22px;
+		}
+
+		.coent .l .video {
+			float: left;
+			display: inherit;
+			width: 644px;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			height: 552px;
+		}
+
+			.coent .l .video EMBED {
+				display: block;
+				margin: 0 0 0 2px;
+			}
+
+			.coent .l .video *, .coent .l .videolist * {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+
+			.coent .l .video img {
+				border: 0;
+				width: 644px;
+				margin: 0;
+				padding: 0;
+			}
+
+		.coent .l .videolist {
+			float: right;
+			display: inherit;
+			width: 36px;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+			.coent .l .videolist em {
+				display: block;
+				width: 30px;
+				height: 55px;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+
+			.coent .l .videolist span {
+				display: block;
+				width: 32px;
+				margin: 0;
+				padding: 0;
+				text-indent: -9999px;
+				vertical-align: middle;
+				cursor: pointer;
+				overflow: hidden;
+			}
+
+			.coent .l .videolist .bnt1_0 {
+				height: 109px;
+				background: url(images/jx0.png) no-repeat 0 0;
+			}
+
+			.coent .l .videolist .bnt1_1 {
+				height: 109px;
+				background: url(images/jx1.png) no-repeat 0 0;
+			}
+
+			.coent .l .videolist .bnt2_0 {
+				height: 108px;
+				background: url(images/kc0.png) no-repeat 0 0;
+			}
+
+			.coent .l .videolist .bnt2_1 {
+				height: 108px;
+				background: url(images/kc1.png) no-repeat 0 0;
+			}
+
+		.coent .r {
+			float: right;
+			width: 270px;
+			margin: 7px 0 0 0;
+		}
+
+			.coent .r .title {
+				background: url(images/rehittop.jpg) no-repeat;
+				height: 28px;
+				text-align: left;
+			}
+
+				.coent .r .title span {
+					display: block;
+					font-size: 12px;
+					color: #000;
+					width: 80px;
+					height: 25px;
+					line-height: 25px;
+					margin: 0 0 0 20px;
+					vertical-align: bottom;
+					text-align: center;
+					padding: 3px 0 0 0;
+				}
+
+			.coent .r .cometn {
+				background: url(images/r_gb.jpg) repeat-y;
+				text-align: center;
+				padding: 0 0 6px 0;
+			}
+
+				.coent .r .cometn .imgtext {
+					width: 260px;
+					margin: 0 5px;
+					padding: 6px 0 0 0;
+					height: 120px;
+				}
+
+					.coent .r .cometn .imgtext img {
+						float: left;
+						margin: 0;
+						width: 100px;
+						height: 120px;
+						margin: 0 0 0 10px;
+					}
+
+					.coent .r .cometn .imgtext ul {
+						width: 130px;
+						float: right;
+						display: inline;
+					}
+
+						.coent .r .cometn .imgtext ul li {
+							line-height: 24px;
+							font-size: 12px;
+							text-align: left;
+						}
+
+				.coent .r .cometn .text {
+					height: 100px;
+					overflow-y: scroll;
+					font-size: 12px;
+					text-align: left;
+					text-indent: 2em;
+					width: 89%;
+					margin: 6px auto;
+					padding: 5px 0 0 0px;
+				}
+
+				.coent .r .cometn .r_xd {
+					height: 110px;
+					font-size: 12px;
+					margin: 0 auto;
+					padding: 4px 0 0 0px;
+					text-align: center;
+				}
+
+					.coent .r .cometn .r_xd textarea {
+						width: 245px;
+						height: 90px;
+						margin: 0 auto 0 2px;
+					}
+
+				.coent .r .cometn h5 {
+					background: url(images/tilehtl.jpg) no-repeat;
+					height: 30px;
+					margin: 0;
+					padding: 0;
+					font-style: normal;
+					line-height: 30px;
+					text-align: left;
+					font-size: 12px;
+					font-weight: normal;
+					text-indent: 2em;
+				}
+
+			.coent .r h6 {
+				margin: 12px 0 0 0;
+				padding: 0;
+				font-style: normal;
+				color: #0175B2;
+				font-size: 12px;
+				font-weight: normal;
+			}
+
+				.coent .r h6 img {
+					vertical-align: middle;
+					margin: 0 6px 0 0;
+				}
+
+			.coent .r .foomet {
+				background: url(images/foomet.jpg) no-repeat;
+				height: 7px;
+			}
+
+			.coent .r .r_bnt {
+				text-align: center;
+				vertical-align: middle;
+				margin: 6px 0;
+			}
+
+				.coent .r .r_bnt .bnt1span {
+					display: inline-block;
+					width: 131px;
+					height: 59px;
+					text-align: center;
+					background: url(images/bnt01gb.jpg) no-repeat;
+					margin: 0;
+					padding: 0;
+				}
+
+				.coent .r .r_bnt .bnt2span {
+					display: inline-block;
+					width: 131px;
+					height: 59px;
+					text-align: center;
+					background: url(images/bnt02gb.jpg) no-repeat;
+					margin: 0;
+					padding: 0;
+				}
+
+				.coent .r .r_bnt .inputstyle1 {
+					border: 0;
+					display: inline-block;
+					width: 132px;
+					height: 59px;
+					text-align: center;
+					background: url(images/btn_jiangyi.png) no-repeat;
+					margin: 0;
+					padding: 0;
+					cursor: pointer;
+				}
+
+				.coent .r .r_bnt .inputstyle1_1 {
+					border: 0;
+					display: inline-block;
+					width: 132px;
+					height: 59px;
+					text-align: center;
+					background: url(images/btn_jiangyi_over.png) no-repeat;
+					margin: 0;
+					padding: 0;
+					cursor: pointer;
+				}
+
+				.coent .r .r_bnt .inputstyle2 {
+					border: 0;
+					display: inline-block;
+					width: 131px;
+					height: 59px;
+					text-align: center;
+					background: url(images/kaoshi.png) no-repeat;
+					margin: 0;
+					padding: 0;
+					cursor: pointer;
+				}
+
+				.coent .r .r_bnt .inputstyle2_1 {
+					border: 0;
+					display: inline-block;
+					width: 131px;
+					height: 59px;
+					text-align: center;
+					background: url(images/kaoshi_over.png) no-repeat;
+					margin: 0;
+					padding: 0;
+					cursor: pointer;
+				}
+
+				.coent .r .r_bnt .inputstyle2_2 {
+					border: 0;
+					display: inline-block;
+					width: 131px;
+					height: 59px;
+					text-align: center;
+					background: url(images/kaoshi_disable.png) no-repeat;
+					margin: 0;
+					padding: 0;
+					cursor: pointer;
+				}
+
+		#jxmb {
+			padding: 0 20px;
+			line-height: 150%;
+		}
+
+		#kcjg {
+			padding: 0 20px;
+			line-height: 150%;
+		}
+
+		.course_title {
+			padding: 30px 20px 0 20px;
+			background: url(css_images/course_title_bg.jpg) no-repeat;
+			width: 643px;
+			height: 250px;
+			margin: 0 auto;
+		}
+
+		.course_title_l {
+			background: #fff;
+			padding: 2px;
+			border: #84BBE1 solid 1px;
+			width: 232px;
+			height: 164px;
+			text-align: center;
+			float: left;
+		}
+
+			.course_title_l img {
+				display: block;
+			}
+
+		.course_title_r {
+			width: 400px;
+			float: right;
+			color: #232323;
+			font-size: 12px;
+		}
+
+			.course_title_r h3 {
+				margin-bottom: 10px;
+				background: url(css_images/newlist_li_bj.gif) repeat-x bottom left;
+				padding-bottom: 5px;
+				color: #000;
+				font-size: 14px;
+			}
+
+				.course_title_r h3 span {
+					float: right;
+					font-size: 12px;
+					font-weight: normal;
+				}
+
+			.course_title_r h4 {
+				color: #232323;
+				font-weight: normal;
+				margin-bottom: 5px;
+				font-size: 12px;
+			}
+
+				.course_title_r h4 span {
+					margin-right: 25px;
+				}
+
+			.course_title_r p {
+				text-indent: 2em;
+				color: #232323;
+				line-height: 170%;
+			}
+
+		.course_item {
+			padding-top: 10px;
+		}
+
+			.course_item li {
+				background: url(css_images/course_li_bg.gif) no-repeat;
+				width: 733px;
+				height: 74px;
+			}
+
+				.course_item li dl {
+					padding: 10px 30px;
+					color: #464646;
+				}
+
+					.course_item li dl dt {
+						font-size: 13px;
+						background: url(css_images/script_16x16.gif) no-repeat 0 0;
+						padding-left: 24px;
+						height: 20px;
+						font-weight: bold;
+					}
+
+						.course_item li dl dt span .red {
+							color: #FB7E10;
+						}
+
+						.course_item li dl dt span {
+							float: right;
+							font-weight: normal;
+							font-size: 12px;
+							margin-right: 30px;
+						}
+
+					.course_item li dl dd {
+						margin: 5px 0;
+						padding-left: 24px;
+					}
+
+						.course_item li dl dd span {
+							margin-right: 30px;
+						}
+
+		.apply_way {
+			padding-top: 20px;
+			margin-left: 8px;
+		}
+
+			.apply_way span.apply_x {
+				border: 3px solid #72bde5;
+				height: 31px;
+				line-height: 31px;
+				font-size: 16px;
+				float: left;
+				padding-left: 12px;
+				padding-right: 12px;
+				margin-top: 4px;
+			}
+
+			.apply_way img {
+				float: left;
+				margin-top: 4px;
+			}
+
+			.apply_way input {
+				float: right;
+				width: 138px;
+				height: 45px;
+				border: none;
+				background: url(bt_btn_03.png) no-repeat;
+				cursor: pointer;
+			}
+
+		.lg_box2 {
+			text-align: left;
+			padding-bottom: 4px;
+			line-height: 27px;
+			padding-left: 5px;
+			padding-right: 5px;
+			font-size: 13px;
+			overflow: hidden;
+			padding-top: 4px;
+		}
+
+			.lg_box2 a {
+				border: #d6e9f4 2px solid;
+				display: inline-block;
+				border-radius: 3px;
+				color: #777;
+				height: 27px;
+				line-height: 27px;
+				text-align: center;
+				margin: 2px;
+				width: 29.5%;
+				background: (lg_btn_bg.jpg) repeat-x;
+				font-family: "微软雅黑", "宋体", "黑体";
+			}
+
+		a.add_btn_0906 {
+			border-radius: 3px;
+			border-top: medium none;
+			border-bottom: medium none;
+			border-left: medium none;
+			border-right: medium none;
+			font-size: 14px;
+			color: #fff;
+			height: 26px;
+			background: #ff7f01;
+			display: block;
+			width: 100%;
+			margin: 8px auto 8px;
+			text-align: center;
+			font-family: "微软雅黑", "宋体", "黑体";
+		}
+	</style>
+	<link href="layout.css" rel="stylesheet" type="text/css" />
+	<link href="common_v3.css?v=0" rel="stylesheet" type="text/css" />
+	<link href="default_v3.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="erji.css" />
+</head>
+<body onload="initFloatTips()">
+	<form method="post" action="./course.aspx?cid=dd0a8761-9d6a-465c-8898-de9856eb8a5a" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODg4MTEyNDYwD2QWAmYPZBYIZg9kFgJmDxYCHglpbm5lcmh0bWxlZAIBD2QWAmYPFgIeB1Zpc2libGVnZAIGDxYCHgtfIUl0ZW1Db3VudAIBFgJmD2QWBGYPFQFCaHR0cDovL2NtZWJnLjkxaHVheWkuY29tL1VwbG9hZC9Db3Vyc2VJbWFnZXMvLzIwMjEwNTE4MDUxNDkxMTEuanBnZAIBD2QWCmYPFQMTLi4vaW1hZ2VzL3hpbl8yLmdpZjQyMDIx5bm05YWs6ZyA6K++77ya56eR5oqA5Yib5paw546w54q25LiO5Y+R5bGV6LaL5Yq/AGQCAQ8PFgIfAWhkZAICDxUBAGQCAw8PFgIfAWhkZAIEDxUEAAAU5YWs6ZyA6K++IDMwLjDlrabml7Y0MjAyMeW5tOWFrOmcgOivvu+8muenkeaKgOWIm+aWsOeOsOeKtuS4juWPkeWxlei2i+WKv2QCBw8WAh8CAiEWQmYPZBYCZg8VBiQ0ZDhmMGYyMS1hNTAwLTRkZWEtOTcxZC1hZDJkMDBlOGYxOTYjLi4vY291cnNlX3dhcmUvaW1hZ2VzL2Fubml1XzAzYS5naWYkNGQ4ZjBmMjEtYTUwMC00ZGVhLTk3MWQtYWQyZDAwZThmMTk2P+aKgOacr+mihOingeaWueazleS7peWPiuWbvemZheWJjeayv+aKgOacr+WPkeWxleamguWGte+8iOS4iu+8iQnlvKDmjK/liJoS5Y2O5Y2X55CG5bel5aSn5a2mZAIBD2QWAmYPFQYkZjFlNzRmMjctYzBjOS00ZGIwLWE3MTAtYWQyZDAwZThmMTk2Iy4uL2NvdXJzZV93YXJlL2ltYWdlcy9hbm5pdV8wM2EuZ2lmJGYxZTc0ZjI3LWMwYzktNGRiMC1hNzEwLWFkMmQwMGU4ZjE5Nj/mioDmnK/pooTop4Hmlrnms5Xku6Xlj4rlm73pmYXliY3msr/mioDmnK/lj5HlsZXmpoLlhrXvvIjkuIvvvIkJ5byg5oyv5YiaEuWNjuWNl+eQhuW3peWkp+WtpmQCAg9kFgJmDxUGJDkzMWFlMzE4LWJmMmUtNGNjZC04MTkwLWFkMmQwMGU4ZjE5NiMuLi9jb3Vyc2Vfd2FyZS9pbWFnZXMvYW5uaXVfMDNhLmdpZiQ5MzFhZTMxOC1iZjJlLTRjY2QtODE5MC1hZDJkMDBlOGYxOTYS5pm66IO95Yi26YCg5oqA5pyvCeW8oOaMr+WImhLljY7ljZfnkIblt6XlpKflraZkAgMPZBYCZg8VBiQ2NzE5YzU1Mi1iZjE2LTQxMTEtYWNiNS1hZDJkMDBlOGYxOTYjLi4vY291cnNlX3dhcmUvaW1hZ2VzL2Fubml1XzAzYS5naWYkNjcxOWM1NTItYmYxNi00MTExLWFjYjUtYWQyZDAwZThmMTk2D+aWsOadkOaWmeaKgOacrwnlvKDmjK/liJoS5Y2O5Y2X55CG5bel5aSn5a2mZAIED2QWAmYPFQYkZWIwZWNiMDItYjZkZC00ZDg3LTk1ZjgtYWQyZDAwZThmMTk2Iy4uL2NvdXJzZV93YXJlL2ltYWdlcy9hbm5pdV8wM2EuZ2lmJGViMGVjYjAyLWI2ZGQtNGQ4Ny05NWY4LWFkMmQwMGU4ZjE5Ng/mlrDog73mupDmioDmnK8J5byg5oyv5YiaEuWNjuWNl+eQhuW3peWkp+WtpmQCBQ9kFgJmDxUGJDJjMmFkNjI1LTZjOTctNDliOS1iNzYzLWFkMmQwMGU4ZjE5NiMuLi9jb3Vyc2Vfd2FyZS9pbWFnZXMvYW5uaXVfMDNhLmdpZiQyYzJhZDYyNS02Yzk3LTQ5YjktYjc2My1hZDJkMDBlOGYxOTYS55Sf54mp5Yy76I2v5oqA5pyvCeW8oOaMr+WImhLljY7ljZfnkIblt6XlpKflraZkAgYPZBYCZg8VBiRjZTE2OGI3Zi0xYTM2LTQwYmEtYWU4MS1hZDJkMDBmZjU4ZTMjLi4vY291cnNlX3dhcmUvaW1hZ2VzL2Fubml1XzAzYS5naWYkY2UxNjhiN2YtMWEzNi00MGJhLWFlODEtYWQyZDAwZmY1OGUzMOaWsOS4gOS7o+S/oeaBr+aKgOacr+S4jue7j+a1juekvuS8muWPkeWxleaImOeVpQnlrZnlu7bmmI4M5bm/5bee5aSn5a2mZAIHD2QWAmYPFQYkYmFlZTJlZDEtMTQwZC00ZWNjLWFiYTQtYWQyZDAwZmY1OGUzIy4uL2NvdXJzZV93YXJlL2ltYWdlcy9hbm5pdV8wM2EuZ2lmJGJhZWUyZWQxLTE0MGQtNGVjYy1hYmE0LWFkMmQwMGZmNThlMzDmlrDkuIDku6Pkv6Hmga/mioDmnK/kuI7lj5Hovr7lm73lrrblj5HlsZXmiJjnlaUJ5a2Z5bu25piODOW5v+W3nuWkp+WtpmQCCA9kFgJmDxUGJGZlZWQyMTA1LWJiNGItNDJiMy1iYTViLWFkMmQwMGZmNThlMyMuLi9jb3Vyc2Vfd2FyZS9pbWFnZXMvYW5uaXVfMDNhLmdpZiRmZWVkMjEwNS1iYjRiLTQyYjMtYmE1Yi1hZDJkMDBmZjU4ZTM25paw5LiA5Luj5L+h5oGv5oqA5pyv5LiO5Lit5Zu95pWw5a2X57uP5rWO5Y+R5bGV5oiY55WlCeWtmeW7tuaYjgzlub/lt57lpKflraZkAgkPZBYCZg8VBiQzMjFhN2I1OS0zYzRkLTQ3MTctYTdjOS1hZDJkMDBmZjU4ZTMjLi4vY291cnNlX3dhcmUvaW1hZ2VzL2Fubml1XzAzYS5naWYkMzIxYTdiNTktM2M0ZC00NzE3LWE3YzktYWQyZDAwZmY1OGUzQuaWsOS4gOS7o+S/oeaBr+aKgOacr+S4jueypOa4r+a+s+Wkp+a5vuWMuue7j+a1juekvuS8muWPkeWxleaImOeVpQnlrZnlu7bmmI4M5bm/5bee5aSn5a2mZAIKD2QWAmYPFQYkMDE5ZWEwNTItM2NkNS00MzA3LWI1OTMtYWQyZDAwZmY1OGUzIy4uL2NvdXJzZV93YXJlL2ltYWdlcy9hbm5pdV8wM2EuZ2lmJDAxOWVhMDUyLTNjZDUtNDMwNy1iNTkzLWFkMmQwMGZmNThlMzbmlrDkuIDku6Pkv6Hmga/mioDmnK/kuI7liLbpgKDkuJrpq5jotKjph4/lj5HlsZXmiJjnlaUJ5a2Z5bu25piODOW5v+W3nuWkp+WtpmQCCw9kFgJmDxUGJDNjZTYwOGMyLWFlYWEtNDEyZS1hN2MyLWFkMmQwMGZjMWVmOCMuLi9jb3Vyc2Vfd2FyZS9pbWFnZXMvYW5uaXVfMDNhLmdpZiQzY2U2MDhjMi1hZWFhLTQxMmUtYTdjMi1hZDJkMDBmYzFlZjgt5pWw5a2X57uP5rWO5pe25Luj55qE5Yi26YCg5Lia5Y+R5bGV77yI5LiA77yJCeW8oOaMr+WImhLljY7ljZfnkIblt6XlpKflraZkAgwPZBYCZg8VBiQwNzVhOTYxNi0wNDQ5LTQ5NDUtOTE4Yi1hZDJkMDBmYzFlZjgjLi4vY291cnNlX3dhcmUvaW1hZ2VzL2Fubml1XzAzYS5naWYkMDc1YTk2MTYtMDQ0OS00OTQ1LTkxOGItYWQyZDAwZmMxZWY4LeaVsOWtl+e7j+a1juaXtuS7o+eahOWItumAoOS4muWPkeWxle+8iOS6jO+8iQnlvKDmjK/liJoS5Y2O5Y2X55CG5bel5aSn5a2mZAIND2QWAmYPFQYkN2I4NjE3ODItMmUzZi00YmJlLWEyOTItYWQyZDAwZmMxZWY4Iy4uL2NvdXJzZV93YXJlL2ltYWdlcy9hbm5pdV8wM2EuZ2lmJDdiODYxNzgyLTJlM2YtNGJiZS1hMjkyLWFkMmQwMGZjMWVmOC3mlbDlrZfnu4/mtY7ml7bku6PnmoTliLbpgKDkuJrlj5HlsZXvvIjkuInvvIkJ5byg5oyv5YiaEuWNjuWNl+eQhuW3peWkp+WtpmQCDg9kFgJmDxUGJDdmNzlkYjk1LWNhY2MtNGUyOC05MjA4LWFkMmQwMGZjMGM2YiMuLi9jb3Vyc2Vfd2FyZS9pbWFnZXMvYW5uaXVfMDNhLmdpZiQ3Zjc5ZGI5NS1jYWNjLTRlMjgtOTIwOC1hZDJkMDBmYzBjNmIq56eR5oqA5Yib5paw5qih5byP5Y+K56eR5oqA5a215YyW77yI5LiK77yJBuadjum7jhjlub/kuJzmioDmnK/luIjojIPlpKflraZkAg8PZBYCZg8VBiRjNGQxNzUyOC1kZTVhLTRlNmUtOTU2NS1hZDJkMDBmYzBjNmIjLi4vY291cnNlX3dhcmUvaW1hZ2VzL2Fubml1XzAzYS5naWYkYzRkMTc1MjgtZGU1YS00ZTZlLTk1NjUtYWQyZDAwZmMwYzZiKuenkeaKgOWIm+aWsOaooeW8j+WPiuenkeaKgOWtteWMlu+8iOS4re+8iQbmnY7pu44Y5bm/5Lic5oqA5pyv5biI6IyD5aSn5a2mZAIQD2QWAmYPFQYkY2QxZTc0MTktZTVmYi00OWVlLWIxNjktYWQyZDAwZmMwYzZiIy4uL2NvdXJzZV93YXJlL2ltYWdlcy9hbm5pdV8wM2EuZ2lmJGNkMWU3NDE5LWU1ZmItNDllZS1iMTY5LWFkMmQwMGZjMGM2Yirnp5HmioDliJvmlrDmqKHlvI/lj4rnp5HmioDlrbXljJbvvIjkuIvvvIkG5p2O6buOGOW5v+S4nOaKgOacr+W4iOiMg+Wkp+WtpmQCEQ9kFgJmDxUGJGZlYTM1MjJhLTI2MjUtNDVkNi1iOGMxLWFkMmQwMTIyOWUwNiMuLi9jb3Vyc2Vfd2FyZS9pbWFnZXMvYW5uaXVfMDNhLmdpZiRmZWEzNTIyYS0yNjI1LTQ1ZDYtYjhjMS1hZDJkMDEyMjllMDYe5oqA5pyv5Yib5paw6K+E5Lu35oyH5qCH5L2T57O7CeWtmeS4veWQmwzlub/lt57lpKflraZkAhIPZBYCZg8VBiQzODM0NTkxZS1mMTkzLTRmNDktODE2Ni1hZDJkMDEyMjllMDYjLi4vY291cnNlX3dhcmUvaW1hZ2VzL2Fubml1XzAzYS5naWYkMzgzNDU5MWUtZjE5My00ZjQ5LTgxNjYtYWQyZDAxMjI5ZTA2IeW5v+S4nOecgeaKgOacr+WIm+aWsOWPkeWxleWKqOaAgQnlrZnkuL3lkJsM5bm/5bee5aSn5a2mZAITD2QWAmYPFQYkZWNhYmFkNDAtOWExNC00YmI1LWEwZWUtYWQyZDAxMjI2NzUzIy4uL2NvdXJzZV93YXJlL2ltYWdlcy9hbm5pdV8wM2EuZ2lmJGVjYWJhZDQwLTlhMTQtNGJiNS1hMGVlLWFkMmQwMTIyNjc1MzDlub/kuJznnIHkvIHkuJrmioDmnK/liJvmlrDnmoTkuLvopoHlrp7njrDmlrnlvI8J5byg5bu25bmzDOW5v+W3nuWkp+WtpmQCFA9kFgJmDxUGJDdkMmI2NmRiLWI0NmQtNGNhNy1hODM2LWFkMmQwMTIyOWUwNiMuLi9jb3Vyc2Vfd2FyZS9pbWFnZXMvYW5uaXVfMDNhLmdpZiQ3ZDJiNjZkYi1iNDZkLTRjYTctYTgzNi1hZDJkMDEyMjllMDYq5bm/5Lic55yB5oqA5pyv5Yib5paw55qE5pyq5p2l5pa55ZCR5oCd6ICDCeW8oOW7tuW5swzlub/lt57lpKflraZkAhUPZBYCZg8VBiQzZDNjYzdkNy02ZjYzLTRmMjUtYTlkOC1hZDJkMDEyMjllMDYjLi4vY291cnNlX3dhcmUvaW1hZ2VzL2Fubml1XzAzYS5naWYkM2QzY2M3ZDctNmY2My00ZjI1LWE5ZDgtYWQyZDAxMjI5ZTA2POenkeaK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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="42187F38" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAANeJO8XuQfNHSrYcz8Jq6VzSlHiboRHW/374hp+Ywo2ZgQzBs+kNt6nFFA+92zOQdd3q35c7CBbslyZDliUgY8QnZiui9/IhEdfi313gQs1DQ==" />
+</div>
+		
+		
+<style>
+.add_top_ewm{ position:absolute; left:50%; top:15px; margin-left:258px;z-index: 9; width:85px; height:33px;}
+.add_top_ewm a{ width:85px; height:33px; text-align:center; border-radius:100px; text-decoration:none; display:block; background:#1277af; color:#fff; font-size:14px; line-height:33px;cursor: pointer;}
+.add_top_ewm img{  position: absolute;  left: -27px;  top: 33px;  display: none;}
+.header{ overflow:visible; position:relative;}
+</style>
+<!--头部 开始 -->
+<div class="header_top">
+    <div class="w">
+        <a class="weibo" href="http://www.91huayi.com/contents/183/5775.html" target="_blank">
+            华医网官方微信</a>
+        
+        <span id="spName" style="margin-left: 0; width: auto;"><i id="header1_icnoMsg" style="font-style: normal;"></i>&nbsp;
+            
+            您好,赵子龙![<a href="../secure/login_out.aspx">退出</a>]
+            </span>
+    </div>
+</div>
+<div class="header">
+    <div class="add_top_ewm">
+        <a onmousemove="document.getElementById('add_ewm_img').style.display='block';" onmouseout="document.getElementById('add_ewm_img').style.display='none';"
+            target="_blank">客户端下载</a>
+        <img src="zshyewm2.png" id="add_ewm_img">
+        
+    </div>
+</div>
+<!--头部 结束 -->
+<!--一级导航 开始 -->
+<div class="nav">
+    <ul class="nav2_list">
+        <li><a href="../cme/index.html">继教资讯</a></li>
+        <li><a href="../pages/cme.aspx">继续教育</a></li>
+        <li><a href="../pages/fme.aspx">全员专项</a></li>
+        <li><a href="../pages/knowledge_navigation.aspx">课程导航</a></li>
+        <li><a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">帮助中心</a></li>
+    </ul>
+</div>
+<!--一级导航 结束 -->
+<div class="w mar_t10">
+</div>
+
+
+		<div id="containter">
+			<div class="sider">
+				
+				
+<script type="text/javascript">
+	$(document).ready(function () {
+		var loginStyle = '';
+		if (loginStyle == "1") {
+			//document.getElementById("main_div").style.height = "318px";
+			//document.getElementById("main_div").style.background = "url(user_bg2.png) no-repeat";
+		}
+
+	});
+	$(function () {
+		$("#check").click(function () {
+			window.location.href = "../PersonalCenter/studyresult.aspx?result=1";
+			//$.ajax({
+			//    type: "post",
+			//    url: "../ashx/getLearningRecordInfo.ashx",
+			//    success: function (result) {
+			//        if (result == "已经有学习记录") {
+			//            window.location.href = "../PersonalCenter/studyin.aspx?result=1";
+			//        }
+			//        if (result == "没有学习记录") {
+			//            window.location.href = "../PersonalCenter/study.aspx?result=1";
+			//        }
+			//        if (result == "已经有学习记录,但没有学习中的记录") {
+			//            window.location.href = "../PersonalCenter/studyresult.aspx?result=1";
+			//        }
+			//        if (result == "会话已过期") {
+			//            if (confirm("会话已过期, 请重新登录") == true) {
+			//                window.location.href = "../secure/login.aspx";
+			//            }
+			//        }
+			//    },
+			//    error: function () {
+			//        alert("请求异常");
+			//    }
+			//});
+		});
+	});
+</script>
+<div id="main_div" class="login" style="position: relative;">
+	<div class="login_top">
+		个人信息
+	</div>
+	<div class="login_mid">
+		<div id="user_info1_showpic" class="cards-maincneter7-div cards-maincneter5-div8" style="position: absolute; right: 20px; top: 9px;">
+			<input type="button" style="width: 84px; height: 24px; border: none; display: block; background: url(anniu.png) no-repeat center;"
+				value="" id="check" />
+		</div>
+		<div class="user_photo_info" id="showuserinfo" style="max-height: 295px;">
+			<div class="user-photo">
+				<img src="http://hyuser.91huayi.com//photo//photo.gif" width="92" height="109" />
+			</div>
+			<div class="user-info">
+				<dl>
+					<dt>姓名<span>赵子龙</span></dt>
+
+					
+					<dt title='412723198708226441'>证件号<span>440***1314</span></dt>
+					
+
+
+					<dt>专业<span title="内科">内科...</span></dt>
+					<dt>职称<span title="医师">医师</span></dt>
+					<dt>地区<span title="湛江市雷州市">湛江市;雷...</span></dt>
+				</dl>
+				<br clear="all" />
+			</div>
+			<div class="user-info2">
+				<dl>
+					<dt>单位:<span title="雷州市人民医院">雷州市人民医院</span></dt>
+				</dl>
+			</div>
+			<div class="lg_box2">
+				
+				<a href="http://wxmp.91huayi.com/toUpdateUserInfo?userId=31ce3c08-e0fa-4628-b4a0-a7ba00be4cc0">修改信息</a><a href="http://hyuser2.91huayi.com/AccountCenter/setpwd.aspx?tag=cme&uid=31ce3c08-e0fa-4628-b4a0-a7ba00be4cc0&user_name=412723198708226441">修改密码</a><a target="_blank" href="../secure/fromCme_Kjpt.aspx">学分查询</a><a target="_blank" href="../pages/buy_card.aspx">在线购卡</a><a target="_blank" href="../pages/buy_card.aspx?redirectaddr=1">购卡记录</a><a href="../pages/card_mes.aspx">在线绑卡</a><a href="../secure/login_out.aspx" class="add_btn_0906">退出</a>
+
+
+
+			</div>
+			<br clear="all" />
+		</div>
+	</div>
+	<div class="login_bottom">
+	</div>
+</div>
+
+
+
+				
+				<div class="sider_newslist">
+					<h3>客服中心</h3>
+					<div style="margin: 8px 0">
+						<img src="tele.gif" width="206" height="22" />
+					</div>
+					<a class="btn119_mouseout" onmouseover="this.className='btn119_mouseover'" onmouseout="this.className='btn119_mouseout'"
+						value="在线客服答疑专区" onclick='javascript:window.open("https://chat56.live800.com/live800/chatClient/chatbox.jsp?companyID=867072&configID=138589&jid=6673832692&s=1")'>
+						<img src="pic_questions.gif" width="125" height="32" /></a> <a class="btn67_mouseout"
+							onmouseover="this.className='btn67_mouseover'" onmouseout="this.className='btn67_mouseout'"
+							value="帮助中心" onclick='javascript:window.open("http://www.91huayi.com/help/index.html?type=bzzx")'>
+							<img src="pic_help.gif" width="83" height="32" /></a>
+				</div>
+				
+				<div class="sider_newslist">
+					
+<script type="text/javascript">
+    function loadHyy() {
+        $.ajax({
+            type: "POST",
+            url: "../ashx/hyyData.ashx",
+            beforeSend: loadhyydb,
+            success: function (msg) {
+                //alert("Data Saved: " + msg);
+                $("#mdiv").html(msg);
+            }
+        })
+    }
+    function loadhyydb() {
+        $("#mdiv").empty();
+        $("#mdiv").html("正在获取数据...");
+    }
+</script>
+<div id="mdiv">
+
+</div>
+
+					<p class="bottom">
+					</p>
+				</div>
+				<p>
+					&nbsp;
+				</p>
+				<p>
+					&nbsp;
+				</p>
+			</div>
+			<div class="main">
+				<div class="crumb">
+					&nbsp;您现在的位置：<a href="cme.aspx">我的继续教育</a>&#187; <a href='#'>
+						非本专业</a>&#187;2021年公需课：科技创新现状与发展趋势
+				</div>
+				<div class="colm_top">
+				</div>
+				<div class="colm_mid">
+					<h3 class="title_h3">
+						<span><a id="upa" href="javascript:__doPostBack(&#39;upa&#39;,&#39;&#39;)">
+							<img src="btn_front.png" width="70" height="26" border="0" /></a>&nbsp;&nbsp;&nbsp;
+                            <a id="npa" href="javascript:__doPostBack(&#39;npa&#39;,&#39;&#39;)">
+								<img src="btn_next.png" width="70" height="26" border="0" /></a></span>课程列表
+                      
+                        </h3>
+					
+					
+							<div class="course_lord">
+								<div class="course_pic">
+									<img src='http://cmebg.91huayi.com/Upload/CourseImages//2021051805149111.jpg' width="196" height="137" />
+								</div>
+								<div class="info">
+									<h3>
+										<span>关注度：<img src='xin_2.gif'
+											align="absmiddle" /></span><a href="#" class="f14blue"><strong>2021年公需课：科技创新现状与发展趋势</strong></a></h3>
+
+									
+									<div>
+										<h3 style="font-family: 微软雅黑; text-indent: 50px;"><strong></strong></h3>
+									</div>
+
+									<div class="information">
+										
+										<span class="f12blue">
+											</span>
+										<span class="f12blue" title=''>
+											</span>
+									</div>
+									<div class="information">
+										<span class="f12blue">
+											公需课 30.0学时</span>
+									</div>
+									<p>
+										2021年公需课：科技创新现状与发展趋势
+									</p>
+
+
+									
+									<div style="text-align: right">
+										<a href="#" onclick='javascript:window.open("course_feedback.aspx?cid=dd0a8761-9d6a-465c-8898-de9856eb8a5a")'>
+											<img src="btn_evaluate.png" width="114" height="27" border="none" /></a>
+									</div>
+									</div>
+								<br clear="all" />
+							</div>
+						
+					
+					
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=4d8f0f21-a500-4dea-971d-ad2d00e8f196' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=4d8f0f21-a500-4dea-971d-ad2d00e8f196' target="new_courseWare"
+										class="f14blue"><strong>技术预见方法以及国际前沿技术发展概况（上）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张振刚</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南理工大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=f1e74f27-c0c9-4db0-a710-ad2d00e8f196' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=f1e74f27-c0c9-4db0-a710-ad2d00e8f196' target="new_courseWare"
+										class="f14blue"><strong>技术预见方法以及国际前沿技术发展概况（下）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张振刚</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南理工大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=931ae318-bf2e-4ccd-8190-ad2d00e8f196' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=931ae318-bf2e-4ccd-8190-ad2d00e8f196' target="new_courseWare"
+										class="f14blue"><strong>智能制造技术</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张振刚</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南理工大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=6719c552-bf16-4111-acb5-ad2d00e8f196' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=6719c552-bf16-4111-acb5-ad2d00e8f196' target="new_courseWare"
+										class="f14blue"><strong>新材料技术</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张振刚</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南理工大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=eb0ecb02-b6dd-4d87-95f8-ad2d00e8f196' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=eb0ecb02-b6dd-4d87-95f8-ad2d00e8f196' target="new_courseWare"
+										class="f14blue"><strong>新能源技术</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张振刚</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南理工大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=2c2ad625-6c97-49b9-b763-ad2d00e8f196' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=2c2ad625-6c97-49b9-b763-ad2d00e8f196' target="new_courseWare"
+										class="f14blue"><strong>生物医药技术</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张振刚</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南理工大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=ce168b7f-1a36-40ba-ae81-ad2d00ff58e3' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=ce168b7f-1a36-40ba-ae81-ad2d00ff58e3' target="new_courseWare"
+										class="f14blue"><strong>新一代信息技术与经济社会发展战略</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">孙延明</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广州大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=baee2ed1-140d-4ecc-aba4-ad2d00ff58e3' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=baee2ed1-140d-4ecc-aba4-ad2d00ff58e3' target="new_courseWare"
+										class="f14blue"><strong>新一代信息技术与发达国家发展战略</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">孙延明</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广州大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=feed2105-bb4b-42b3-ba5b-ad2d00ff58e3' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=feed2105-bb4b-42b3-ba5b-ad2d00ff58e3' target="new_courseWare"
+										class="f14blue"><strong>新一代信息技术与中国数字经济发展战略</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">孙延明</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广州大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=321a7b59-3c4d-4717-a7c9-ad2d00ff58e3' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=321a7b59-3c4d-4717-a7c9-ad2d00ff58e3' target="new_courseWare"
+										class="f14blue"><strong>新一代信息技术与粤港澳大湾区经济社会发展战略</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">孙延明</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广州大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=019ea052-3cd5-4307-b593-ad2d00ff58e3' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=019ea052-3cd5-4307-b593-ad2d00ff58e3' target="new_courseWare"
+										class="f14blue"><strong>新一代信息技术与制造业高质量发展战略</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">孙延明</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广州大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=3ce608c2-aeaa-412e-a7c2-ad2d00fc1ef8' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=3ce608c2-aeaa-412e-a7c2-ad2d00fc1ef8' target="new_courseWare"
+										class="f14blue"><strong>数字经济时代的制造业发展（一）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张振刚</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南理工大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=075a9616-0449-4945-918b-ad2d00fc1ef8' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=075a9616-0449-4945-918b-ad2d00fc1ef8' target="new_courseWare"
+										class="f14blue"><strong>数字经济时代的制造业发展（二）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张振刚</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南理工大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=7b861782-2e3f-4bbe-a292-ad2d00fc1ef8' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=7b861782-2e3f-4bbe-a292-ad2d00fc1ef8' target="new_courseWare"
+										class="f14blue"><strong>数字经济时代的制造业发展（三）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张振刚</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南理工大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=7f79db95-cacc-4e28-9208-ad2d00fc0c6b' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=7f79db95-cacc-4e28-9208-ad2d00fc0c6b' target="new_courseWare"
+										class="f14blue"><strong>科技创新模式及科技孵化（上）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">李黎</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东技术师范大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=c4d17528-de5a-4e6e-9565-ad2d00fc0c6b' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=c4d17528-de5a-4e6e-9565-ad2d00fc0c6b' target="new_courseWare"
+										class="f14blue"><strong>科技创新模式及科技孵化（中）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">李黎</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东技术师范大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=cd1e7419-e5fb-49ee-b169-ad2d00fc0c6b' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=cd1e7419-e5fb-49ee-b169-ad2d00fc0c6b' target="new_courseWare"
+										class="f14blue"><strong>科技创新模式及科技孵化（下）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">李黎</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东技术师范大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=fea3522a-2625-45d6-b8c1-ad2d01229e06' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=fea3522a-2625-45d6-b8c1-ad2d01229e06' target="new_courseWare"
+										class="f14blue"><strong>技术创新评价指标体系</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">孙丽君</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广州大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=3834591e-f193-4f49-8166-ad2d01229e06' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=3834591e-f193-4f49-8166-ad2d01229e06' target="new_courseWare"
+										class="f14blue"><strong>广东省技术创新发展动态</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">孙丽君</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广州大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=ecabad40-9a14-4bb5-a0ee-ad2d01226753' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=ecabad40-9a14-4bb5-a0ee-ad2d01226753' target="new_courseWare"
+										class="f14blue"><strong>广东省企业技术创新的主要实现方式</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张延平</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广州大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=7d2b66db-b46d-4ca7-a836-ad2d01229e06' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=7d2b66db-b46d-4ca7-a836-ad2d01229e06' target="new_courseWare"
+										class="f14blue"><strong>广东省技术创新的未来方向思考</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">张延平</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广州大学</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=3d3cc7d7-6f63-4f25-a9d8-ad2d01229e06' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=3d3cc7d7-6f63-4f25-a9d8-ad2d01229e06' target="new_courseWare"
+										class="f14blue"><strong>科技创新的趋势和广东科技创新的发展（上）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">曾祥效</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=091759ca-1590-423c-9059-ad2d01229e06' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=091759ca-1590-423c-9059-ad2d01229e06' target="new_courseWare"
+										class="f14blue"><strong>科技创新的趋势和广东科技创新的发展（中）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">曾祥效</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=9c25c406-fb9e-4f68-9f57-ad2d01229e06' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=9c25c406-fb9e-4f68-9f57-ad2d01229e06' target="new_courseWare"
+										class="f14blue"><strong>科技创新的趋势和广东科技创新的发展（下）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">曾祥效</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=d57589d2-5760-41c5-9c60-ad2d010257b7' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=d57589d2-5760-41c5-9c60-ad2d010257b7' target="new_courseWare"
+										class="f14blue"><strong>广东省孵化育成政策解读与孵化服务案例（上）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">何静</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=1b998761-153a-4322-9d79-ad2d010257b7' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=1b998761-153a-4322-9d79-ad2d010257b7' target="new_courseWare"
+										class="f14blue"><strong>广东省孵化育成政策解读与孵化服务案例（中）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">何静</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=b8cf1e4f-45d9-479c-947a-ad2d010257b7' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=b8cf1e4f-45d9-479c-947a-ad2d010257b7' target="new_courseWare"
+										class="f14blue"><strong>广东省孵化育成政策解读与孵化服务案例（下）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">何静</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=69546b9f-de6e-4d00-8c12-ad2d010257b7' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=69546b9f-de6e-4d00-8c12-ad2d010257b7' target="new_courseWare"
+										class="f14blue"><strong>粤港澳青年孵化载体建设情况与港澳青年创业案例（上）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">何静</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=5c82a9ac-840b-48f5-8c1a-ad2d010257b7' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=5c82a9ac-840b-48f5-8c1a-ad2d010257b7' target="new_courseWare"
+										class="f14blue"><strong>粤港澳青年孵化载体建设情况与港澳青年创业案例（中）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">何静</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=8baab50d-5f4e-4d96-a8a9-ad2d010257b7' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=8baab50d-5f4e-4d96-a8a9-ad2d010257b7' target="new_courseWare"
+										class="f14blue"><strong>粤港澳青年孵化载体建设情况与港澳青年创业案例（下）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">何静</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=174ca960-ea0e-4d12-a76b-ad2d010257b7' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=174ca960-ea0e-4d12-a76b-ad2d010257b7' target="new_courseWare"
+										class="f14blue"><strong>广东省大学科技园建设情况与政策解读（上）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">何静</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=76efd366-2b6d-4f69-9e96-ad2d00e8fd5e' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=76efd366-2b6d-4f69-9e96-ad2d00e8fd5e' target="new_courseWare"
+										class="f14blue"><strong>广东省大学科技园建设情况与政策解读（中）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">何静</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href='../course_ware/course_ware.aspx?cwid=b13165db-3c4b-454e-a0c9-ad2d00fc0044' target="new_courseWare" class="f14blue">
+										<img src='anniu_03a.gif' width="61" height="22" align="absmiddle" /></a></span>
+
+									<a href='../course_ware/course_ware.aspx?cwid=b13165db-3c4b-454e-a0c9-ad2d00fc0044' target="new_courseWare"
+										class="f14blue"><strong>广东省大学科技园建设情况与政策解读（下）</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">何静</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东省科学技术情报研究所</span>
+									</div>
+									<br clear="all" />
+								</div>
+							</div>
+						
+					
+					
+
+
+
+
+					<div class="zj">
+						<div class="zj-top"></div>
+						<div class="ly_box">
+							
+
+<style type="text/css">
+.tip{ background:#fff;margin-bottom:10px; }
+.tip .title{ text-align:left;}
+.tip .title span{border-bottom:#4893eb solid 2px;font-size:14px; padding:8px; font-weight:bold; color:#333333;line-height:36px;}
+.tip .main{ width:100%; border-top:#d1d6da solid 1px;padding:20px 0;}
+.tip .main .jf{ margin-top:10px;font-size:12px;}
+.tip .main .main_l{width:20%; float:left; text-align:center;}
+.tip .main .main_l a{ text-decoration:none; }
+.tip .main .main_r{width:80%; float:right;}
+.tip .main .main_r dl{ text-align:left; padding:0; margin:0; font-size:12px;}
+.tip .main .main_r dl dt{ font-size:14px;margin-bottom:10px;}
+.tip .main .main_r dl dt span{ font-size:12px;margin-left:15px;color:#932121;}
+.tip .main .main_r dl dd{ line-height:26px;}
+.tip .main .main_r dl dd a:link,.tip .main .main_r dl dd a:visited,.tip .main .main_r dl dd a:hover,.tip .main .main_r dl dd a:active{color:#444444; text-decoration:none;}
+.tip .main .main_r dl dd a:hover{color:#03F; text-decoration: underline;}
+.f12red{color:#932121; text-decoration:none}
+</style>
+
+<div class="tip">
+   <div class="title"><span>讨论区</span></div>
+   <div class="main">
+      <div class="main_l" onmouseover="this.style.backgroundColor='#D8E7F0'" onmouseout="this.style.backgroundColor=''">
+      <a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">
+      <img src="jf_icon.png" width="74" height="75" border="0" />
+      <br /><span class="jf" >华医教辅</span></a>
+      </div>
+      <div class="main_r">
+      <dl>
+         <dt><strong>整理常见问题</strong><span><a href="http://www.91huayi.com/help/index.html?type=bzzx" class="f12red" target="_blank">更多问题</a></span></dt>
+         <dd><a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">1、什么叫余额不足或卡类型不匹配？</a></dd>
+         <dd><a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">2、学分已申请，为啥没有学分？</a></dd>
+         <dd><a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">3、学习卡是什么？怎样购买学习卡？ </a></dd>
+         <dd><a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">4、怎样才能参加考试？</a></dd>
+
+
+      </dl>
+      </div>
+      <br clear="all" />
+   </div>
+   <div>
+   <img src="question_bottom.gif" width="100%" height="100%" />
+   </div>
+</div>
+						</div>
+					</div>
+
+					
+					<div class="evaluation">
+						
+						<div class="content">
+							<div>
+								<div id="cyPoll" role="cylabs" data-use="poll" sid='dd0a8761-9d6a-465c-8898-de9856eb8a5a' cid='1'>
+								</div>
+								<div id="cyPk" role="cylabs" data-use="pk" sid='dd0a8761-9d6a-465c-8898-de9856eb8a5a' cid='1'>
+								</div>
+								<div id="SOHUCS" sid='dd0a8761-9d6a-465c-8898-de9856eb8a5a'>
+								</div>
+							</div>
+							<div>
+								<iframe id="tw" width="100%" frameborder="0" scrolling="no" src='../course_ware/shcy_tw.aspx?sid=dd0a8761-9d6a-465c-8898-de9856eb8a5a&cid=2'></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="colm_bottom">
+				</div>
+				<br clear="all" />
+			</div>
+		</div>
+		
+		<!-- footer -->
+		<br clear="all" />
+		
+<div id="footer" style="height: 175px;">
+    <div class="w950">
+        <p>
+            <a href="http://www.91huayi.com/help/index.html" target="_blank">华医介绍</a> |
+            <a href="http://www.91huayi.com/help/index.html?type=hzhb" target="_blank">
+                        合作伙伴</a> | <a href="http://www.91huayi.com/help/index.html?type=flsm" target="_blank">
+                            法律声明</a> | <a href="http://www.91huayi.com/help/index.html?type=lxwm" target="_blank">
+                                联系我们</a> | <a href="http://www.91huayi.com/help/index.html?type=jrhy" target="_blank">
+                                    加入华医</a> | <a href="http://www.91huayi.com/help/index.html?type=wzdt" target="_blank">
+                                        网站地图</a> | <a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">
+                                            帮助中心</a></p>
+        <p>
+            <a href="http://cme.91huayi.com/cme/index.html" target="_blank">继续医学教育</a> | <a href="http://cme.91huayi.com/cme/index.html"
+                target="_blank">全员/专项培训</a> |
+            
+            <a href="http://hukao.91huayi.com/" target="_blank">护考培训</a> |<a href="http://sqpx.91huayi.com/" target="_blank">基层卫生人员培训</a>
+            |
+            <a href="http://xljy.91huayi.com/" target="_blank">基层学历教育</a> | <a href="http://www.91huayi.com/help/index.html?type=jkjy"
+                    target="_blank">健康教育</a> |
+            <a href="http://www.91huayi.com/help/index.html?type=kjglxxh" target="_blank">科教管理信息化</a>
+            </p>
+        <p>
+            北京华医网科技股份有限公司 91huayi.com<span style="font-family: Arial"> © </span>2011 版权所有</p>
+        <p>
+            <a href="/icp.html" target="_blank">京ICP证090569号</a> <a href="http://www.miibeian.gov.cn"
+                target="_blank">京ICP备09012743号-1</a> <a href="http://www.91huayi.com/html/2011-08/599.html"
+                    target="_blank">京卫网审[2011]第0035号</a> <a href="http://www.91huayi.com/html/2011-10/630.html"
+                        target="_blank">互联网药品信息服务资格证书（京）-非经营性-2011-0057</a> 京公网安备110102004996-1
+        </p>
+        <p>
+            <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202010020200021" target="_blank">
+                <img alt="" src="copy_righti_1.jpg" border="0"/></a> <a href="http://www.anquan.org/authenticate/cert/?site=www.91huayi.com&at=realname"
+                    target="_blank">
+                    <img alt="" src="copy_righti_2.jpg" border="0"/>
+                </a>
+        </p>
+    </div>
+</div>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?b8b19370771d6914b2aac73158a962b8";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?6debcbf742b5092b534195e3a6aa7e55";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+		<!-- footer -->
+		<div id="floatTips" style="display: none; position: absolute; right: 0px; top: 185px;">
+			<div id="floatTips1">
+				<a href="http://xuexi.91huayi.com/type_course.aspx?type_id=F75D11C7-6114-4E80-84B2-2C4BD3AC3EAA" target="_blank">
+					<img width="140px" src="20170929cme.jpg" alt="" /></a><div style="width: 130px; height: 21px; line-height: 21px; text-align: right; font-size: 13px;">
+						<a href="javascript:void(0);" onclick="closeFloatTips()">关闭</a>
+					</div>
+			</div>
+			<div id="floatTips2">
+				<a href="http://xuexi.91huayi.com/course_info.aspx?id=65c14991-da8e-e711-83ce-204747863de8" target="_blank">
+					<img width="140px" src="prize.jpg" alt="" style="margin-top: 3px;" /></a><div
+						style="width: 130px; height: 21px; line-height: 21px; text-align: right; font-size: 13px;">
+						<a href="javascript:void(0);" onclick="closeFloatTips2()">关闭</a>
+					</div>
+			</div>
+		</div>
+		<div id="floatTips3" style="display: block; position: absolute; left: 0px; top: 143px;">
+			<a id="imga3" href="javascript:void(0);" onclick="closeFloatTips3()">
+				<img width="130px" src="huayizhushou.png" alt="" id="clickimg3" /></a>
+		</div>
+
+	
+<script>window.alert('根据广东省人力资源和社会保障厅《关于发布2021年我省专业技术人员继续教育公需科目学习指南的通知》，2021年全省专业技术人员继续教育公需科目学习任务按30学时计算。网络课件将于12月31日下线，不提供补学服务。020-38914613、38314977');</script></form>
+	<script type="text/javascript">
+		var _config = { categoryId: '1' };
+		(function () {
+			var appid = 'cyrEVRY76',
+				conf = 'prod_0a94d2656418519e2b8fa8034257527c';
+			var doc = document,
+				s = doc.createElement('script'),
+				h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+			s.type = 'text/javascript';
+			s.charset = 'utf-8';
+			s.src = 'http://assets.changyan.sohu.com/upload/changyan.js?conf=' + conf + '&appid=' + appid;
+			h.insertBefore(s, h.firstChild);
+			window.SCS_NO_IFRAME = true;
+
+			//            SOHUCS.reset();
+		})()
+	</script>
+	<script type="text/javascript" charset="utf-8" src="http://changyan.itc.cn/js/??lib/jquery.js,changyan.labs.js?appid=cyrEVRY76"></script>
+
+</body>
+</html>

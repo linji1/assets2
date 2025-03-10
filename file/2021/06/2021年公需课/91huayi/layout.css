@@ -1,0 +1,77 @@
+/* CSS Document */
+#wrapper
+{
+    margin: 0 auto;
+}
+#header
+{    
+    width: 960px;
+    margin: 6px auto 0 auto;
+	text-align:left;
+	
+}
+
+.btn_w34_red{height:19px; line-height:19px;color:#fff; font-size:12px; cursor:pointer; border:0;vertical-align:middle; background:url(css_images/btn_w34_red.png) no-repeat; margin-right:5px; width:43px;}
+
+.btn_w34_red2{height:19px; line-height:19px;color:#fff; font-size:12px; cursor:pointer; border:0;vertical-align:middle; background:url(css_images/btn_w34_red.png) no-repeat; margin-right:5px; width:63px;}
+
+#containter
+{
+    width: 960px;
+    margin: 0 auto;
+	text-align:left;
+	color:#0075B7;
+}
+/* -----------crumb Style-----------
+---------------------------------------*/
+.crumb{color:#234e9b;padding-left:10px; margin-bottom:5px;}
+.crumb a:hover{color:#0000FF; text-decoration:underline;}
+
+
+body{ padding:0; margin:0; font-size:12px; font-family:宋体; color:#555;}
+a img{border:none;}
+ul,ol,li,p,h3,dl,dt,dd,a,h1,h2,h3,input{padding:0; margin:0; list-style:none; }
+input{ font-family:宋体; color:#555;outline: none; }
+a{ text-decoration:none; color:#555;}
+a:hover{ color:#00567e;}
+.w{ width:1028px; margin:0 auto; overflow:hidden;}
+.fl{ float:left;}
+.fr{ float: right;}
+.clearfix{ overflow:hidden; font-size:0; height:0; width:100%; margin:0; padding:0; clear:both;}
+.mar_t7{ margin-top:7px;}
+.box_15{ overflow:hidden; font-size:0; height:15px; width:100%; margin:0; padding:0; clear:both;}
+.more{ background:url(more_08.png) no-repeat; width:51px; height:20px; float:right; margin:15px 15px 0 0; display:block;}
+
+/* 头部*/
+.header_top{ width:100%; margin:0 auto; height:29px; line-height:29px; background-color:#fff;}
+/*.header_top .weibo{ float:right; background:url(sina_hyw.jpg) no-repeat right center; padding-right:25px;}*/
+.header_top span{ width:85%;line-height:29px; float:left;text-align:right;}
+.header{background:url(header_bg.jpg) no-repeat center center #e8eff9; height:65px; width:100%; border-top:1px solid #d9e1eb;clear:both; overflow:hidden;}
+.header a{ width:365px; height:65px; display:inline-block;float:right;}
+.search_box{ background-color:#177ca0; float:right; margin:15px 200px 0 0;}
+.search_box .search_txt{ height:29px; line-height:29px; border:2px solid #177ca0; width:300px; float:left; padding:0 10px; font-size:14px;outline: none; color:#1277af;}
+.search_box a{ background:url(search_btn.jpg) no-repeat; float:right; width:40px; height:33px;}
+.header_2{ background:url(jcxl_header.jpg) no-repeat center center #e8eff9; height:75px; width:100%; border-top:1px solid #d9e1eb;clear:both; overflow:hidden;}
+.header_3{ background:url(jcws_bg.jpg) repeat-x left center; width:100%; height:115px; }
+.header_3 .bg{background:url(jcws_header.jpg) no-repeat center center; height:115px; width:100%; border-top:1px solid #d9e1eb;clear:both; overflow:hidden;}
+/* 一级导航*/
+.nav{font-family:微软雅黑; background-color:#1277af; height:42px; width:100%; clear:both; overflow:hidden;}
+.nav .nav_list1{ width:1000px; margin:0 auto; height:42px;}
+.nav .nav_list1 li{ float: left; background:url(nav_li.jpg) no-repeat right center; width:125px; text-align:center; line-height:42px; font-size:15px; color:#fff;}
+.nav .nav_list1 li:last-child{ background-image:none;}
+.nav .nav_list1 li a{ color:#fff; width:100%; height:42px; display:block;}
+.nav .nav_list1 li a:hover{background:url(nav_li.jpg) no-repeat right center #1880b9;}
+/* 二级页面导航*/
+.nav .nav2_list{ width:1000px; margin:0 auto; height:42px; background:url(nav_li.jpg) no-repeat left center; }
+.nav .nav2_list li{ float: left; background:url(nav_li.jpg) no-repeat right center; width:19%; text-align:center; line-height:42px; font-size:18px; color:#fff;}
+.nav .nav2_list li a{ color:#fff; width:100%; height:42px; display:block;}
+.nav .nav2_list li a:hover{background:url(nav_li.jpg) no-repeat right center #1880b9;}
+/* 头部结束*/
+
+
+#footer{width:100%;height:145px;color: #333333; text-align:center; padding-top:13px; border-top:#d9d9d9 solid 1px;margin-top:20px;}
+#footer p{ line-height:24px;}
+#footer p a{ color: #333333;text-decoration: none;}
+#footer p a:visited{color: #333333;text-decoration: none;}
+#footer p: a:hover{ color: #333333;text-decoration: underline;}
+#footer p a:active{color: #333333;text-decoration: none;}

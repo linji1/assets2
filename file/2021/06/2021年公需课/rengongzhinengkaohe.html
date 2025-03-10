@@ -1,0 +1,2766 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="author" content="smile@kang.cool">
+<meta name="description" content="hello">
+<meta name="keywords" content="a,b,c">
+<meta http-equiv="Window-target" content="_top">
+	<script type="text/javascript" language="javascript" src="https://linji.cn/assets/js/jquery.min.js"></script>
+<link rel="stylesheet" id="fancybox-css"  href="https://linji.cn/assets/js/fancybox/jquery.fancybox.min.css" type="text/css" media="all" />
+<script type='text/javascript' src="https://linji.cn/assets/js/fancybox/jquery.fancybox.min.js"></script>
+<!-- fancyBox 3 -->
+<script type="text/javascript">
+jQuery(function(){
+
+	var images = jQuery('a').filter( function() { return /\.(jpe?g|png|gif|bmp|webp)$/i.test(jQuery(this).attr('href')) });
+
+		images.each(function(){
+			var title = jQuery(this).children("img").attr("title");
+			var caption = jQuery(this).children("img").attr("alt");
+			jQuery(this).attr("data-fancybox", "gallery").attr("title",title).attr('data-caption',caption);
+		});
+	
+	
+
+	jQuery("[data-fancybox]").fancybox({
+		'loop': false,
+		'margin': [44, 0],
+		'gutter': 50,
+		'keyboard': true,
+		'arrows': true,
+		'infobar': false,
+		'toolbar': true,
+		'buttons': ["zoom", "slideShow", "fullScreen", "download","thumbs", "close"],
+		'idleTime': 4,
+		'protect': false,
+		'modal': false,
+		'animationEffect': "zoom",
+		'animationDuration': 350,
+		'transitionEffect': "fade",
+		'transitionDuration': 350,
+					});
+
+});
+
+</script>	<link rel="Shortcut Icon" href="images/favicon.ico">
+	<!-- common -->
+	<link rel="stylesheet" href="common.base.min.css">
+
+ 	<link rel="stylesheet" href="app_study.min.css">
+	<script type="text/javascript" src="common.base.min.js"></script>
+
+	<script type="text/javascript" src="laypage.js"></script>
+	<script type="text/javascript" src="ncts_study.min.js"></script>
+
+	<input id="ctx" type="hidden" value="">
+
+<title>课程学习</title>
+</head>
+<body>
+	<div id="g-wrap" class="g-wrap">
+			<div id="top">
+	<div class="g-sxthead">
+        <div class="g-sxtauto no-auto">
+            <h1 class="m-sxtlogo">
+                <a href="###" target="_parent">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </h1>
+            <div class="m-sxthduser">
+                <div href="javascript:;" class="user">
+		<img src=images/defaultAvatarImg.png userId="" userName="" ctx="" loginId="857480" class="" style="">
+                    <span class="name">林继</span>
+                    <span class="arrow"></span>
+                </div>
+                <ul class="list">
+                    <li><a href="/logout">退出系统</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script>
+
+function loadMore(){
+	window.open('/ncts/message/list/more?orders=CREATE_TIME.DESC');
+}
+
+$(function(){
+	$('#messageBtn').hover(function(){
+		var li = $('#messageList li');
+		if(li.size() <= 0){
+			$('#messageList').load("/ncts/message/list?orders=CREATE_TIME.DESC");
+		}
+	},function(){});
+})
+</script>
+			</div>
+			<div>
+    <div class="g-sxtstudyhd">
+        <ul class="m-sxtstudy-nav">
+			<li class="z-crt" item="study" ><a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada')">课程学习</a></li>
+			<li item="progess" ><a href="/c_f03e978ceb05464095427119fd8c9ada/study/course/progess">学习进度</a></li>
+        </ul>
+    </div>
+    <script>
+    	function lightMenu(item){
+    		$('.m-sxtstudy-nav li').removeClass('z-crt');
+		    $('.m-sxtstudy-nav li[item='+item+']').addClass('z-crt');
+    	}
+    </script>
+			</div>
+		<div id="content">
+
+	<!-- 继续上次参与的活动， 如已完成自动进入下一活动 -->
+
+
+		<div class="g-cl-content">
+			<div class="g-cl-study">
+				<div class="g-study-frame f-cb">
+					<div class="g-study-sd">
+							<div sectionId="s_148d456e06374425b40612cc44105d2e" class="g-sxtcatalog">
+								<ul class="g-course-catalog" id="courseCatalog">
+                                    <h3 class="sxtctl" title="一、人工智能的发展历史、现状与未来">一、人工智能的发展历史、现状与未来</h3>
+                                		<li childSectionId="sc_18113b214c9d485da0291472958ac58f">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（一）人工智能内涵与发展历程">
+														<i class="u-catalog-ico"></i>（一）人工智能内涵与发展历程</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_e455b8e7df494ccebf60b0f1f35eda08" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_e455b8e7df494ccebf60b0f1f35eda08')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（一）人工智能内涵与发展历程">（一）人工智能内涵与发展历程</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_33dec95709e041c089bf9336d04d20b5">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（二）新一代人工智能">
+														<i class="u-catalog-ico"></i>（二）新一代人工智能</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_ab16fcb509164d20948f0e59fad1fd66" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_ab16fcb509164d20948f0e59fad1fd66')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（二）新一代人工智能">（二）新一代人工智能</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_7d5487680b7a4c7a9ee7b29acdc731f0">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（三）新一代人工智能代表：大数据智能">
+														<i class="u-catalog-ico"></i>（三）新一代人工智能代表：大数据智能</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_f6368d3558de4fa8b89d0d2abaa0edbd" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_f6368d3558de4fa8b89d0d2abaa0edbd')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（三）新一代人工智能代表：大数据智能">（三）新一代人工智能代表：大数据智能</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_b3732702b21642769f9907ecfa2f0959">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（四）多源图像目标识别与智能理解">
+														<i class="u-catalog-ico"></i>（四）多源图像目标识别与智能理解</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_ea2b40891b9f414bbe3f9312b0eab1ad" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_ea2b40891b9f414bbe3f9312b0eab1ad')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（四）多源图像目标识别与智能理解">（四）多源图像目标识别与智能理解</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_a347b7771c9243499a2f71d33459ba61">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（五）自然语言处理与知识图谱">
+														<i class="u-catalog-ico"></i>（五）自然语言处理与知识图谱</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_dfc12f7bc50a4ee687fc7864ecc0ea9d" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_dfc12f7bc50a4ee687fc7864ecc0ea9d')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（五）自然语言处理与知识图谱">（五）自然语言处理与知识图谱</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_527c998dd1cf487baddde32100344d11">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（六）边缘计算与边缘智能">
+														<i class="u-catalog-ico"></i>（六）边缘计算与边缘智能</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_69ea305a537147e5b13229f19118a950" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_69ea305a537147e5b13229f19118a950')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（六）边缘计算与边缘智能">（六）边缘计算与边缘智能</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                </ul>
+                             </div>
+							<div sectionId="s_3249ba62663d4e3aa5640ce67decba81" class="g-sxtcatalog">
+								<ul class="g-course-catalog" id="courseCatalog">
+                                    <h3 class="sxtctl" title="二、人工智能产业发展政策与态势">二、人工智能产业发展政策与态势</h3>
+                                		<li childSectionId="sc_4434649e7a9e408081a3d7bc52920b79">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（一）人工智能技术及其产业链">
+														<i class="u-catalog-ico"></i>（一）人工智能技术及其产业链</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_416dc30ba99f404892f4accfd56cf588" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_416dc30ba99f404892f4accfd56cf588')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（一）人工智能技术及其产业链">（一）人工智能技术及其产业链</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_523a96a066bf4ab1bd9b2e11ef1c7324">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（二）人工智能产业发展历程">
+														<i class="u-catalog-ico"></i>（二）人工智能产业发展历程</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_167b9b0342494536a398afe67a796219" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_167b9b0342494536a398afe67a796219')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（二）人工智能产业发展历程">（二）人工智能产业发展历程</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_a7ef56747ed2492c92387f18729589af">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（三）人工智能产业发展现状与分析">
+														<i class="u-catalog-ico"></i>（三）人工智能产业发展现状与分析</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_9140a49ee2b9443382438b41c39b6c8f" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_9140a49ee2b9443382438b41c39b6c8f')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（三）人工智能产业发展现状与分析">（三）人工智能产业发展现状与分析</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_af532155b6ca49a796a96c3cedda0b3d">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（四）中国人工智能产业发展政策解读（上）">
+														<i class="u-catalog-ico"></i>（四）中国人工智能产业发展政策解读（上）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_1f203846240b44e79141a1e4eaeee5bc" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_1f203846240b44e79141a1e4eaeee5bc')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（四）中国人工智能产业发展政策解读（上）">（四）中国人工智能产业发展政策解读（上）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_a5f7c958cb914e8192778abddd0ab22a">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（五）中国人工智能产业发展政策解读（下）">
+														<i class="u-catalog-ico"></i>（五）中国人工智能产业发展政策解读（下）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_c9a3172919684101a24dbc472d614668" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_c9a3172919684101a24dbc472d614668')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（五）中国人工智能产业发展政策解读（下）">（五）中国人工智能产业发展政策解读（下）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_78f1d62fdfe84b0c850c9d5323861fdb">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（六）国际人工智能产业发展政策解读">
+														<i class="u-catalog-ico"></i>（六）国际人工智能产业发展政策解读</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_8730cfe50de34e4a80ed18df01669c89" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_8730cfe50de34e4a80ed18df01669c89')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（六）国际人工智能产业发展政策解读">（六）国际人工智能产业发展政策解读</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_8120630bb1254f6fa4be8fd34741f76f">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（七）人工智能产业发展态势分析与展望">
+														<i class="u-catalog-ico"></i>（七）人工智能产业发展态势分析与展望</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_ac68191da21d41d7ba0c21c37a061287" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_ac68191da21d41d7ba0c21c37a061287')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（七）人工智能产业发展态势分析与展望">（七）人工智能产业发展态势分析与展望</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                </ul>
+                             </div>
+							<div sectionId="s_a41a512cb58c4b38977c4cbf248a6076" class="g-sxtcatalog">
+								<ul class="g-course-catalog" id="courseCatalog">
+                                    <h3 class="sxtctl" title="三、人工智能技术与制造业转型升级">三、人工智能技术与制造业转型升级</h3>
+                                		<li childSectionId="sc_54bc35aee8164747ba3bcecf2758ce78">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（一）制造业发展现状与转型升级需求（上）">
+														<i class="u-catalog-ico"></i>（一）制造业发展现状与转型升级需求（上）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_4587c94d5bcd44e5bb437d9bdbbe3e33" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_4587c94d5bcd44e5bb437d9bdbbe3e33')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（一）制造业发展现状与转型升级需求（上）">（一）制造业发展现状与转型升级需求（上）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_e1702cce620e44a8a6abd585d146bc84">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（二）制造业发展现状与转型升级需求（下）">
+														<i class="u-catalog-ico"></i>（二）制造业发展现状与转型升级需求（下）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_c18795748f594a87866d5bbfc3a3909e" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_c18795748f594a87866d5bbfc3a3909e')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（二）制造业发展现状与转型升级需求（下）">（二）制造业发展现状与转型升级需求（下）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_c3e5330fcc574fa5a809ca6314a3e6fe">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（三）信息物理融合系统：智能制造综合技术体系（上）">
+														<i class="u-catalog-ico"></i>（三）信息物理融合系统：智能制造综合技术体系（上）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_fed78055bbaa4f238026f4ef6dbba828" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_fed78055bbaa4f238026f4ef6dbba828')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（三）信息物理融合系统：智能制造综合技术体系（上）">（三）信息物理融合系统：智能制造综合技术体系（上）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_e0360f48cdc143deb11394bd3be01335">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（四）信息物理融合系统：智能制造综合技术体系（下）">
+														<i class="u-catalog-ico"></i>（四）信息物理融合系统：智能制造综合技术体系（下）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_9d34812510204d1292c0f1838a13a86c" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_9d34812510204d1292c0f1838a13a86c')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（四）信息物理融合系统：智能制造综合技术体系（下）">（四）信息物理融合系统：智能制造综合技术体系（下）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_82876e95ab2e4aebbb3c3fa23ca93322">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（五）工业知识自动化与软件化（上）">
+														<i class="u-catalog-ico"></i>（五）工业知识自动化与软件化（上）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_14a6b10cc22b45a5a4a3056739751234" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_14a6b10cc22b45a5a4a3056739751234')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（五）工业知识自动化与软件化（上）">（五）工业知识自动化与软件化（上）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_ad108e254db64488bad7f4b8a9de63ff">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（六）工业知识自动化与软件化（中）">
+														<i class="u-catalog-ico"></i>（六）工业知识自动化与软件化（中）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_ec1ce01f6bbb4433b5723429569ddb19" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_ec1ce01f6bbb4433b5723429569ddb19')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（六）工业知识自动化与软件化（中）">（六）工业知识自动化与软件化（中）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_35976dcc23994491a6cf81414c4f27fe">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（七）工业知识自动化与软件化（下）">
+														<i class="u-catalog-ico"></i>（七）工业知识自动化与软件化（下）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_e30796bb17d447cba1991dfda56da0d0" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_e30796bb17d447cba1991dfda56da0d0')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（七）工业知识自动化与软件化（下）">（七）工业知识自动化与软件化（下）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                </ul>
+                             </div>
+							<div sectionId="s_7777a889294b4287be4c26e99160f6e1" class="g-sxtcatalog">
+								<ul class="g-course-catalog" id="courseCatalog">
+                                    <h3 class="sxtctl" title="四、人工智能与新基建">四、人工智能与新基建</h3>
+                                		<li childSectionId="sc_ad74ee2707fe4d20951b07a8061a5c28">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（一）新基建与人工智能（上）">
+														<i class="u-catalog-ico"></i>（一）新基建与人工智能（上）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_f0ef90d8d81243868314d85cd41641b4" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_f0ef90d8d81243868314d85cd41641b4')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（一）新基建与人工智能（上）">（一）新基建与人工智能（上）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_a8c3d78ebfc64269ab1e85ad8681e9f6">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（二）新基建与人工智能（中）">
+														<i class="u-catalog-ico"></i>（二）新基建与人工智能（中）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_fb6e6f40b1c0455494b5e702685255e5" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_fb6e6f40b1c0455494b5e702685255e5')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（二）新基建与人工智能（中）">（二）新基建与人工智能（中）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_12c15c95015e498792e9c9a6cc0ac39c">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（三）新基建与人工智能（下）">
+														<i class="u-catalog-ico"></i>（三）新基建与人工智能（下）</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_c54f07f4fd0d4c44a7e5bcccf2074c38" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_c54f07f4fd0d4c44a7e5bcccf2074c38')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（三）新基建与人工智能（下）">（三）新基建与人工智能（下）</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                </ul>
+                             </div>
+							<div sectionId="s_61dd9269fa584ebbaf4ebfef9e21b226" class="g-sxtcatalog">
+								<ul class="g-course-catalog" id="courseCatalog">
+                                    <h3 class="sxtctl" title="五、人工智能在数字经济产业的应用">五、人工智能在数字经济产业的应用</h3>
+                                		<li childSectionId="sc_f5b3e42ff33746eea53b9ebdfb11f383">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（一）人工智能与数字经济">
+														<i class="u-catalog-ico"></i>（一）人工智能与数字经济</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_32bc60c999644fac87b1e203aed44b5e" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_32bc60c999644fac87b1e203aed44b5e')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（一）人工智能与数字经济">（一）人工智能与数字经济</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_aaee20d4ff4a4348a3d3d43b7d597c13">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（二）人工智能与工业互联网">
+														<i class="u-catalog-ico"></i>（二）人工智能与工业互联网</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_eb8a6e44a57b454586fa6712571d1547" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_eb8a6e44a57b454586fa6712571d1547')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（二）人工智能与工业互联网">（二）人工智能与工业互联网</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_aa4f1a02a7304976bdd82c6f8ae70b20">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（三）人工智能与大数据">
+														<i class="u-catalog-ico"></i>（三）人工智能与大数据</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_9cd096b81af9457489077dd14ff171b0" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_9cd096b81af9457489077dd14ff171b0')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（三）人工智能与大数据">（三）人工智能与大数据</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_3b9bc1201b404476939831e1b7e123a5">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（四）人工智能与智能供应链">
+														<i class="u-catalog-ico"></i>（四）人工智能与智能供应链</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_33d905fdf0ea439c98a801706b24a31f" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_33d905fdf0ea439c98a801706b24a31f')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（四）人工智能与智能供应链">（四）人工智能与智能供应链</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_1375675ca9c146b2bfb73bb83e2977db">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（五）人工智能与新零售">
+														<i class="u-catalog-ico"></i>（五）人工智能与新零售</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_aeb0e5c574b640638eb9862b03fd8f3c" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_aeb0e5c574b640638eb9862b03fd8f3c')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（五）人工智能与新零售">（五）人工智能与新零售</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_c59aeff0c1654528bdfe94052fd53d75">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（六）人工智能与数字金融">
+														<i class="u-catalog-ico"></i>（六）人工智能与数字金融</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_cbae6d94e24243369dfa6957b46eba2f" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_cbae6d94e24243369dfa6957b46eba2f')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（六）人工智能与数字金融">（六）人工智能与数字金融</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                </ul>
+                             </div>
+							<div sectionId="s_9ed9bd2ac9e14ad8a6b1e1ca3f722e50" class="g-sxtcatalog">
+								<ul class="g-course-catalog" id="courseCatalog">
+                                    <h3 class="sxtctl" title="六、人工智能在智慧城市的应用 ">六、人工智能在智慧城市的应用 </h3>
+                                		<li childSectionId="sc_5a75efdeaf394838bc8e132ce9125208">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（一）人工智能与智能生活">
+														<i class="u-catalog-ico"></i>（一）人工智能与智能生活</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_8f1be9f5868542b3aeed45605a81b53e" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_8f1be9f5868542b3aeed45605a81b53e')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（一）人工智能与智能生活">（一）人工智能与智能生活</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_8a3d29c8f1f7427a9110d48dbb5e5a1c">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（二）人工智能与交通物流">
+														<i class="u-catalog-ico"></i>（二）人工智能与交通物流</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_d5c21253f54a49039d676a2d9a7c78ee" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_d5c21253f54a49039d676a2d9a7c78ee')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（二）人工智能与交通物流">（二）人工智能与交通物流</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_44a6e764a802478ea9f988cc1c478417">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（三）人工智能与医疗教育">
+														<i class="u-catalog-ico"></i>（三）人工智能与医疗教育</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_bba8b36c9dc94bd3b053c09eca21e39a" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_bba8b36c9dc94bd3b053c09eca21e39a')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（三）人工智能与医疗教育">（三）人工智能与医疗教育</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_1e98c36c5c194ba9b7d9728a67f275b4">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（四）人工智能与农业资源">
+														<i class="u-catalog-ico"></i>（四）人工智能与农业资源</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_9b8eb0a720ad4bf9a51e812386123914" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_9b8eb0a720ad4bf9a51e812386123914')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（四）人工智能与农业资源">（四）人工智能与农业资源</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_eab6752d03634eb9b752a0ddecb2b6ee">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（五）人工智能与政务安防">
+														<i class="u-catalog-ico"></i>（五）人工智能与政务安防</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_b18e47c3473b474f963f560af77b8c76" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_b18e47c3473b474f963f560af77b8c76')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（五）人工智能与政务安防">（五）人工智能与政务安防</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                		<li childSectionId="sc_818b21cdf59545daa710ab9b5bfaa415">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="（六）人工智能与城市服务">
+														<i class="u-catalog-ico"></i>（六）人工智能与城市服务</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_ab241831ff9948009ac43a1e4bc23f72" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_ab241831ff9948009ac43a1e4bc23f72')" href="###" class="section tt-s
+							                                    ">
+							                                    <span class="txt" title="（六）人工智能与城市服务">（六）人工智能与城市服务</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                </ul>
+                             </div>
+							<div sectionId="s_698c699e8d724a9798cba11f0da2636d" class="g-sxtcatalog">
+								<ul class="g-course-catalog" id="courseCatalog">
+                                    <h3 class="sxtctl" title="七、考核">七、考核</h3>
+                                		<li childSectionId="sc_f7f46cfb24764ae4b66d158dc864635f">
+											<dl class="m-course-catalog">
+												<dt class="z-crt">
+													<h3 class="tt-b" title="考核">
+														<i class="u-catalog-ico"></i>考核</h3>
+													<div class="tr">
+														<a href="javascript:;" class="opt"></a>
+													</div>
+												</dt>
+														<dd childSectionActivitieId="a_b23243b083e449e79f1c6c269575e7ea" >
+															<a onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','', 'a_b23243b083e449e79f1c6c269575e7ea')" href="###" class="section tt-s
+							                                    		z-crt
+							                                    ">
+							                                    <span class="txt" title="考核">考核</span>
+															</a>
+														</dd>
+											</dl>
+                                		</li>
+                                </ul>
+                             </div>
+					</div>
+						<input type="hidden" class="aidHidden " value="a_e455b8e7df494ccebf60b0f1f35eda08">
+						<input type="hidden" class="aidHidden " value="a_ab16fcb509164d20948f0e59fad1fd66">
+						<input type="hidden" class="aidHidden " value="a_f6368d3558de4fa8b89d0d2abaa0edbd">
+						<input type="hidden" class="aidHidden " value="a_ea2b40891b9f414bbe3f9312b0eab1ad">
+						<input type="hidden" class="aidHidden " value="a_dfc12f7bc50a4ee687fc7864ecc0ea9d">
+						<input type="hidden" class="aidHidden " value="a_69ea305a537147e5b13229f19118a950">
+						<input type="hidden" class="aidHidden " value="a_416dc30ba99f404892f4accfd56cf588">
+						<input type="hidden" class="aidHidden " value="a_167b9b0342494536a398afe67a796219">
+						<input type="hidden" class="aidHidden " value="a_9140a49ee2b9443382438b41c39b6c8f">
+						<input type="hidden" class="aidHidden " value="a_1f203846240b44e79141a1e4eaeee5bc">
+						<input type="hidden" class="aidHidden " value="a_c9a3172919684101a24dbc472d614668">
+						<input type="hidden" class="aidHidden " value="a_8730cfe50de34e4a80ed18df01669c89">
+						<input type="hidden" class="aidHidden " value="a_ac68191da21d41d7ba0c21c37a061287">
+						<input type="hidden" class="aidHidden " value="a_4587c94d5bcd44e5bb437d9bdbbe3e33">
+						<input type="hidden" class="aidHidden " value="a_c18795748f594a87866d5bbfc3a3909e">
+						<input type="hidden" class="aidHidden " value="a_fed78055bbaa4f238026f4ef6dbba828">
+						<input type="hidden" class="aidHidden " value="a_9d34812510204d1292c0f1838a13a86c">
+						<input type="hidden" class="aidHidden " value="a_14a6b10cc22b45a5a4a3056739751234">
+						<input type="hidden" class="aidHidden " value="a_ec1ce01f6bbb4433b5723429569ddb19">
+						<input type="hidden" class="aidHidden " value="a_e30796bb17d447cba1991dfda56da0d0">
+						<input type="hidden" class="aidHidden " value="a_f0ef90d8d81243868314d85cd41641b4">
+						<input type="hidden" class="aidHidden " value="a_fb6e6f40b1c0455494b5e702685255e5">
+						<input type="hidden" class="aidHidden " value="a_c54f07f4fd0d4c44a7e5bcccf2074c38">
+						<input type="hidden" class="aidHidden " value="a_32bc60c999644fac87b1e203aed44b5e">
+						<input type="hidden" class="aidHidden " value="a_eb8a6e44a57b454586fa6712571d1547">
+						<input type="hidden" class="aidHidden " value="a_9cd096b81af9457489077dd14ff171b0">
+						<input type="hidden" class="aidHidden " value="a_33d905fdf0ea439c98a801706b24a31f">
+						<input type="hidden" class="aidHidden " value="a_aeb0e5c574b640638eb9862b03fd8f3c">
+						<input type="hidden" class="aidHidden " value="a_cbae6d94e24243369dfa6957b46eba2f">
+						<input type="hidden" class="aidHidden " value="a_8f1be9f5868542b3aeed45605a81b53e">
+						<input type="hidden" class="aidHidden " value="a_d5c21253f54a49039d676a2d9a7c78ee">
+						<input type="hidden" class="aidHidden " value="a_bba8b36c9dc94bd3b053c09eca21e39a">
+						<input type="hidden" class="aidHidden " value="a_9b8eb0a720ad4bf9a51e812386123914">
+						<input type="hidden" class="aidHidden " value="a_b18e47c3473b474f963f560af77b8c76">
+						<input type="hidden" class="aidHidden " value="a_ab241831ff9948009ac43a1e4bc23f72">
+						<input type="hidden" class="aidHidden ing" value="a_b23243b083e449e79f1c6c269575e7ea">
+					<div class="g-study-mn">
+                        <div class="m-study-box">
+                            <div class="m-sxtstudy-opt" id="studySelectAct">
+								<a href="javascript:;" onclick="goPrev()" class="btn crt"><i></i>上一活动</a>
+                                <p class="txt">
+                                	当前活动：《考核》</p>
+                                <a href="javascript:;" onclick="goNext()" class="btn next disable"><i></i>下一个活动</a>
+<center style="padding: -200px;"><a href="https://linji.cn/assets/qblog/images/公需课.png" data-fancybox="gallery" data-caption="2021年广东教育系统及华医网公需课"><span style="font-size: 24px;font-weight: 700;color: red;">微信：saboha</span></a>
+</center>                            </div>
+
+		<!-- 缓存中存在学习时间限制就用缓存中的时间限制来判断，否则就以活动和课程的时间为准 -->
+
+	<div class="g-study-prompt">
+		<p>
+					您已完成测验&nbsp;
+		</p>
+		 	<i class="close">X</i>
+    </div>
+    <script>
+    	$(function(){
+    		//隐藏活动完成情况
+	    	study_prompt();
+    	});
+    	
+    	//隐藏活动完成情况
+		function study_prompt(){
+		    $(".g-study-prompt .close").on("click",function(){
+		        var $this_p = $(this).parent(".g-study-prompt");
+		            $this_p.css({"display":"none"});
+		    });
+		    //$(".g-study-prompt").delay(20000).fadeOut(500,0);
+	
+		}
+    </script>
+
+
+	<div class="g-study-dt g-study-check-dt">
+                        <div class="g-question-box">
+                        	<div class="am-title">
+                                <p class="m-studyTest-grade">已得：<span><strong>100</strong>分</span></p>
+                                <div class="am-main-r am-g-question-tl-time">
+			
+				<div class="am-count-down in">
+					<i class="trg"></i>
+					<p class="h-txt">活动进行中</p>
+				</div>
+                                    <input type="hidden" value="2016/6/30,20:30:00" class="endTime">
+                                </div>
+                            </div>
+                            <form id="testForm" method="put" action="/a_b23243b083e449e79f1c6c269575e7ea/study/unique_uid_857480/ncts/test/delivery/5d7625fc493f4c87b0c564d8004d7bd7/finishTest">
+                            <ol class="g-topic-lst" id="topicList">
+
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q1:2:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">1、</span>
+                                               		<em class='qs-type'>[是非题]&nbsp;</em>
+                                                工业互联网是实现创造业智能化的核心，目前全球主要国家正加快工业互联网战略布局，以抢占未来制造业竞争的制高点。<i class="item-score">（2分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q1:2:1_RESPONSE"  checked="checked" value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、正确</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q1:2:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、错误</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q2:3:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">2、</span>
+                                               		<em class='qs-type'>[是非题]&nbsp;</em>
+                                                当前大数据的数据规模为：从数十GB到十几ZB级。<i class="item-score">（2分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q2:3:1_RESPONSE"  checked="checked" value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、正确</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q2:3:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、错误</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q3:4:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">3、</span>
+                                               		<em class='qs-type'>[是非题]&nbsp;</em>
+                                                &ldquo;新零售&rdquo;一词由马云在2016年的云栖大会上提出，因此&ldquo;新零售&rdquo;仅仅局限于&ldquo;阿里巴巴新零售&rdquo;。<i class="item-score">（2分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q3:4:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、正确</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q3:4:1_RESPONSE"  checked="checked" value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、错误</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q4:5:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">4、</span>
+                                               		<em class='qs-type'>[是非题]&nbsp;</em>
+                                                北美和欧洲是全球人工智能发展最为迅速的地区，亚洲的人工智能发展相对缓慢。<i class="item-score">（2分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q4:5:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、正确</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q4:5:1_RESPONSE"  checked="checked" value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、错误</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q5:6:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">5、</span>
+                                               		<em class='qs-type'>[是非题]&nbsp;</em>
+                                                现阶段所实现的人工智能大部分指强人工智能，并且已经被广泛使用。<i class="item-score">（2分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q5:6:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、正确</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q5:6:1_RESPONSE"  checked="checked" value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、错误</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q6:7:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">6、</span>
+                                               		<em class='qs-type'>[是非题]&nbsp;</em>
+                                                目前，我国人工智能的各个领域全面发展，包括机器人机器学习、计算机视觉、专家系统、自然语言处理。<i class="item-score">（2分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q6:7:1_RESPONSE"  checked="checked" value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、正确</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q6:7:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、错误</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q7:8:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">7、</span>
+                                               		<em class='qs-type'>[是非题]&nbsp;</em>
+                                                习近平总书记在中央政治局第十八次集体学习时强调：要探索&ldquo;区块链＋&rdquo;，在民生领域的运用，积极推动区块链在教育、就业、养老、精准扶贫、医疗健康、商品防伪、食品安全等领域的应用，为人民群众提供更加智能、更加便捷、更加优质的公共服务。<i class="item-score">（2分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q7:8:1_RESPONSE"  checked="checked" value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、正确</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q7:8:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、错误</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q8:9:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">8、</span>
+                                               		<em class='qs-type'>[是非题]&nbsp;</em>
+                                                国际人工智能产业发展政策可分为三个梯队，我国目前属于人工智能整体水平、技术、人才等优势明显的第一梯队。<i class="item-score">（2分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q8:9:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、正确</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q8:9:1_RESPONSE"  checked="checked" value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、错误</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q9:10:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">9、</span>
+                                               		<em class='qs-type'>[是非题]&nbsp;</em>
+                                                我国智慧城市发展大体上经历了四个时期：探索实践期、规范调整期、战略攻坚期、全面发展期。<i class="item-score">（2分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q9:10:1_RESPONSE"  checked="checked" value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、正确</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q9:10:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、错误</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q10:11:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">10、</span>
+                                               		<em class='qs-type'>[是非题]&nbsp;</em>
+                                                知识软件化是实现知识高效获取、共享、传播与复用的核心手段，通过将CPS各层次方法、模型等知识进行显性化、数字化、模块化，并封装为可重复使用和灵活调用的微服务组件，使面向工业制造的CPS集成应用系统开发利用速度得到提升。<i class="item-score">（2分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q10:11:1_RESPONSE"  checked="checked" value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、正确</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q10:11:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、错误</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q11:12:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">11、</span>
+                                               		<em class='qs-type'>[单选题]&nbsp;</em>
+                                                知识抽取的关键技术是？<i class="item-score">（3分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q11:12:1_RESPONSE"  checked="checked" value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、实体识别、关系抽取、事件抽取</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q11:12:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、实体识别、概念抽取、事件抽取</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q11:12:1_RESPONSE"   value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、概念抽取、关系抽取、事件抽取</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q11:12:1_RESPONSE"   value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、实体识别、关系抽取、概念抽取</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q12:13:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">12、</span>
+                                               		<em class='qs-type'>[单选题]&nbsp;</em>
+                                                在以下信息抽取实例中，哪个抽取类别和内容是不一致的？ <i class="item-score">（3分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q12:13:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、会议时间——2021年4月26日</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q12:13:1_RESPONSE"  checked="checked" value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、姓名——中共中央政治局常委</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q12:13:1_RESPONSE"   value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、会议主题——持续加强政府系统党风廉政建设和反腐败工作</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q12:13:1_RESPONSE"   value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、职位——国务院总理</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q13:14:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">13、</span>
+                                               		<em class='qs-type'>[单选题]&nbsp;</em>
+                                                以下关于语音识别技术涉及的领域，哪个选项是错误的？<i class="item-score">（3分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q13:14:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、信号处理</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q13:14:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、模式识别</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q13:14:1_RESPONSE"  checked="checked" value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、语音整合</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q13:14:1_RESPONSE"   value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、发声机理</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q14:15:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">14、</span>
+                                               		<em class='qs-type'>[单选题]&nbsp;</em>
+                                                下列先阶段&ldquo;人工智能＋制造&rdquo;主要面临的挑战中，哪个描述的不对？ <i class="item-score">（3分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q14:15:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、人工智能的价值难以被准确衡量</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q14:15:1_RESPONSE"  checked="checked" value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、全部领域数据资产管理能力有待提升</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q14:15:1_RESPONSE"   value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、工业深水区的解决方案仍待探索</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q14:15:1_RESPONSE"   value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、复合型人才缺口较大</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q15:16:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">15、</span>
+                                               		<em class='qs-type'>[单选题]&nbsp;</em>
+                                                当前，世界各国对战略性新兴产业的发展普遍予以高度重视，但中国在&ldquo;（  ）&rdquo;规划中明确将战略性新兴产业作为发展重点。<i class="item-score">（3分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q15:16:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、十一五</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q15:16:1_RESPONSE"  checked="checked" value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、十二五</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q15:16:1_RESPONSE"   value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、十三五</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q15:16:1_RESPONSE"   value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、十四五</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q16:17:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">16、</span>
+                                               		<em class='qs-type'>[单选题]&nbsp;</em>
+                                                金融领域的科技应用可以分为（  ）三个阶段。<i class="item-score">（3分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q16:17:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、金融全球化、互联网金融、科技金融</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q16:17:1_RESPONSE"  checked="checked" value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、金融信息化、互联网金融、科技金融</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q16:17:1_RESPONSE"   value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、金融信息化、全球化金融、科技金融</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q16:17:1_RESPONSE"   value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、金融信息化、互联网金融、全球金融</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q17:18:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">17、</span>
+                                               		<em class='qs-type'>[单选题]&nbsp;</em>
+                                                以下数据量可以称为大数据的是？<i class="item-score">（3分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q17:18:1_RESPONSE"  checked="checked" value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、100PB</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q17:18:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、100KB</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q17:18:1_RESPONSE"   value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、100MB</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q17:18:1_RESPONSE"   value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、1000MB</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q18:19:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">18、</span>
+                                               		<em class='qs-type'>[单选题]&nbsp;</em>
+                                                习近平总书记高度重视科技创新与成果转化工作，强调要加快创新成果转化应用、彻底打通官咖、破解实现（  ）&ldquo;一条龙&rdquo;转化的瓶颈。<i class="item-score">（3分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q18:19:1_RESPONSE"  checked="checked" value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、技术突破、产品制造、市场模式、产业发展</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q18:19:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、技术突破、产品制造、环境保护、产业发展</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q18:19:1_RESPONSE"   value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、技术突破、环境保护、市场模式、产业发展</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q18:19:1_RESPONSE"   value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、环境保护、产品制造、市场模式、产业发展</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q19:20:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">19、</span>
+                                               		<em class='qs-type'>[单选题]&nbsp;</em>
+                                                人工智能产业发展的关键技术除了大数据以外还包括？<i class="item-score">（3分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q19:20:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、云计算</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q19:20:1_RESPONSE"   value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、物联网</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q19:20:1_RESPONSE"   value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、人工智能</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q19:20:1_RESPONSE"  checked="checked" value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、以上都是</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q20:21:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">20、</span>
+                                               		<em class='qs-type'>[单选题]&nbsp;</em>
+                                                智能制造、智慧城市、智能医疗、智慧教育等产业具有（  ），在人工智能产业有着巨大的潜力。<i class="item-score">（3分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q20:21:1_RESPONSE"   value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、竞争特征</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q20:21:1_RESPONSE"  checked="checked" value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、融合特征</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q20:21:1_RESPONSE"   value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、共生特征</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-radio-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="radio" name="qti_response_Q20:21:1_RESPONSE"   value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、互补特征</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q21:22:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">21、</span>
+                                               		<em class='qs-type'>[多选题]&nbsp;</em>
+                                                以下关于人工智能的定义，哪些是正确的？<i class="item-score">（5分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q21:22:1_RESPONSE"   checked="checked"  value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、指包括计算、数据资源、人工智能算法和计算研究、应用构建在内的产业</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q21:22:1_RESPONSE"     value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、人工智能就是人造智能</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q21:22:1_RESPONSE"   checked="checked"  value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、基于指人工智能算法和技术进行研发及拓展应用的产业</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q21:22:1_RESPONSE"     value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、能造出“智能工具”</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q22:23:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">22、</span>
+                                               		<em class='qs-type'>[多选题]&nbsp;</em>
+                                                人工智能三要素是什么？<i class="item-score">（5分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q22:23:1_RESPONSE"   checked="checked"  value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、数据</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q22:23:1_RESPONSE"   checked="checked"  value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、算法</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q22:23:1_RESPONSE"     value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、机器</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q22:23:1_RESPONSE"   checked="checked"  value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、算力</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q23:24:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">23、</span>
+                                               		<em class='qs-type'>[多选题]&nbsp;</em>
+                                                农业智能化有哪些特征？<i class="item-score">（5分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q23:24:1_RESPONSE"   checked="checked"  value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、农业生产要素数字化、在线化</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q23:24:1_RESPONSE"   checked="checked"  value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、农业决策大数据化、智能化</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q23:24:1_RESPONSE"   checked="checked"  value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、全天候服务个性化、针对化</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q23:24:1_RESPONSE"   checked="checked"  value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、农业管理信用化、安全化</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q24:25:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">24、</span>
+                                               		<em class='qs-type'>[多选题]&nbsp;</em>
+                                                从基础支撑技术层面对大数据智能本身基础关键体术体系进行研究，主要有哪些技术？<i class="item-score">（5分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q24:25:1_RESPONSE"   checked="checked"  value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、数据采集清洗</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q24:25:1_RESPONSE"     value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、数据的业务问题分析</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q24:25:1_RESPONSE"   checked="checked"  value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、数据的存储管理</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q24:25:1_RESPONSE"   checked="checked"  value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、数据的可视化分析</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q25:26:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">25、</span>
+                                               		<em class='qs-type'>[多选题]&nbsp;</em>
+                                                图像处理的一般过程包含？<i class="item-score">（5分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q25:26:1_RESPONSE"   checked="checked"  value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、图像增强</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q25:26:1_RESPONSE"     value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、图像恢复</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q25:26:1_RESPONSE"   checked="checked"  value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、图像变换</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q25:26:1_RESPONSE"   checked="checked"  value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、图像生成</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q26:27:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">26、</span>
+                                               		<em class='qs-type'>[多选题]&nbsp;</em>
+                                                在自然语言处理中子任务&mdash;&mdash;自动摘要中，可以分为哪两种实现形式？<i class="item-score">（5分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q26:27:1_RESPONSE"   checked="checked"  value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、抽取式</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q26:27:1_RESPONSE"   checked="checked"  value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、抽象式</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q26:27:1_RESPONSE"     value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、完成式</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q26:27:1_RESPONSE"     value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、过去式</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q27:28:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">27、</span>
+                                               		<em class='qs-type'>[多选题]&nbsp;</em>
+                                                云边协同的内容包括？<i class="item-score">（5分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q27:28:1_RESPONSE"   checked="checked"  value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、资源协同</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q27:28:1_RESPONSE"   checked="checked"  value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、智能协同</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q27:28:1_RESPONSE"   checked="checked"  value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、数据协同</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q27:28:1_RESPONSE"   checked="checked"  value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、服务协同</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q28:29:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">28、</span>
+                                               		<em class='qs-type'>[多选题]&nbsp;</em>
+                                                大数据具有那些特点？<i class="item-score">（5分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q28:29:1_RESPONSE"   checked="checked"  value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、数据体量巨大</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q28:29:1_RESPONSE"   checked="checked"  value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、数据种类繁多</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q28:29:1_RESPONSE"   checked="checked"  value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、价值密度低</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q28:29:1_RESPONSE"   checked="checked"  value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、处理速度快</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q29:30:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">29、</span>
+                                               		<em class='qs-type'>[多选题]&nbsp;</em>
+                                                下列不属于边缘智能面对的技术挑战类别的是？<i class="item-score">（5分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q29:30:1_RESPONSE"     value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、隐私与安全</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q29:30:1_RESPONSE"   checked="checked"  value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、数据样本过多</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q29:30:1_RESPONSE"     value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、边缘计算节点软/硬件异构</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q29:30:1_RESPONSE"   checked="checked"  value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、人才短缺</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+											<li class="m-topic-item">
+
+											<input type="hidden" name="qti_item_Q30:31:1_RESPONSE"/>
+                                            <div class="m-topic m-topic01">
+                                                <h3 class="title"><span class="item-num">30、</span>
+                                               		<em class='qs-type'>[多选题]&nbsp;</em>
+                                                在知识图谱体系中，哪几个选项是属于应用层的？<i class="item-score">（5分）</i></h3>
+                                                <ol class="m-question-lst">
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q30:31:1_RESPONSE"   checked="checked"  value="Choice0">
+	                                                                </strong>
+	                                                                <span>A、语义搜索</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q30:31:1_RESPONSE"   checked="checked"  value="Choice1">
+	                                                                </strong>
+	                                                                <span>B、智能问答</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q30:31:1_RESPONSE"   checked="checked"  value="Choice2">
+	                                                                </strong>
+	                                                                <span>C、辅助决策</span>
+	                                                            </label>
+	                                                        </li>
+
+
+	                                                        <li>
+	                                                            <label class="m-checkbox-tick">
+	                                                                <strong class="on">
+	                                                                    <i class="ico ico2"></i>
+																			<input type="checkbox" name="qti_response_Q30:31:1_RESPONSE"     value="Choice3">
+	                                                                </strong>
+	                                                                <span>D、结构化数据</span>
+	                                                            </label>
+	                                                        </li>
+
+
+                                                </ol>
+                            						<div class="m-check-result ">
+                                                        <div class="m-ck-result-txt">
+                                                            <p class="m-ck-result">您的答案：
+                                                                <i class="m-ck-judge"></i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                        	</div>
+
+									  		</li><!--end topic item -->
+                                <div class="g-studyIpt-box"><!--start suggest 培训的建议-->
+
+                                    <div class="m-common-btn">
+
+                                        <!--<button type="button" class="btn u-inverse-btn">取消</button>-->
+                                        <div class="m-reExam-btn">
+	                                   		<a href="###" onclick="javascript:finishTest();">
+	                                   			<button type="button"  class="btn u-main-btn">
+	                                   					重新测验
+	                                   			</button>
+	                                   		</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </ol>
+  </form>
+					  				<form id="studyTestActivityForm" >
+										<input type="hidden" name="offsetTop">
+										<input type="hidden" name="goLastActivity">
+										<input type="hidden" name="goTest" value="Y">
+									</form>
+                                    </div>
+                                    <!--end study activity box 调查问卷-->
+                                </div>
+                                <script>
+                                	function handleResponse(formId){
+                                		var data = $.ajaxSubmit(formId);
+                                		if (!isMatchJson(data)){
+                        					$('body').html($(data));
+                        				}else{
+                        					var json = $.parseJSON(data);
+    										if(json.responseCode == '01'){
+    											alert(json.responseMsg);
+    										}
+                        				}
+                                	}
+
+                                	function finishTest(){
+										var url = '/a_b23243b083e449e79f1c6c269575e7ea/study/course/c_f03e978ceb05464095427119fd8c9ada';
+										$('#studyTestActivityForm input[name="goLastActivity"]').val('N');
+										$('#studyTestActivityForm').attr('action', url);
+										$('#studyTestActivityForm input[name="offsetTop"]').val($(document).scrollTop());
+										$('#studyTestActivityForm').submit();
+                                	}
+
+                                	setA();
+                        			function setA(){
+                        				$('#g-study-dt').oneTime('900s', 'A', function(){
+                        					$('#g-study-dt').stopTime ('A');
+                        					mylayerFn.btns({
+                        						content: '您在本页面的停留很长时间了，系统将在15分钟后自动退出登录，是否继续学习？',
+                                    			btns:[
+                                        			{content:"继续学习", classname:'mylayer-btn3', type:0, close: true, fn:function(){
+                                        				$.ajax({
+                                        					url: '/ncts/resetSession',
+                                        					success: function(data){
+                                        						if(data.responseCode == '00'){
+                        											setA();
+                        										}else{
+                        											alert('访问超时, 请重新登录');
+                        										}
+                                        					},
+                                        					error: function(XMLHttpRequest, textStatus, errorThrown){
+                        										if(textStatus == 'error'){
+                        											window.location.reload();
+                        										}
+                        									}
+                                        				});
+                                        			}},
+                                    			]
+                        					});
+                        				});
+                        			}
+                                </script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="active-tipindex" style="display: none;">
+            <p class="big">鼠标移到这里</p>
+            <p>可以查看该节下面所有活动哦~</p>
+            <a href="javascript:;" class="Abtn">下一步</a>
+        </div>
+
+		</div>
+		<div id="footer">
+    <!--<div class="g-sxtfoot"><p>广东省继续教育协会版权所有</p><p>地址：广州市天河区天源路767号A栋301<span class="line">|</span>粤ICP备18031366号-1 <span class="line">|</span> 技术支持：广州昊誉信息科技有限公司</p></div>
+    -->
+    <div class="g-sxtfoot">
+        <p>版权所有：广东省教育厅教师继续教育指导中心 <span class="line">|</span>
+            地址：广州市东风东路723号
+        </p>
+        <!--<p>地址：广州市天河区天源路767号A栋301<span class="line">|</span>粤ICP备18031366号-1 <span class="line">|</span> 技术支持：广州昊誉信息科技有限公司</p>-->
+        <p>技术支持：广东第二师范学院  广州昊誉信息科技有限公司 <span class="line">|</span> 客服热线：400-998-9352 <span class="line">|</span> 粤ICP备09132871号-2</p>
+    </div>
+
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?1bf654a6abeafaf71c27bb383e5a01f9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+		</div>
+		<input type="hidden" id="loadDivId" value="content" />
+		<div class="blackBg"></div>
+		<div class="blackBg1"></div>
+		<div class="whiteBg"></div>
+		<div class="ag-whitebg"></div>
+		<div class="ag-blackbg"></div>
+	</div>
+	<form id="downloadFileForm" action="/file/downloadFile.do" method="post" target="_blank">
+		<input type="hidden" name="id">
+		<input type="hidden" name="fileName">
+		<input type="hidden" name="fileRelations[0].type"> 
+		<input type="hidden" name="fileRelations[0].relation.id"> 
+	</form>
+	<form id="updateFileForm" target="_blank">
+		<input type="hidden" name="id">
+		<input type="hidden" name="fileName">
+	</form>
+	<form id="deleteFileRelationForm" target="_blank">
+		<input type="hidden" name="fileId">
+		<input type="hidden" name="relation.id">
+		<input type="hidden" name="type">
+	</form>
+	<form id="deleteFileInfoForm" target="_blank">
+		<input type="hidden" name="id">
+	</form>
+	<form id="studyCourseForm" >
+		<input type="hidden" name="offsetTop">
+		<input type="hidden" name="goLastActivity">
+	</form>
+	<script>
+		function studyCourse(courseId, sectionId, activityId){
+			var url = '/study/course/'+courseId;
+			if(sectionId != null && sectionId != ''){
+				url = '/'+sectionId+'/study/course/'+courseId;
+				$('#studyCourseForm input[name="goLastActivity"]').val('N');
+			}
+			if(activityId != null && activityId != ''){
+				url = '/'+activityId+'/study/course/'+courseId;
+				$('#studyCourseForm input[name="goLastActivity"]').val('N');
+			}
+			$('#studyCourseForm').attr('action', url);
+			$('#studyCourseForm input[name="offsetTop"]').val($(document).scrollTop());
+			$('#studyCourseForm').submit();
+		}
+	</script>
+</body>
+</html>
+<script>
+	$(function(){
+		//默认打开章节
+		$('.section.z-crt').parents('dl').find('dt .tr').trigger('click');
+
+		//搜索框动画
+	    showSearchBoxAnimate();
+	    //章节列表显示隐藏
+	    courseLearningFn.sectionCatalog();
+	  	//课程学习选中活动
+	    studySelectAct.star($('.m-studyAct-lst li').index($('.m-studyAct-lst li.z-crt')));
+		//下拉滚动侧边栏固定定位
+	    //courseLearningFn.sideFixed();
+		//隐藏显示侧边
+	    //LayerOpreationFnAjax("#openNoteLayerUnit","#studyNoteLayer",'/note/course?courseId=c_f03e978ceb05464095427119fd8c9ada&sectionId=sc_f7f46cfb24764ae4b66d158dc864635f');
+	    //LayerOpreationFnAjax("#openQaLayerUnit","#studyQaLayer",'/ncts/faq_question/course/c_f03e978ceb05464095427119fd8c9ada');
+	    //侧边栏收缩
+	    slide();
+	    //活动点击提示
+	    active_tip('/ncts/custom/gongxu', '857480');
+	    //打开意见反馈
+	    open_feedback();
+
+		$('.topCourseName').text('人工智能发展与产业应用');
+	});
+
+	function goPrev(){
+		var $this = $('.aidHidden.ing');
+		var index = $('.aidHidden').index($this);
+		if(index != 0){
+			var $prev = $this.prev();
+			studyCourse('c_f03e978ceb05464095427119fd8c9ada','', $prev.val());
+		}else{
+			alert('已经是第一个活动');
+		}
+	}
+
+	function goNext(){
+		var $this = $('.aidHidden.ing');
+		var index = $('.aidHidden').index($this);
+		if(index != $('.aidHidden').length - 1){
+			var $next = $this.next();
+			studyCourse('c_f03e978ceb05464095427119fd8c9ada','', $next.val());
+		}else{
+			alert('已经是最后一个活动');
+		}
+	}
+
+	$(function(){
+		$.cookie('last_study_aid_857480_c_f03e978ceb05464095427119fd8c9ada', 'a_b23243b083e449e79f1c6c269575e7ea|sc_f7f46cfb24764ae4b66d158dc864635f', { expires: 30, path: '/' });
+	});
+</script>

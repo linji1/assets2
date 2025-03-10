@@ -1,0 +1,86 @@
+﻿html
+{
+    height: 100%;
+	
+}
+body
+{
+    font-size: 12px;
+    font-family: "宋体" ,Arial, Helvetica, sans-serif;
+    color: #000;
+    height: 100%;
+	 padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li, span, img, input, select, dl, dt, dd
+{
+    padding: 0;
+    margin: 0;
+}
+ul, ol
+{
+    list-style-type: none;
+}
+.clear
+{
+    font-size: 0px;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.clearBoth:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearBoth {
+    height:0;
+    width:0;
+    line-height:0;
+    display: inline-block;
+    overflow:hidden;
+}
+* html .clearBoth {height: 0%;}
+
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+.hide
+{
+    display: none;
+}
+a
+{
+    text-decoration: none;
+}
+a img
+{
+    border: 0px none;
+}
+input, select
+{
+    vertical-align:middle;  margin-bottom:1px; cursor: pointer;
+}
+a, input, label
+{
+
+    outline: none;
+}
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:none;
+}

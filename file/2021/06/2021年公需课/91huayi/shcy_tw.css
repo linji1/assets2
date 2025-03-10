@@ -1,0 +1,29 @@
+﻿/*去掉回复
+#SOHUCS #SOHU_MAIN #SOHU-comment-main .section-list-w .action-click-gw .click-reply-gw
+{
+    display: none !important;
+}
+
+/*去掉参与和评论数*/
+#SOHUCS #SOHU_MAIN #SOHU-comment-main .section-title-w .title-join-w
+{
+    display: none !important;
+}
+
+/*去掉用户信息*/
+#SOHUCS #SOHU_MAIN #SOHU-comment-main .section-title-w .user-wrap-w
+{
+    display: none !important;
+}
+
+/*去掉版权信息*/
+#SOHUCS #SOHU_MAIN #SOHU-comment-main #powerby_sohu
+{
+    display: none !important;
+}
+
+/*去掉最新评论*/
+#SOHUCS #SOHU_MAIN #SOHU-comment-main .section-list-w .block-title-gw .title-name-gw
+{
+    display: none !important;
+}

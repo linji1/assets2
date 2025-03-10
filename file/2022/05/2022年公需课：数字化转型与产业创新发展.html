@@ -1,0 +1,1781 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="Keywords" content="继续医学教育,医学教育,继续医学教育学分证书,学分证书,学分,医学学分,市级二类学分,市级Ⅱ类学分,市级Ⅰ类学分,二类学分,国家级继续医学教育项目,省级继续医学教育项目,医学学分证书,医学培训,远程医学教育,远程医学培训,医学课件,医学视频课件,全员培训,专项培训,CME,CPD,继教,教育,远程,远程教育,国家一类学分,国家Ⅰ类学分,Ⅱ类学分,Ⅰ类学分,一类学分,二类学分,医学,国家级学分">
+	<meta name="description" content="华医网继续医学教育：用教育推动医疗发展。包括：国家级继续医学教育、省市级继续医学教育、医学知识库、适宜技术、人文知识、医德医风专题、医学管理、医学新进展等医学教育课程。">
+	<title>华医网—继续医学教育•用教育推动医疗发展</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+	<script type="text/javascript" src="91huayi/jquery.min.js"></script><style type="text/css" abt="234"></style>
+	<link href="91huayi/shcy.css" rel="stylesheet" type="text/css">
+	<link href="91huayi/common2.css?v=2" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript">
+		$(function () {
+			$(".content>div:gt(0)").hide();
+			$(".tab li").css("cursor", "pointer");
+			$(".tab li").hover(function () {
+				$(this).addClass("tab_current");
+			}, function () {
+				$(this).removeClass("tab_current");
+			}).click(
+				function () {
+					$(this).addClass("tab_selected").siblings().removeClass("tab_selected");
+					$(".content>div").eq($(this).index()).siblings().hide().end().show();
+				}
+			)
+		});
+
+
+		//浮动广告
+		var tips; var tips1; var theTop = 185/*这是默认高度*/; var old = theTop;
+		function initFloatTips() {
+			tips = document.getElementById('floatTips');
+			tips1 = document.getElementById('floatTips3');
+			moveTips();
+			moveTips1();
+		};
+		function moveTips1() {
+			var tt = 50;
+			if (window.innerHeight) {//返回窗口的文档显示区的高度
+				pos = window.pageYOffset//设置或返回当前页面相对于窗口显示区左上角的 Y 位置
+			}
+			else if (document.documentElement && document.documentElement.scrollTop) {
+				pos = document.documentElement.scrollTop//垂直方向滚动的值
+			}
+			else if (document.body) {
+				pos = document.body.scrollTop; //网页被卷去的高
+			}
+			pos = pos - tips1.offsetTop + theTop;
+			pos = tips1.offsetTop + pos / 10;
+			if (pos < theTop) pos = theTop;
+			if (pos != old) {
+				tips1.style.top = pos + "px";
+				tt = 10;
+			}
+			old = pos;
+			setTimeout(moveTips1, tt);
+		}
+		function moveTips() {
+			var tt = 50;
+			if (window.innerHeight) {//返回窗口的文档显示区的高度
+				pos = window.pageYOffset//设置或返回当前页面相对于窗口显示区左上角的 Y 位置
+			}
+			else if (document.documentElement && document.documentElement.scrollTop) {
+				pos = document.documentElement.scrollTop//垂直方向滚动的值
+			}
+			else if (document.body) {
+				pos = document.body.scrollTop; //网页被卷去的高
+			}
+			pos = pos - tips.offsetTop + theTop;
+			pos = tips.offsetTop + pos / 180;
+			if (pos < theTop) pos = theTop;
+			if (pos != old) {
+				tips.style.top = pos + "px";
+				tt = 10;
+			}
+			old = pos;
+			setTimeout(moveTips, tt);
+		}
+		function closeFloatTips() {
+			tips = document.getElementById('floatTips1');
+			GSetCookie("ifShowFloatTips", "0");
+			tips.style.display = "none";
+		}
+		function showFloatTips() {
+			tips = document.getElementById('floatTips');
+			tips.style.display = "";
+		}
+		function closeFloatTips2() {
+			tips = document.getElementById('floatTips2');
+			GSetCookie("ifShowFloatTips2", "0");
+			tips.style.display = "none";
+		}
+		function showFloatTips2() {
+			tips = document.getElementById('floatTips2');
+			tips.style.display = "";
+		}
+		function closeFloatTips3() {
+			tips1 = document.getElementById('floatTips3');
+			GSetCookie("ifShowFloatTips3", "0");
+			tips1.style.display = "none";
+		}
+	</script>
+	<script type="text/javascript">
+
+		function GetCookie(name) {
+			var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+			if (arr != null) return unescape(arr[2]); return null;
+		}
+		function SetCookie(sName, sValue) {
+			document.cookie = sName + "=" + escape(sValue) + "; ";
+		}
+		function GSetCookie(sName, sValue) {
+			document.cookie = sName + "=" + escape(sValue) + "; path=/";
+		}
+	</script>
+	<script type="text/javascript">
+		var cid = '4223a775-5cce-4dad-b62c-01146f705c7f';
+		var cwid = "";
+		$(document).ready(function () {
+			if (GetCookie("ifShowFloatTips") != "0") {
+				showFloatTips();
+
+			}
+			if (GSetCookie("ifShowFloatTips") != "0") {
+				showFloatTips2();
+			}
+			//loadHyy();
+			//load();
+		})
+		$(function () {
+			topbntalert();
+		});
+		function topbntalert() {
+			var input = $(".btn_fn").find("a");
+			input.each(function (i) {
+				//alert(i);
+				$(this).hover(
+					function () {
+						var obj = $(this).attr("class");
+						var pot = $(this).offset();
+						$("#" + obj).removeClass("h").addClass("hover");
+						$("#" + obj).css({ top: 236 + "px", left: pot.left + "px" });
+					}, function () {
+						var obj = $(this).attr("class");
+						$("#" + obj).removeClass("hover").addClass("h");
+					});
+				if (i > input.lenght)
+					return false;
+			});
+		}
+	</script>
+	<style type="text/css">
+		.top {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			height: 38px;
+			background: url(images/topgb.gif) repeat-x;
+		}
+
+		.crul {
+			clear: both;
+			line-height: 0;
+			font-size: 0;
+			margin: 0;
+			padding: 0;
+		}
+
+		.top div {
+			width: 950px;
+			margin: 0 auto;
+		}
+
+			.top div img {
+				vertical-align: middle;
+				border: 0;
+			}
+
+			.top div span {
+				float: left;
+				display: block;
+			}
+
+			.top div .flashbnt {
+				float: right;
+			}
+
+			.top div label {
+				display: block;
+				width: 400px;
+				height: 23px;
+				text-align: center;
+				margin: 5px 0 20px 0;
+				padding: 0;
+				float: left;
+			}
+
+				.top div label input {
+					vertical-align: middle;
+					border: 0;
+					height: 23px;
+					width: 89px;
+					color: #FFF;
+				}
+
+			.top div a {
+				float: right;
+				display: block;
+				text-align: right;
+				text-decoration: none;
+				color: #666;
+				font-size: 12px;
+			}
+
+		.bntgb {
+			background: url(images/bntgb.png) no-repeat;
+			border: 0;
+			width: 64px;
+			height: 25px;
+			line-height: 22px;
+			color: #0075B2;
+			font-size: 12px;
+		}
+
+		.hover {
+			position: absolute;
+			background: url(../images/alert.gif) no-repeat;
+			width: 193px;
+			height: 86px;
+			color: #0075b2;
+			display: block;
+			font-size: 12px;
+			text-align: left;
+		}
+
+			.hover span {
+				text-indent: 30px;
+				display: block;
+				width: 170px;
+				height: 50px;
+				margin: 25px auto 0 auto;
+				line-height: 18px;
+			}
+
+		.h {
+			display: none;
+		}
+
+		.peve {
+			background: url(../images/pvenet.jpg) no-repeat;
+			margin: 0 100px 0 0px;
+			width: 89px;
+			height: 23px;
+			display: block;
+			color: #fff;
+			text-indent: 2.3em;
+			line-height: 23px;
+		}
+
+		.nxest {
+			background: url(../images/nxet.jpg) no-repeat;
+			width: 89px;
+			height: 23px;
+			display: block;
+			color: #fff;
+			text-indent: 2em;
+			line-height: 23px;
+		}
+
+		.top span {
+			color: #666;
+			font-size: 12px;
+		}
+
+		.coent {
+			width: 950px;
+			margin: 0 auto;
+			padding: 0;
+			background: #FFF;
+		}
+
+			.coent .l {
+				float: left;
+				width: 680px;
+				margin: 7px 0 0 0;
+				display: inline;
+			}
+
+				.coent .l .hide {
+					position: absolute;
+					background: url(images/listgb.png) no-repeat;
+					width: 282px;
+					height: 277px;
+					display: none;
+					text-align: left;
+					text-indent: 2em;
+					font-size: 12px;
+					font-weight: normal;
+				}
+
+		.emhver {
+			margin: 6px 6px;
+			padding: 0;
+			width: 16px;
+			height: 16px;
+			background: url(images/clos1.png) no-repeat;
+			float: right;
+			cursor: pointer;
+		}
+
+		.bntem {
+			margin: 6px 6px;
+			padding: 0;
+			width: 16px;
+			height: 16px;
+			background: url(images/clos2.png) no-repeat;
+			float: right;
+			cursor: pointer;
+		}
+
+		.coent .l .hide h4 {
+			color: #525C68;
+			font-size: 14px;
+			margin: 10px 0 15px 15px;
+		}
+
+		.coent .l .hide span {
+			display: block;
+			margin: 0 0 0 6px;
+		}
+
+		.coent .l .hide ul {
+			margin: 0 0 0 20px;
+		}
+
+		.coent .l .hide li {
+			font-size: 12px;
+			line-height: 22px;
+		}
+
+		.coent .l .video {
+			float: left;
+			display: inherit;
+			width: 644px;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			height: 552px;
+		}
+
+			.coent .l .video EMBED {
+				display: block;
+				margin: 0 0 0 2px;
+			}
+
+			.coent .l .video *, .coent .l .videolist * {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+
+			.coent .l .video img {
+				border: 0;
+				width: 644px;
+				margin: 0;
+				padding: 0;
+			}
+
+		.coent .l .videolist {
+			float: right;
+			display: inherit;
+			width: 36px;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+			.coent .l .videolist em {
+				display: block;
+				width: 30px;
+				height: 55px;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+
+			.coent .l .videolist span {
+				display: block;
+				width: 32px;
+				margin: 0;
+				padding: 0;
+				text-indent: -9999px;
+				vertical-align: middle;
+				cursor: pointer;
+				overflow: hidden;
+			}
+
+			.coent .l .videolist .bnt1_0 {
+				height: 109px;
+				background: url(images/jx0.png) no-repeat 0 0;
+			}
+
+			.coent .l .videolist .bnt1_1 {
+				height: 109px;
+				background: url(images/jx1.png) no-repeat 0 0;
+			}
+
+			.coent .l .videolist .bnt2_0 {
+				height: 108px;
+				background: url(images/kc0.png) no-repeat 0 0;
+			}
+
+			.coent .l .videolist .bnt2_1 {
+				height: 108px;
+				background: url(images/kc1.png) no-repeat 0 0;
+			}
+
+		.coent .r {
+			float: right;
+			width: 270px;
+			margin: 7px 0 0 0;
+		}
+
+			.coent .r .title {
+				background: url(images/rehittop.jpg) no-repeat;
+				height: 28px;
+				text-align: left;
+			}
+
+				.coent .r .title span {
+					display: block;
+					font-size: 12px;
+					color: #000;
+					width: 80px;
+					height: 25px;
+					line-height: 25px;
+					margin: 0 0 0 20px;
+					vertical-align: bottom;
+					text-align: center;
+					padding: 3px 0 0 0;
+				}
+
+			.coent .r .cometn {
+				background: url(images/r_gb.jpg) repeat-y;
+				text-align: center;
+				padding: 0 0 6px 0;
+			}
+
+				.coent .r .cometn .imgtext {
+					width: 260px;
+					margin: 0 5px;
+					padding: 6px 0 0 0;
+					height: 120px;
+				}
+
+					.coent .r .cometn .imgtext img {
+						float: left;
+						margin: 0;
+						width: 100px;
+						height: 120px;
+						margin: 0 0 0 10px;
+					}
+
+					.coent .r .cometn .imgtext ul {
+						width: 130px;
+						float: right;
+						display: inline;
+					}
+
+						.coent .r .cometn .imgtext ul li {
+							line-height: 24px;
+							font-size: 12px;
+							text-align: left;
+						}
+
+				.coent .r .cometn .text {
+					height: 100px;
+					overflow-y: scroll;
+					font-size: 12px;
+					text-align: left;
+					text-indent: 2em;
+					width: 89%;
+					margin: 6px auto;
+					padding: 5px 0 0 0px;
+				}
+
+				.coent .r .cometn .r_xd {
+					height: 110px;
+					font-size: 12px;
+					margin: 0 auto;
+					padding: 4px 0 0 0px;
+					text-align: center;
+				}
+
+					.coent .r .cometn .r_xd textarea {
+						width: 245px;
+						height: 90px;
+						margin: 0 auto 0 2px;
+					}
+
+				.coent .r .cometn h5 {
+					background: url(images/tilehtl.jpg) no-repeat;
+					height: 30px;
+					margin: 0;
+					padding: 0;
+					font-style: normal;
+					line-height: 30px;
+					text-align: left;
+					font-size: 12px;
+					font-weight: normal;
+					text-indent: 2em;
+				}
+
+			.coent .r h6 {
+				margin: 12px 0 0 0;
+				padding: 0;
+				font-style: normal;
+				color: #0175B2;
+				font-size: 12px;
+				font-weight: normal;
+			}
+
+				.coent .r h6 img {
+					vertical-align: middle;
+					margin: 0 6px 0 0;
+				}
+
+			.coent .r .foomet {
+				background: url(images/foomet.jpg) no-repeat;
+				height: 7px;
+			}
+
+			.coent .r .r_bnt {
+				text-align: center;
+				vertical-align: middle;
+				margin: 6px 0;
+			}
+
+				.coent .r .r_bnt .bnt1span {
+					display: inline-block;
+					width: 131px;
+					height: 59px;
+					text-align: center;
+					background: url(images/bnt01gb.jpg) no-repeat;
+					margin: 0;
+					padding: 0;
+				}
+
+				.coent .r .r_bnt .bnt2span {
+					display: inline-block;
+					width: 131px;
+					height: 59px;
+					text-align: center;
+					background: url(images/bnt02gb.jpg) no-repeat;
+					margin: 0;
+					padding: 0;
+				}
+
+				.coent .r .r_bnt .inputstyle1 {
+					border: 0;
+					display: inline-block;
+					width: 132px;
+					height: 59px;
+					text-align: center;
+					background: url(images/btn_jiangyi.png) no-repeat;
+					margin: 0;
+					padding: 0;
+					cursor: pointer;
+				}
+
+				.coent .r .r_bnt .inputstyle1_1 {
+					border: 0;
+					display: inline-block;
+					width: 132px;
+					height: 59px;
+					text-align: center;
+					background: url(images/btn_jiangyi_over.png) no-repeat;
+					margin: 0;
+					padding: 0;
+					cursor: pointer;
+				}
+
+				.coent .r .r_bnt .inputstyle2 {
+					border: 0;
+					display: inline-block;
+					width: 131px;
+					height: 59px;
+					text-align: center;
+					background: url(images/kaoshi.png) no-repeat;
+					margin: 0;
+					padding: 0;
+					cursor: pointer;
+				}
+
+				.coent .r .r_bnt .inputstyle2_1 {
+					border: 0;
+					display: inline-block;
+					width: 131px;
+					height: 59px;
+					text-align: center;
+					background: url(images/kaoshi_over.png) no-repeat;
+					margin: 0;
+					padding: 0;
+					cursor: pointer;
+				}
+
+				.coent .r .r_bnt .inputstyle2_2 {
+					border: 0;
+					display: inline-block;
+					width: 131px;
+					height: 59px;
+					text-align: center;
+					background: url(images/kaoshi_disable.png) no-repeat;
+					margin: 0;
+					padding: 0;
+					cursor: pointer;
+				}
+
+		#jxmb {
+			padding: 0 20px;
+			line-height: 150%;
+		}
+
+		#kcjg {
+			padding: 0 20px;
+			line-height: 150%;
+		}
+
+		.course_title {
+			padding: 30px 20px 0 20px;
+			background: url(css_images/course_title_bg.jpg) no-repeat;
+			width: 643px;
+			height: 250px;
+			margin: 0 auto;
+		}
+
+		.course_title_l {
+			background: #fff;
+			padding: 2px;
+			border: #84BBE1 solid 1px;
+			width: 232px;
+			height: 164px;
+			text-align: center;
+			float: left;
+		}
+
+			.course_title_l img {
+				display: block;
+			}
+
+		.course_title_r {
+			width: 400px;
+			float: right;
+			color: #232323;
+			font-size: 12px;
+		}
+
+			.course_title_r h3 {
+				margin-bottom: 10px;
+				background: url(css_images/newlist_li_bj.gif) repeat-x bottom left;
+				padding-bottom: 5px;
+				color: #000;
+				font-size: 14px;
+			}
+
+				.course_title_r h3 span {
+					float: right;
+					font-size: 12px;
+					font-weight: normal;
+				}
+
+			.course_title_r h4 {
+				color: #232323;
+				font-weight: normal;
+				margin-bottom: 5px;
+				font-size: 12px;
+			}
+
+				.course_title_r h4 span {
+					margin-right: 25px;
+				}
+
+			.course_title_r p {
+				text-indent: 2em;
+				color: #232323;
+				line-height: 170%;
+			}
+
+		.course_item {
+			padding-top: 10px;
+		}
+
+			.course_item li {
+				background: url(css_images/course_li_bg.gif) no-repeat;
+				width: 733px;
+				height: 74px;
+			}
+
+				.course_item li dl {
+					padding: 10px 30px;
+					color: #464646;
+				}
+
+					.course_item li dl dt {
+						font-size: 13px;
+						background: url(css_images/script_16x16.gif) no-repeat 0 0;
+						padding-left: 24px;
+						height: 20px;
+						font-weight: bold;
+					}
+
+						.course_item li dl dt span .red {
+							color: #FB7E10;
+						}
+
+						.course_item li dl dt span {
+							float: right;
+							font-weight: normal;
+							font-size: 12px;
+							margin-right: 30px;
+						}
+
+					.course_item li dl dd {
+						margin: 5px 0;
+						padding-left: 24px;
+					}
+
+						.course_item li dl dd span {
+							margin-right: 30px;
+						}
+
+		.apply_way {
+			padding-top: 20px;
+			margin-left: 8px;
+		}
+
+			.apply_way span.apply_x {
+				border: 3px solid #72bde5;
+				height: 31px;
+				line-height: 31px;
+				font-size: 16px;
+				float: left;
+				padding-left: 12px;
+				padding-right: 12px;
+				margin-top: 4px;
+			}
+
+			.apply_way img {
+				float: left;
+				margin-top: 4px;
+			}
+
+			.apply_way input {
+				float: right;
+				width: 138px;
+				height: 45px;
+				border: none;
+				background: url(../images/bt_btn_03.png) no-repeat;
+				cursor: pointer;
+			}
+
+		.lg_box2 {
+			text-align: left;
+			padding-bottom: 4px;
+			line-height: 27px;
+			padding-left: 5px;
+			padding-right: 5px;
+			font-size: 13px;
+			overflow: hidden;
+			padding-top: 4px;
+		}
+
+			.lg_box2 a {
+				border: #d6e9f4 2px solid;
+				display: inline-block;
+				border-radius: 3px;
+				color: #777;
+				height: 27px;
+				line-height: 27px;
+				text-align: center;
+				margin: 2px;
+				width: 29.5%;
+				background: (../images/lg_btn_bg.jpg) repeat-x;
+				font-family: "微软雅黑", "宋体", "黑体";
+			}
+
+		a.add_btn_0906 {
+			border-radius: 3px;
+			border-top: medium none;
+			border-bottom: medium none;
+			border-left: medium none;
+			border-right: medium none;
+			font-size: 14px;
+			color: #fff;
+			height: 26px;
+			background: #ff7f01;
+			display: block;
+			width: 100%;
+			margin: 8px auto 8px;
+			text-align: center;
+			font-family: "微软雅黑", "宋体", "黑体";
+		}
+	</style>
+	<link href="91huayi/layout.css" rel="stylesheet" type="text/css">
+	<link href="91huayi/common_v3.css?v=0" rel="stylesheet" type="text/css">
+	<link href="91huayi/default_v3.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="91huayi/erji.css">
+<style id="tsbrowser_video_independent_player_style" type="text/css">
+      [tsbrowser_force_max_size] {
+        width: 100% !important;
+        height: 100% !important;
+        left: 0px !important;
+        top: 0px !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        transform: none !important;
+      }
+      [tsbrowser_force_fixed] {
+        position: fixed !important;
+        z-index: 9999 !important;
+        background: black !important;
+      }
+      [tsbrowser_force_hidden] {
+        opacity: 0 !important;
+        z-index: 0 !important;
+      }
+      [tsbrowser_hide_scrollbar] {
+        overflow: hidden !important;
+      }
+      [tsbrowser_display_none] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+      [tsbrowser_force_show] {
+        display: black !important;
+        visibility: visible !important;
+        opacity: 0;
+      }</style><script>//remove baidu search ad
+var _countAA = 0
+function doBBBd(){}
+doBBBd()
+document.addEventListener('keyup', function(){_countAA-=10;doBBBd()}, false)
+document.addEventListener('click', function(){_countAA-=10;doBBBd()}, false)
+
+</script></head>
+<body onload="initFloatTips()">
+	<form method="post" action="./course.aspx?cid=4223a775-5cce-4dad-b62c-01146f705c7f" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="42187F38">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Y/8RqxlUu8vgsRMSc7pbn/gGUm+BWZoXRI9p8r30ocEe8a++VVebvPFlDSQGMNGEIwxqr1iCo9ll5P395wxzQCqDKFjyGOtmkhzr9ZEaRJPqI1ntI3scHd8g/9IzcMmkc9BNpd9znRHLXzInTdZ0up0hdP+e1Dx3xYCj8YUU/u+w6LYS">
+</div>
+		
+		
+<style>
+.add_top_ewm{ position:absolute; left:50%; top:15px; margin-left:258px;z-index: 9; width:85px; height:33px;}
+.add_top_ewm a{ width:85px; height:33px; text-align:center; border-radius:100px; text-decoration:none; display:block; background:#1277af; color:#fff; font-size:14px; line-height:33px;cursor: pointer;}
+.add_top_ewm img{  position: absolute;  left: -27px;  top: 33px;  display: none;}
+.header{ overflow:visible; position:relative;}
+</style>
+<!--头部 开始 -->
+<div class="header_top">
+<div class="w">      
+        
+        <span id="spName" style="margin-left: 0; width: auto;"><i id="header1_icnoMsg" style="font-style: normal;"></i>&nbsp;
+            
+            您好,赵子龙![<a href="../secure/login_out.aspx">退出</a>]
+            </span><a href="https://www.91huayi.com/contents/183/5775.html" style="background: url(91huayi/19112236156.jpg) no-repeat right center;" target="_blank">华医网官方微信</a><a href="https://cme.91huayi.com/pages/pc_ewm.htm" style="background: none;color: #ea1e19;" target="_blank">找回二维码激活卡</a><a href="https://cme1.91huayi.com/pages/certificate_query.aspx" style="background: none;" target="_blank">华医电子证书查验</a>
+    
+    </div>
+</div>
+<div class="header">
+
+ <div class="add_top_ewm">
+ 	<a onmousemove="document.getElementById('add_ewm_img').style.display='block';" onmouseout="document.getElementById('add_ewm_img').style.display='none';" target="_blank">客户端下载</a>
+ 	<img src="91huayi/893730373.png" id="add_ewm_img">
+ </div>
+
+    <div class="w">
+        <a href="https://www.91huayi.com/" target="_blank"><img src="91huayi/210710925.png" alt="互联网医学教育"></a>
+        <div class="search_box" style="display:none;">
+            
+                <input class="search_txt" name="word" type="text" value="请输入关键字">
+                <input type="hidden" name="type" value="Title">
+                <a href="javascript:document.getElementById('submitForm').submit();" target="_blank">
+                </a>
+            
+        </div>
+    </div>
+</div>
+<!--头部 结束 -->
+<!--一级导航 开始 -->
+<div class="nav">
+    <ul class="nav2_list">
+        <li><a href="http://cme23.91huayi.com/cme/index.html">继教资讯</a></li>
+        <li><a href="http://cme23.91huayi.com/pages/cme.aspx">继续教育</a></li>
+        <li><a href="http://cme23.91huayi.com/pages/fme.aspx">全员专项</a></li>
+        <li><a href="http://cme23.91huayi.com/pages/knowledge_navigation.aspx">课程导航</a></li>
+        <li><a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">帮助中心</a></li>
+    </ul>
+</div>
+<!--一级导航 结束 -->
+<div class="w mar_t10">
+</div>
+
+
+		<div id="containter">
+			<div class="sider">
+				
+				
+<script type="text/javascript">	
+	$(function () {
+		var loginStyle = '';
+		if (loginStyle == "1") {
+			//document.getElementById("main_div").style.height = "318px";
+			//document.getElementById("main_div").style.background = "url(../images/user_bg2.png) no-repeat";
+		}
+		$("#check").click(function () {
+			window.location.href = "http://cme23.91huayi.com/PersonalCenter/studyresult.aspx?result=1";
+		});
+	});
+</script>
+<div id="main_div" class="login" style="position: relative;">
+	<div class="login_top">
+		个人信息
+	</div>
+	<div class="login_mid">
+		<div id="user_info1_showpic" class="cards-maincneter7-div cards-maincneter5-div8" style="position: absolute; right: 20px; top: 9px;">
+			<input type="button" style="width: 84px; height: 24px; border: none; display: block; background: url(http://cme23.91huayi.com/images/anniu.png) no-repeat center;" value="" id="check">
+		</div>
+		<div class="user_photo_info" id="showuserinfo" style="max-height: 295px;">
+			<div class="user-photo">
+				<img src="http://hyuser.91huayi.com//photo//photo.gif" width="92" height="109">
+			</div>
+			<div class="user-info">
+				<dl>
+					<dt>姓名<span>赵子龙</span></dt>
+
+					
+					<dt title="412723198708226441">证件号<span>440***0321</span></dt>
+					
+
+
+					<dt>专业<span title="耳鼻咽喉科学">耳鼻咽喉科...</span></dt>
+					<dt>职称<span title="医师">医师</span></dt>
+					<dt>地区<span title="湛江市;霞山区">湛江市;雷...</span></dt>
+				</dl>
+				<br clear="all">
+			</div>
+			<div class="user-info2">
+				<dl>
+					<dt>单位:<span title="雷州市中医医院">雷州市中医医院</span></dt>
+				</dl>
+			</div>
+			<div class="lg_box2">
+				
+				<a href="http://wxmp.91huayi.com/toUpdateUserInfo?userId=31ce3c08-e0fa-4628-b4a0-a7ba00be4cc0">修改信息</a><a href="http://hyuser2.91huayi.com/AccountCenter/setpwd.aspx?tag=cme&amp;uid=31ce3c08-e0fa-4628-b4a0-a7ba00be4cc0&amp;user_name=a11708929">修改密码</a><a target="_blank" href="http://cme23.91huayi.com/secure/fromCme_Kjpt.aspx">学分查询</a><a target="_blank" href="http://cme23.91huayi.com/pages/buy_card.aspx">在线购卡</a><a target="_blank" href="http://cme23.91huayi.com/pages/buy_card.aspx?redirectaddr=1">购卡记录</a><a href="http://cme23.91huayi.com/pages/card_mes.aspx">在线绑卡</a><a href="http://cme23.91huayi.com/secure/login_out.aspx" class="add_btn_0906">退出</a>
+
+
+
+			</div>
+			<br clear="all">
+		</div>
+	</div>
+	<div class="login_bottom">
+	</div>
+</div>
+
+
+
+				
+				<div class="sider_newslist">
+					<h3>客服中心</h3>
+					<div style="margin: 8px 0">
+						<img src="http://cme23.91huayi.com/images/tele.gif" width="206" height="22">
+					</div>
+					<a class="btn119_mouseout" onmouseover="this.className='btn119_mouseover'" onmouseout="this.className='btn119_mouseout'" value="在线客服答疑专区" onclick="javascript:window.open(&quot;https://chat56.live800.com/live800/chatClient/chatbox.jsp?companyID=867072&amp;configID=138589&amp;jid=6673832692&amp;s=1&quot;)">
+						<img src="http://cme23.91huayi.com/images/pic_questions.gif" width="125" height="32"></a> <a class="btn67_mouseout" onmouseover="this.className='btn67_mouseover'" onmouseout="this.className='btn67_mouseout'" value="帮助中心" onclick="javascript:window.open(&quot;http://www.91huayi.com/help/index.html?type=bzzx&quot;)">
+							<img src="http://cme23.91huayi.com/images/pic_help.gif" width="83" height="32"></a>
+				</div>
+				
+				<div class="sider_newslist">
+					
+<script type="text/javascript">
+    function loadHyy() {
+        $.ajax({
+            type: "POST",
+            url: "http://cme23.91huayi.com/ashx/hyyData.ashx",
+            beforeSend: loadhyydb,
+            success: function (msg) {
+                //alert("Data Saved: " + msg);
+                $("#mdiv").html(msg);
+            }
+        })
+    }
+    function loadhyydb() {
+        $("#mdiv").empty();
+        $("#mdiv").html("正在获取数据...");
+    }
+</script>
+<div id="mdiv">
+
+</div>
+
+					<p class="bottom">
+					</p>
+				</div>
+				<p>
+					&nbsp;
+				</p>
+				<p>
+					&nbsp;
+				</p>
+			</div>
+			<div class="main">
+				<div class="crumb">
+					&nbsp;您现在的位置：<a href="cme.aspx">我的继续教育</a>» <a href="#">
+						非本专业</a>»2022年公需课：数字化转型与产业创新发展
+				</div>
+				<div class="colm_top">
+				</div>
+				<div class="colm_mid">
+					<h3 class="title_h3">
+						<span><a id="upa" href="javascript:__doPostBack('upa','')">
+							<img src="http://cme23.91huayi.com/images/btn_front.png" width="70" height="26" border="0"></a>&nbsp;&nbsp;&nbsp;
+                            <a id="npa" href="javascript:__doPostBack('npa','')">
+								<img src="http://cme23.91huayi.com/images/btn_next.png" width="70" height="26" border="0"></a></span>课程列表
+                      
+                        </h3>
+					
+					
+							<div class="course_lord">
+								<div class="course_pic">
+									<img src="http://cdn.91huayi.com/hywupload/courseImages/20220506133900675.jpg" width="196" height="137">
+								</div>
+								<div class="info">
+									<h3>
+										<span>关注度：<img src="http://cme23.91huayi.com/images/xin_2.gif" align="absmiddle"></span><a href="#" class="f14blue"><strong>2022年公需课：数字化转型与产业创新发展</strong></a></h3>
+
+									
+									<div>
+										<h3 style="font-family: 微软雅黑; text-indent: 50px;"><strong></strong></h3>
+									</div>
+
+									<div class="information">
+										
+										<span class="f12blue">
+											</span>
+										<span class="f12blue" title="">
+											</span>
+									</div>
+									<div class="information">
+										<span class="f12blue">
+											2022年公需课30.0学时</span>
+									</div>
+									<p>
+										2022年公需课：数字化转型与产业创新发展
+									</p>
+
+
+									
+									<div style="text-align: right">
+										<a href="#" onclick="javascript:window.open(&quot;course_feedback.aspx?cid=4223a775-5cce-4dad-b62c-01146f705c7f&quot;)">
+											<img src="http://cme23.91huayi.com/images/btn_evaluate.png" width="114" height="27" border="none"></a>
+									</div>
+									</div>
+								<br clear="all">
+							</div>
+						
+					
+					
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=9be362b6-2fde-4b75-9770-ae8e010d9ebc" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=9be362b6-2fde-4b75-9770-ae8e010d9ebc" target="new_courseWare" class="f14blue"><strong>2022年卫生健康行业公需科目学习问答</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">华医网</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华医网</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=5e2264e6-748f-428f-934d-ae8d0156fff9" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=5e2264e6-748f-428f-934d-ae8d0156fff9" target="new_courseWare" class="f14blue"><strong>数字经济助力“双循环”新发展格局</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">朱金周</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">中国信息通信研究院广州分院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=2f1f5ef1-8966-4c2e-acda-ae8d0156fff9" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=2f1f5ef1-8966-4c2e-acda-ae8d0156fff9" target="new_courseWare" class="f14blue"><strong>对数字经济的理论认识</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">朱金周</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">中国信息通信研究院广州分院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=48e195b0-1280-43f4-baa3-ae8d0156fff9" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=48e195b0-1280-43f4-baa3-ae8d0156fff9" target="new_courseWare" class="f14blue"><strong>我国数字经济发展情况</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">朱金周</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">中国信息通信研究院广州分院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=4a67b92f-2df2-4eb4-bc7c-ae8d0156fff9" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=4a67b92f-2df2-4eb4-bc7c-ae8d0156fff9" target="new_courseWare" class="f14blue"><strong>广东省数字经济发展情况</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">朱金周</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">中国信息通信研究院广州分院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=89bafb6b-339d-4f3f-8d6a-ae8d01574de3" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=89bafb6b-339d-4f3f-8d6a-ae8d01574de3" target="new_courseWare" class="f14blue"><strong>数字化转型的由来和概念缘起</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">王伟玲</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">中国电子信息产业发展研究院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=c393d570-f550-46da-813f-ae8d01574de3" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=c393d570-f550-46da-813f-ae8d01574de3" target="new_courseWare" class="f14blue"><strong>数字化引领治理现代化的作用机理</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">王伟玲</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">中国电子信息产业发展研究院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=cfe8a18f-8140-4f60-ade6-ae8d01574de3" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=cfe8a18f-8140-4f60-ade6-ae8d01574de3" target="new_courseWare" class="f14blue"><strong>数字化转型的一般性框架</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">王伟玲</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">中国电子信息产业发展研究院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=07c0ebb0-6335-4670-af51-ae8e00d10831" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=07c0ebb0-6335-4670-af51-ae8e00d10831" target="new_courseWare" class="f14blue"><strong>数据要素和算力的内涵与空间意义</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">王方方</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东财经大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=e5fc1168-b4bc-4c3c-acb8-ae8e00d11c0c" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=e5fc1168-b4bc-4c3c-acb8-ae8e00d11c0c" target="new_courseWare" class="f14blue"><strong>数字经济时代基础设施的空间演变</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">王方方</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东财经大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=733b3ee6-4523-4133-a587-ae8e00d12da6" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=733b3ee6-4523-4133-a587-ae8e00d12da6" target="new_courseWare" class="f14blue"><strong>东数西算对地方经济发展的影响</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">王方方</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东财经大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=4bd3ae92-2019-4171-893f-ae8e00d14c7e" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=4bd3ae92-2019-4171-893f-ae8e00d14c7e" target="new_courseWare" class="f14blue"><strong>数字经济概述</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">相里朋</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">工业和信息化部电子第五研究所</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=a0fbfba8-21a5-4b69-aa2d-ae8e00d15bc3" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=a0fbfba8-21a5-4b69-aa2d-ae8e00d15bc3" target="new_courseWare" class="f14blue"><strong>产业数字化转型</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">相里朋</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">工业和信息化部电子第五研究所</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=cb933f91-5e9c-43dc-a5af-ae8e00d16cf7" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=cb933f91-5e9c-43dc-a5af-ae8e00d16cf7" target="new_courseWare" class="f14blue"><strong>数字化转型方法</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">相里朋</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">工业和信息化部电子第五研究所</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=aa9c36a6-a354-4100-a7fe-ae8e00d17d6f" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=aa9c36a6-a354-4100-a7fe-ae8e00d17d6f" target="new_courseWare" class="f14blue"><strong>敏捷式转型实践</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">相里朋</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">工业和信息化部电子第五研究所</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=bfaf6a4c-65f3-4976-96d2-ae8e00d18b9d" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=bfaf6a4c-65f3-4976-96d2-ae8e00d18b9d" target="new_courseWare" class="f14blue"><strong>创新与数字化转型</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">阮传扬</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东财经大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=959e45fd-38f7-45a9-9580-ae8e00d19a04" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=959e45fd-38f7-45a9-9580-ae8e00d19a04" target="new_courseWare" class="f14blue"><strong>数字化转型的现状及趋势</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">阮传扬</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东财经大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=8635cd07-ea7d-401a-938d-ae8e00d1b454" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=8635cd07-ea7d-401a-938d-ae8e00d1b454" target="new_courseWare" class="f14blue"><strong>可持续创新绩效评价体系</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">阮传扬</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">广东财经大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=9ac29ca4-e638-4a3d-bd31-ae8e00dd3ac2" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=9ac29ca4-e638-4a3d-bd31-ae8e00dd3ac2" target="new_courseWare" class="f14blue"><strong>制造业数字化转型背景</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">尹玲</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">东莞理工学院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=0847dd0f-7c05-4a54-ab37-ae8e00dd5743" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=0847dd0f-7c05-4a54-ab37-ae8e00dd5743" target="new_courseWare" class="f14blue"><strong>数字化转型核心技术</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">尹玲</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">东莞理工学院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=147e4ae3-a220-42ce-a0dc-ae8e00dd5743" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=147e4ae3-a220-42ce-a0dc-ae8e00dd5743" target="new_courseWare" class="f14blue"><strong>数字化转型典型应用场景</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">尹玲</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">东莞理工学院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=d7417530-b67b-4670-a6a2-ae8e00dd45f4" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=d7417530-b67b-4670-a6a2-ae8e00dd45f4" target="new_courseWare" class="f14blue"><strong>数字化转型发展趋势</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">尹玲</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">东莞理工学院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=b5b50fdb-20c4-4656-a044-ae8e00dd3ac2" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=b5b50fdb-20c4-4656-a044-ae8e00dd3ac2" target="new_courseWare" class="f14blue"><strong>数字基础设施之工业互联网标识解析体系，促进行业数字化转型</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">刘阳</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">中国信息通信研究院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=4cdd1cf3-e5e3-408b-b492-ae8e00dd5743" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=4cdd1cf3-e5e3-408b-b492-ae8e00dd5743" target="new_courseWare" class="f14blue"><strong>数字基础设施之工业互联网平台，促进区域数字化转型</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">刘阳</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">中国信息通信研究院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=1aab8e2a-2b9d-4eb2-830f-ae8e00dd2f09" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=1aab8e2a-2b9d-4eb2-830f-ae8e00dd2f09" target="new_courseWare" class="f14blue"><strong>数字基础设施之工业区块链，促进产业数字化转型</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">刘阳</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">中国信息通信研究院</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=21049461-3e9a-4141-a7b1-ae8e00dd3ac2" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=21049461-3e9a-4141-a7b1-ae8e00dd3ac2" target="new_courseWare" class="f14blue"><strong>个人信息保护法的立法目的</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">王春晖</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">浙江大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=65d84ace-92db-4271-89a7-ae8e00dd5743" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=65d84ace-92db-4271-89a7-ae8e00dd5743" target="new_courseWare" class="f14blue"><strong>个人信息域外效力及核心原则</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">王春晖</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">浙江大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=0d7f78aa-2691-4517-a7ce-ae8e00dd2f09" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=0d7f78aa-2691-4517-a7ce-ae8e00dd2f09" target="new_courseWare" class="f14blue"><strong>个人信息跨境提供的规则</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">王春晖</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">浙江大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=b0bd1279-17d6-488a-a41a-ae8e00dd2f09" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=b0bd1279-17d6-488a-a41a-ae8e00dd2f09" target="new_courseWare" class="f14blue"><strong>数字化转型中的法律法规概述</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">马颜昕</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南师范大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=a096a404-7859-4d39-bae7-ae8e00dd3ac2" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=a096a404-7859-4d39-bae7-ae8e00dd3ac2" target="new_courseWare" class="f14blue"><strong>重点法律法规条款介绍与案例分析</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">马颜昕</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南师范大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=95f435ab-6e14-4082-8cb2-ae8e00dd2f09" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=95f435ab-6e14-4082-8cb2-ae8e00dd2f09" target="new_courseWare" class="f14blue"><strong>《个人信息保护法》</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">马颜昕</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南师范大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+							<div class="course">
+								<h3>
+									<span><a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=8fcf83c5-78c2-4a9b-bee0-ae8e00dd2f09" target="new_courseWare" class="f14blue">
+										<img src="http://cme23.91huayi.com/course_ware/images/anniu_03a.gif" width="61" height="22" align="absmiddle"></a></span>
+
+									<a href="http://cme23.91huayi.com/course_ware/course_ware.aspx?cwid=8fcf83c5-78c2-4a9b-bee0-ae8e00dd2f09" target="new_courseWare" class="f14blue"><strong>《广东省数字经济促进条例》</strong></a></h3>
+								<div style="padding-left: 25px;">
+									<div class="txts">
+										授课老师：<span class="f12blue">马颜昕</span>
+									</div>
+									<div class="txts" style="width: 400px;">
+										单位：<span class="f12blue">华南师范大学</span>
+									</div>
+									<br clear="all">
+								</div>
+							</div>
+						
+					
+					
+
+
+
+
+					<div class="zj">
+						<div class="zj-top"></div>
+						<div class="ly_box">
+							
+
+<style type="text/css">
+.tip{ background:#fff;margin-bottom:10px; }
+.tip .title{ text-align:left;}
+.tip .title span{border-bottom:#4893eb solid 2px;font-size:14px; padding:8px; font-weight:bold; color:#333333;line-height:36px;}
+.tip .main{ width:100%; border-top:#d1d6da solid 1px;padding:20px 0;}
+.tip .main .jf{ margin-top:10px;font-size:12px;}
+.tip .main .main_l{width:20%; float:left; text-align:center;}
+.tip .main .main_l a{ text-decoration:none; }
+.tip .main .main_r{width:80%; float:right;}
+.tip .main .main_r dl{ text-align:left; padding:0; margin:0; font-size:12px;}
+.tip .main .main_r dl dt{ font-size:14px;margin-bottom:10px;}
+.tip .main .main_r dl dt span{ font-size:12px;margin-left:15px;color:#932121;}
+.tip .main .main_r dl dd{ line-height:26px;}
+.tip .main .main_r dl dd a:link,.tip .main .main_r dl dd a:visited,.tip .main .main_r dl dd a:hover,.tip .main .main_r dl dd a:active{color:#444444; text-decoration:none;}
+.tip .main .main_r dl dd a:hover{color:#03F; text-decoration: underline;}
+.f12red{color:#932121; text-decoration:none}
+</style>
+
+<div class="tip">
+   <div class="title"><span>讨论区</span></div>
+   <div class="main">
+      <div class="main_l" onmouseover="this.style.backgroundColor='#D8E7F0'" onmouseout="this.style.backgroundColor=''" style="">
+      <a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">
+      <img src="http://cme23.91huayi.com/images/jf_icon.png" width="74" height="75" border="0">
+      <br><span class="jf">华医教辅</span></a>
+      </div>
+      <div class="main_r">
+      <dl>
+         <dt><strong>整理常见问题</strong><span><a href="http://www.91huayi.com/help/index.html?type=bzzx" class="f12red" target="_blank">更多问题</a></span></dt>
+         <dd><a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">1、什么叫余额不足或卡类型不匹配？</a></dd>
+         <dd><a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">2、学分已申请，为啥没有学分？</a></dd>
+         <dd><a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">3、学习卡是什么？怎样购买学习卡？ </a></dd>
+         <dd><a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">4、怎样才能参加考试？</a></dd>
+
+
+      </dl>
+      </div>
+      <br clear="all">
+   </div>
+   <div>
+   <img src="http://cme23.91huayi.com/images/question_bottom.gif" width="100%" height="21px">
+   </div>
+</div>
+						</div>
+					</div>
+
+					
+					
+				</div>
+				<div class="colm_bottom">
+				</div>
+				<br clear="all">
+			</div>
+		</div>
+		
+		<!-- footer -->
+		<br clear="all">
+		
+<div id="footer" style="height: 175px;">
+	<div class="w950">
+		<p>
+			<a href="http://www.91huayi.com/help/index.html" target="_blank">华医介绍</a> |
+            <a href="http://www.91huayi.com/help/index.html?type=hzhb" target="_blank">
+                        合作伙伴</a> | <a href="http://www.91huayi.com/help/index.html?type=flsm" target="_blank">法律声明</a> | <a href="http://www.91huayi.com/help/index.html?type=lxwm" target="_blank">联系我们</a> | <a href="http://www.91huayi.com/help/index.html?type=jrhy" target="_blank">加入华医</a> | <a href="http://www.91huayi.com/help/index.html?type=wzdt" target="_blank">网站地图</a> | <a href="http://www.91huayi.com/help/index.html?type=bzzx" target="_blank">帮助中心</a>
+		</p>
+		<p>
+			<a href="http://cme.91huayi.com/cme/index.html" target="_blank">继续医学教育</a> | <a href="http://cme.91huayi.com/cme/index.html" target="_blank">全员/专项培训</a> |
+            
+			<a href="http://hukao.91huayi.com/" target="_blank">护考培训</a> |<a href="http://sqpx.91huayi.com/" target="_blank">基层卫生人员培训</a>
+			|
+            <a href="http://xljy.91huayi.com/" target="_blank">基层学历教育</a> | <a href="http://www.91huayi.com/help/index.html?type=jkjy" target="_blank">健康教育</a> |
+            <a href="http://www.91huayi.com/help/index.html?type=kjglxxh" target="_blank">科教管理信息化</a>
+		</p>
+		<p>
+			北京华医网科技股份有限公司 91huayi.com<span style="font-family: Arial"> © </span>2011 版权所有
+		</p>
+		<p>
+			<a href="/icp.html" target="_blank">京ICP证090569号</a> <a href="http://www.miibeian.gov.cn" target="_blank">京ICP备09012743号-1</a> <a href="http://www.91huayi.com/html/2011-08/599.html" target="_blank">京卫网审[2011]第0035号</a> <a href="http://www.91huayi.com/html/2011-10/630.html" target="_blank">互联网药品信息服务资格证书（京）-非经营性-2011-0057</a> 京公网安备110102004996-1
+		</p>
+		<p>
+			<a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202010020200021" target="_blank">
+				<img alt="" src="http://cme23.91huayi.com/images/copy_righti_1.jpg" border="0"></a> <a href="http://www.anquan.org/authenticate/cert/?site=www.91huayi.com&amp;at=realname" target="_blank">
+					<img alt="" src="http://www.91huayi.com/images/copy_righti_2.jpg" border="0">
+				</a>
+		</p>
+	</div>
+</div>
+<script>
+	var testid = '31ce3c08-e0fa-4628-b4a0-a7ba00be4cc0';
+	$.ajax({
+		type: "GET",
+		url: 'https://hywtj.91huayi.com/tongJi/UrlVisitLog?person_id=' + testid + '&remark=cme浏览' + '&callback=?',
+		cache: false,
+		error: function () {
+		},
+		dataType: "jsonp",
+		jsonp: 'callback',
+		success: function (msg) { }
+	});
+
+</script>
+
+
+
+
+
+		<!-- footer -->
+		<div id="floatTips" style="position: absolute; right: 0px; top: 325.217px;">
+			<div id="floatTips1">
+				<a href="https://xuexi.91huayi.com/course/toCourse?product_on_shelf_id=BBEFA0B1-0513-4B31-B29E-B680F2F7579C" target="_blank">
+					<img width="140px" src="http://cme23.91huayi.com/images/ad20220427_zs.jpg" alt=""></a><div style="width: 130px; height: 21px; line-height: 21px; text-align: right; font-size: 13px;">
+						<a href="javascript:void(0);" onclick="closeFloatTips()">关闭</a>
+					</div>
+			</div>
+			<div id="floatTips2">
+				<a href="https://xuexi.91huayi.com/course/toCourse?product_on_shelf_id=96457383-8A0A-41AA-ABC8-ED18A92749EC" target="_blank">
+					<img width="140px" src="http://cme23.91huayi.com/images/ad20220427_xdt.jpg" alt="" style="margin-top: 3px;"></a><div style="width: 130px; height: 21px; line-height: 21px; text-align: right; font-size: 13px;">
+						<a href="javascript:void(0);" onclick="closeFloatTips2()">关闭</a>
+					</div>
+			</div>
+		</div>
+		<div id="floatTips3" style="display: block; position: absolute; left: 0px; top: 189.5px;">
+			<a id="imga3" href="javascript:void(0);" onclick="closeFloatTips3()">
+				<img width="130px" src="http://cme23.91huayi.com/images/huayizhushou.png" alt="" id="clickimg3"></a>
+		</div>
+
+	</form>
+ 
+
+
+</body></html>

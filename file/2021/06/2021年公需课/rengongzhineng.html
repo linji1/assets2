@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="author" content="smile@kang.cool">
+<meta name="description" content="hello">
+<meta name="keywords" content="a,b,c">
+<meta http-equiv="Window-target" content="_top">
+	<script type="text/javascript" language="javascript" src="https://linji.cn/assets/js/jquery.min.js"></script>
+<link rel="stylesheet" id="fancybox-css"  href="https://linji.cn/assets/js/fancybox/jquery.fancybox.min.css" type="text/css" media="all" />
+<script type='text/javascript' src="https://linji.cn/assets/js/fancybox/jquery.fancybox.min.js"></script>
+<!-- fancyBox 3 -->
+<script type="text/javascript">
+jQuery(function(){
+
+	var images = jQuery('a').filter( function() { return /\.(jpe?g|png|gif|bmp|webp)$/i.test(jQuery(this).attr('href')) });
+
+		images.each(function(){
+			var title = jQuery(this).children("img").attr("title");
+			var caption = jQuery(this).children("img").attr("alt");
+			jQuery(this).attr("data-fancybox", "gallery").attr("title",title).attr('data-caption',caption);
+		});
+	
+	
+
+	jQuery("[data-fancybox]").fancybox({
+		'loop': false,
+		'margin': [44, 0],
+		'gutter': 50,
+		'keyboard': true,
+		'arrows': true,
+		'infobar': false,
+		'toolbar': true,
+		'buttons': ["zoom", "slideShow", "fullScreen", "download","thumbs", "close"],
+		'idleTime': 4,
+		'protect': false,
+		'modal': false,
+		'animationEffect': "zoom",
+		'animationDuration': 350,
+		'transitionEffect': "fade",
+		'transitionDuration': 350,
+					});
+
+});
+
+</script>
+<link rel="Shortcut Icon" href="images/favicon.ico">
+	<!-- common -->
+	<link rel="stylesheet" href="common.base.min.css">
+
+ 	<link rel="stylesheet" href="app_study.min.css">
+	<script type="text/javascript" src="common.base.min.js"></script>
+
+	<script type="text/javascript" src="laypage.js"></script>
+	<script type="text/javascript" src="ncts_study.min.js"></script>
+
+	<input id="ctx" type="hidden" value="">
+
+<title>课程学习</title>
+</head>
+<body>
+	<div id="g-wrap" class="g-wrap">
+			<div id="top">
+	<div class="g-sxthead">
+        <div class="g-sxtauto no-auto">
+            <h1 class="m-sxtlogo">
+                <a href="###" target="_parent">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </h1>
+            <div class="m-sxthduser">
+                <div href="javascript:;" class="user">
+		<img src=images/defaultAvatarImg.png userId="" userName="" ctx="" loginId="857480" class="" style="">
+                    <span class="name">林继</span>
+                    <span class="arrow"></span>
+                </div>
+                <ul class="list">
+                    <li><a href="/logout">退出系统</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script>
+
+function loadMore(){
+	window.open('/ncts/message/list/more?orders=CREATE_TIME.DESC');
+}
+
+$(function(){
+	$('#messageBtn').hover(function(){
+		var li = $('#messageList li');
+		if(li.size() <= 0){
+			$('#messageList').load("/ncts/message/list?orders=CREATE_TIME.DESC");
+		}
+	},function(){});
+})
+</script>
+			</div>
+			<div>
+    <div class="g-sxtstudyhd">
+        <ul class="m-sxtstudy-nav">
+			<li class="z-crt" item="study" ><a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada')">课程学习</a></li>
+			<li item="progess" ><a href="/c_f03e978ceb05464095427119fd8c9ada/study/course/progess">学习进度</a></li>
+        </ul>
+    </div>
+    <script>
+    	function lightMenu(item){
+    		$('.m-sxtstudy-nav li').removeClass('z-crt');
+		    $('.m-sxtstudy-nav li[item='+item+']').addClass('z-crt');
+    	}
+    </script>
+			</div>
+		<div id="content">
+
+
+<div class="g-sxt-graybg sxt-edit-course-discuss">
+	<div id="g-wrap">
+		<div class="g-sxtauto">
+	    	<div id="courseLearning" class="sxt-learn-rate">
+		<div class="g-progress-box">
+	        <ul class="m-progress-info ">
+	            <li class="infor-result">
+							<span class="u-sxt-tip ing"><i></i>课程进行中</span>
+	                <div class="result-txt">
+							<span>课程得分</span>
+						    <span class="get"><strong>100</strong><span>分</span></span>  
+	                    	<span class="u-sxt-rsico ok"></span><!-- ok是合格 ，unok不合格 ，带评分就没有这行代码 -->
+	                </div>
+	                <div class="m-bar">
+	                    <span class="u-bar u-gt">
+	                        <span class="u-val" id="progressBar"></span>
+	                    </span>
+	                    <p class="des"><i></i>
+	                      		完成教学活动100%，课程成绩<strong>60</strong>分及以上合格。
+	                                                                     你已完成<strong id="completeActNum">20</strong>/<strong id="actNum">37</strong> 个学习活动，进度<strong id="progress">60.6%</strong>。</p>
+	                </div>        
+					<center style="padding: -200px;"><a href="https://linji.cn/assets/qblog/images/公需课.png" data-fancybox="gallery" data-caption="2021年广东教育系统及华医网公需课"><span style="font-size: 24px;font-weight: 700;color: red;">微信：saboha</span></a>
+</center>
+	            </li>
+	        </ul>
+	        <div class="g-count-detail">
+	        	<div class="m-con-tab">
+		            <table id="scoreTb">
+	                    <thead>
+	                        <tr>
+	                            <th width="">章</th>
+	                            <th width="30%">节</th>
+	                            <th width="50%">活动名称</th>
+	                            <th width="60px">完成情况</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+		                    						<tr>
+				                                        	<td rowspan="6">一、人工智能的发展历史、现状与未来</td>
+				                                        	<td rowspan='1'>（一）人工智能内涵与发展历程</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_e455b8e7df494ccebf60b0f1f35eda08')">
+				                                        	（一）人工智能内涵与发展历程</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（二）新一代人工智能</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_ab16fcb509164d20948f0e59fad1fd66')">
+				                                        	（二）新一代人工智能</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（三）新一代人工智能代表：大数据智能</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_f6368d3558de4fa8b89d0d2abaa0edbd')">
+				                                        	（三）新一代人工智能代表：大数据智能</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（四）多源图像目标识别与智能理解</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_ea2b40891b9f414bbe3f9312b0eab1ad')">
+				                                        	（四）多源图像目标识别与智能理解</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（五）自然语言处理与知识图谱</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_dfc12f7bc50a4ee687fc7864ecc0ea9d')">
+				                                        	（五）自然语言处理与知识图谱</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（六）边缘计算与边缘智能</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_69ea305a537147e5b13229f19118a950')">
+				                                        	（六）边缘计算与边缘智能</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="7">二、人工智能产业发展政策与态势</td>
+				                                        	<td rowspan='1'>（一）人工智能技术及其产业链</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_416dc30ba99f404892f4accfd56cf588')">
+				                                        	（一）人工智能技术及其产业链</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（二）人工智能产业发展历程</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_167b9b0342494536a398afe67a796219')">
+				                                        	（二）人工智能产业发展历程</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（三）人工智能产业发展现状与分析</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_9140a49ee2b9443382438b41c39b6c8f')">
+				                                        	（三）人工智能产业发展现状与分析</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（四）中国人工智能产业发展政策解读（上）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_1f203846240b44e79141a1e4eaeee5bc')">
+				                                        	（四）中国人工智能产业发展政策解读（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（五）中国人工智能产业发展政策解读（下）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_c9a3172919684101a24dbc472d614668')">
+				                                        	（五）中国人工智能产业发展政策解读（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（六）国际人工智能产业发展政策解读</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_8730cfe50de34e4a80ed18df01669c89')">
+				                                        	（六）国际人工智能产业发展政策解读</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（七）人工智能产业发展态势分析与展望</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_ac68191da21d41d7ba0c21c37a061287')">
+				                                        	（七）人工智能产业发展态势分析与展望</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="7">三、人工智能技术与制造业转型升级</td>
+				                                        	<td rowspan='1'>（一）制造业发展现状与转型升级需求（上）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_4587c94d5bcd44e5bb437d9bdbbe3e33')">
+				                                        	（一）制造业发展现状与转型升级需求（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（二）制造业发展现状与转型升级需求（下）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_c18795748f594a87866d5bbfc3a3909e')">
+				                                        	（二）制造业发展现状与转型升级需求（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（三）信息物理融合系统：智能制造综合技术体系（上）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_fed78055bbaa4f238026f4ef6dbba828')">
+				                                        	（三）信息物理融合系统：智能制造综合技术体系（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（四）信息物理融合系统：智能制造综合技术体系（下）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_9d34812510204d1292c0f1838a13a86c')">
+				                                        	（四）信息物理融合系统：智能制造综合技术体系（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（五）工业知识自动化与软件化（上）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_14a6b10cc22b45a5a4a3056739751234')">
+				                                        	（五）工业知识自动化与软件化（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（六）工业知识自动化与软件化（中）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_ec1ce01f6bbb4433b5723429569ddb19')">
+				                                        	（六）工业知识自动化与软件化（中）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（七）工业知识自动化与软件化（下）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_e30796bb17d447cba1991dfda56da0d0')">
+				                                        	（七）工业知识自动化与软件化（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="3">四、人工智能与新基建</td>
+				                                        	<td rowspan='1'>（一）新基建与人工智能（上）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_f0ef90d8d81243868314d85cd41641b4')">
+				                                        	（一）新基建与人工智能（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（二）新基建与人工智能（中）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_fb6e6f40b1c0455494b5e702685255e5')">
+				                                        	（二）新基建与人工智能（中）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（三）新基建与人工智能（下）</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_c54f07f4fd0d4c44a7e5bcccf2074c38')">
+				                                        	（三）新基建与人工智能（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="6">五、人工智能在数字经济产业的应用</td>
+				                                        	<td rowspan='1'>（一）人工智能与数字经济</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_32bc60c999644fac87b1e203aed44b5e')">
+				                                        	（一）人工智能与数字经济</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（二）人工智能与工业互联网</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_eb8a6e44a57b454586fa6712571d1547')">
+				                                        	（二）人工智能与工业互联网</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（三）人工智能与大数据</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_9cd096b81af9457489077dd14ff171b0')">
+				                                        	（三）人工智能与大数据</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（四）人工智能与智能供应链</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_33d905fdf0ea439c98a801706b24a31f')">
+				                                        	（四）人工智能与智能供应链</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（五）人工智能与新零售</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_aeb0e5c574b640638eb9862b03fd8f3c')">
+				                                        	（五）人工智能与新零售</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（六）人工智能与数字金融</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_cbae6d94e24243369dfa6957b46eba2f')">
+				                                        	（六）人工智能与数字金融</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="6">六、人工智能在智慧城市的应用 </td>
+				                                        	<td rowspan='1'>（一）人工智能与智能生活</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_8f1be9f5868542b3aeed45605a81b53e')">
+				                                        	（一）人工智能与智能生活</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（二）人工智能与交通物流</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_d5c21253f54a49039d676a2d9a7c78ee')">
+				                                        	（二）人工智能与交通物流</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（三）人工智能与医疗教育</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_bba8b36c9dc94bd3b053c09eca21e39a')">
+				                                        	（三）人工智能与医疗教育</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（四）人工智能与农业资源</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_9b8eb0a720ad4bf9a51e812386123914')">
+				                                        	（四）人工智能与农业资源</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（五）人工智能与政务安防</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_b18e47c3473b474f963f560af77b8c76')">
+				                                        	（五）人工智能与政务安防</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan='1'>（六）人工智能与城市服务</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_ab241831ff9948009ac43a1e4bc23f72')">
+				                                        	（六）人工智能与城市服务</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">七、考核</td>
+				                                        	<td rowspan='1'>考核</td>
+				                                        <td>
+															<a href="###" onclick="studyCourse('c_f03e978ceb05464095427119fd8c9ada','','a_b23243b083e449e79f1c6c269575e7ea')">
+				                                        	考核</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+	                    </tbody>
+	                </table>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+	<script>
+		$(function(){
+			lightMenu('progess');
+			
+			$('#actNum').text('36');
+			$('#completeActNum').text('36');
+			var actNum = parseInt('36');
+			var completeActNum = parseInt('36');
+			actNum = (actNum == 0)?1:actNum;
+			var persent = ((completeActNum/actNum)*100).toFixed(1);
+			$('#progress').text(persent + '%');
+			$('#progressBar').css('width',persent+'%');
+			$('#progressBarCompleteActNum').text('已完成'+completeActNum);
+		});
+	</script>
+		</div>
+		<div id="footer">
+    <!--<div class="g-sxtfoot"><p>广东省继续教育协会版权所有</p><p>地址：广州市天河区天源路767号A栋301<span class="line">|</span>粤ICP备18031366号-1 <span class="line">|</span> 技术支持：广州昊誉信息科技有限公司</p></div>
+    -->
+    <div class="g-sxtfoot">
+        <p>版权所有：广东省教育厅教师继续教育指导中心 <span class="line">|</span>
+            地址：广州市东风东路723号
+        </p>
+        <!--<p>地址：广州市天河区天源路767号A栋301<span class="line">|</span>粤ICP备18031366号-1 <span class="line">|</span> 技术支持：广州昊誉信息科技有限公司</p>-->
+        <p>技术支持：广东第二师范学院  广州昊誉信息科技有限公司 <span class="line">|</span> 客服热线：400-998-9352 <span class="line">|</span> 粤ICP备09132871号-2</p>
+    </div>
+
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?1bf654a6abeafaf71c27bb383e5a01f9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+		</div>
+		<input type="hidden" id="loadDivId" value="content" />
+		<div class="blackBg"></div>
+		<div class="blackBg1"></div>
+		<div class="whiteBg"></div>
+		<div class="ag-whitebg"></div>
+		<div class="ag-blackbg"></div>
+	</div>
+	<form id="downloadFileForm" action="/file/downloadFile.do" method="post" target="_blank">
+		<input type="hidden" name="id">
+		<input type="hidden" name="fileName">
+		<input type="hidden" name="fileRelations[0].type"> 
+		<input type="hidden" name="fileRelations[0].relation.id"> 
+	</form>
+	<form id="updateFileForm" target="_blank">
+		<input type="hidden" name="id">
+		<input type="hidden" name="fileName">
+	</form>
+	<form id="deleteFileRelationForm" target="_blank">
+		<input type="hidden" name="fileId">
+		<input type="hidden" name="relation.id">
+		<input type="hidden" name="type">
+	</form>
+	<form id="deleteFileInfoForm" target="_blank">
+		<input type="hidden" name="id">
+	</form>
+	<form id="studyCourseForm" >
+		<input type="hidden" name="offsetTop">
+		<input type="hidden" name="goLastActivity">
+	</form>
+	<script>
+		function studyCourse(courseId, sectionId, activityId){
+			var url = '/study/course/'+courseId;
+			if(sectionId != null && sectionId != ''){
+				url = '/'+sectionId+'/study/course/'+courseId;
+				$('#studyCourseForm input[name="goLastActivity"]').val('N');
+			}
+			if(activityId != null && activityId != ''){
+				url = '/'+activityId+'/study/course/'+courseId;
+				$('#studyCourseForm input[name="goLastActivity"]').val('N');
+			}
+			$('#studyCourseForm').attr('action', url);
+			$('#studyCourseForm input[name="offsetTop"]').val($(document).scrollTop());
+			$('#studyCourseForm').submit();
+		}
+	</script>
+</body>
+</html>

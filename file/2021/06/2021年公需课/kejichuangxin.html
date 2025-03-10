@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="Shortcut Icon" href="images/favicon.ico">
+	<script type="text/javascript" language="javascript" src="https://linji.cn/assets/js/jquery.min.js"></script>
+<link rel="stylesheet" id="fancybox-css"  href="https://linji.cn/assets/js/fancybox/jquery.fancybox.min.css" type="text/css" media="all" />
+<script type='text/javascript' src="https://linji.cn/assets/js/fancybox/jquery.fancybox.min.js"></script>
+<!-- fancyBox 3 -->
+<script type="text/javascript">
+jQuery(function(){
+
+	var images = jQuery('a').filter( function() { return /\.(jpe?g|png|gif|bmp|webp)$/i.test(jQuery(this).attr('href')) });
+
+		images.each(function(){
+			var title = jQuery(this).children("img").attr("title");
+			var caption = jQuery(this).children("img").attr("alt");
+			jQuery(this).attr("data-fancybox", "gallery").attr("title",title).attr('data-caption',caption);
+		});
+	
+	
+
+	jQuery("[data-fancybox]").fancybox({
+		'loop': false,
+		'margin': [44, 0],
+		'gutter': 50,
+		'keyboard': true,
+		'arrows': true,
+		'infobar': false,
+		'toolbar': true,
+		'buttons': ["zoom", "slideShow", "fullScreen", "download","thumbs", "close"],
+		'idleTime': 4,
+		'protect': false,
+		'modal': false,
+		'animationEffect': "zoom",
+		'animationDuration': 350,
+		'transitionEffect': "fade",
+		'transitionDuration': 350,
+					});
+
+});
+
+</script>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="author" content="smile@kang.cool">
+<meta name="description" content="hello">
+<meta name="keywords" content="a,b,c">
+<meta http-equiv="Window-target" content="_top">
+
+	
+	
+
+	<!-- common -->
+	<link rel="stylesheet" href="common.base.min.css">
+
+ 	<link rel="stylesheet" href="app_study.min.css">
+	<script type="text/javascript" src="common.base.min.js"></script>
+	
+
+
+
+	<script type="text/javascript" src="laypage.js"></script>
+	
+	<script type="text/javascript" src="ncts_study.min.js"></script>
+	
+	
+	
+	
+	
+	
+	<script type="text/javascript" charset="utf-8" src="gwdang-notifier-universal.js"></script></head><body><input id="ctx" type="hidden" value="/ncts">
+
+<title>课程学习</title>
+
+
+	<div id="g-wrap" class="g-wrap">
+			<div id="top">
+	<div class="g-sxthead">
+        <div class="g-sxtauto no-auto">
+            <h1 class="m-sxtlogo">
+                <a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" target="_parent">
+                    <img src="logo.png" alt="">
+                </a>
+            </h1>
+            <div class="m-sxthduser">
+                <div href="javascript:;" class="user">
+			<img src="images/defaultAvatarImg.png" userid="" username="" ctx="/ncts" loginid="857560" class="" style="">
+                    <span class="name">林继</span>
+                    <span class="arrow"></span>
+                </div>
+                <ul class="list">
+                    <li><a href="https://jsglpt.gdedu.gov.cn/ncts/logout">退出系统</a></li>
+                </ul>
+            </div>
+            <div id="messageBtn" class="m-sxthdnews ">
+                <div class="m-mouse-news">
+                    <i class="arrow-icon"></i>
+                    <ul id="messageList" class="m-mouse-txt">
+<script>
+	$(function(){
+		$('body').on('click', 'a.goto-verify', function () {
+			var _this = $(this);
+			var id = _this.data('id');
+			window.location.href = '/ncts/workshopUser?workshopId=' + id;
+		});
+		var unReadMsgInputs = $('.unReadMsg');
+		if(unReadMsgInputs.size()>0){
+			var messageIds = '';
+			$.each(unReadMsgInputs,function(i,n){
+				if(messageIds == ''){
+					messageIds = $(n).val();
+				}else{
+					messageIds = messageIds + ',' + $(n).val();
+				}
+			});
+			
+			$.post('/ncts/ncts/message',{
+				'id':messageIds,
+				'_method':'PUT',
+				'readed':'1'
+			},function(response){
+				
+			});
+			
+		}
+	});
+
+	function replyMessage(a){
+    	var messageId = $(a).closest('li').attr('messageId');
+        mylayerFn.open({
+            type: 2,
+            title: '回复小纸条',
+            bgcolor: '#fff',
+            fix: false,
+            area: [510, 400],
+            content: '/ncts/ncts/message/create/reply?messageId='+messageId
+        });
+	};
+	
+	function viewCourseActivity(relationId,relationType){
+		var url = '/ncts/'+relationId+'/study/course/'+relationType;
+		window.open(url);
+	}
+	
+</script></ul>
+                    <div class="m-h-more">
+                        <a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="loadMore()" class="more"><i class="u-h-see"></i>查看更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+
+function loadMore(){
+	window.open('/ncts/ncts/message/list/more?orders=CREATE_TIME.DESC');
+}
+
+$(function(){
+	$('#messageBtn').hover(function(){
+		var li = $('#messageList li');
+		if(li.size() <= 0){
+			$('#messageList').load("/ncts/ncts/message/list?orders=CREATE_TIME.DESC");
+		}
+	},function(){});
+})
+</script>
+			</div>
+			<div>
+    <div class="g-sxtstudyhd">
+        <ul class="m-sxtstudy-nav">
+		        <li class="" item="study"><a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;)">课程学习</a></li>
+				<li item="progess" class="z-crt"><a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess">学习进度</a></li>
+        </ul>
+    </div>
+    <script>
+    	function lightMenu(item){
+    		$('.m-sxtstudy-nav li').removeClass('z-crt');
+		    $('.m-sxtstudy-nav li[item='+item+']').addClass('z-crt');
+    	}
+    </script>
+			</div>
+		<div id="content">
+
+
+<div class="g-sxt-graybg sxt-edit-course-discuss">
+	<div id="g-wrap">
+		<div class="g-sxtauto">
+	    	<div id="courseLearning" class="sxt-learn-rate">
+		<div class="g-progress-box">
+<ul class="m-progress-info ">
+	            <li class="infor-result">
+							<span class="u-sxt-tip ing"><i></i>课程进行中</span>
+	                <div class="result-txt">
+							<span>课程得分</span>
+						    <span class="get"><strong>100</strong><span>分</span></span>  
+	                    	<span class="u-sxt-rsico ok"></span><!-- ok是合格 ，unok不合格 ，带评分就没有这行代码 -->
+	                </div>
+	                <div class="m-bar">
+	                    <span class="u-bar u-gt">
+	                        <span class="u-val" id="progressBar" style="width: 100%;"></span>
+	                    </span>
+	                    <p class="des"><i></i>
+	                      		完成教学活动100%，课程成绩<strong>60</strong>分及以上合格。
+	                                                                     你已完成<strong id="completeActNum">34</strong>/<strong id="actNum">34</strong> 个学习活动，进度<strong id="progress">100.0%</strong>。</p>
+	                </div>                            
+	            </li>
+				<center style="padding: -200px;"><a href="https://linji.cn/assets/qblog/images/公需课.png" data-fancybox="gallery" data-caption="2021年广东教育系统及华医网公需课"><span style="font-size: 24px;font-weight: 700;color: red;">微信:Saboha</span></a>
+</center>
+	        </ul>	        <div class="g-count-detail">
+	        	<div class="m-con-tab">
+		            <table id="scoreTb">
+	                    <thead>
+	                        <tr>
+	                            <th width="">章</th>
+	                            <th width="30%">节</th>
+	                            <th width="50%">活动名称</th>
+	                            <th width="60px">完成情况</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+		                    						<tr>
+				                                        	<td rowspan="6">一、新科技革命与全球产业变革</td>
+				                                        	<td rowspan="1">（一）技术预见方法以及国际前沿技术发展概况（上）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_a23b4cfa476e4d5bbae190a0fa9d0d3b&#39;)">
+				                                        	（一）技术预见方法以及国际前沿技术发展概况（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（二）技术预见方法以及国际前沿技术发展概况（下）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_0e751ea8dd9c4292947070c9c93ffc5d&#39;)">
+				                                        	（二）技术预见方法以及国际前沿技术发展概况（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（三）智能制造技术</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_431a0bd626d846d88d09223008ad3885&#39;)">
+				                                        	（三）智能制造技术</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（四）新材料技术</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_ff886b2a69b94949b5ab60f4852833d9&#39;)">
+				                                        	（四）新材料技术</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（五）新能源技术</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_1ddcd275acbb4846a6d725511687eb05&#39;)">
+				                                        	（五）新能源技术</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（六）生物医药技术</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_814a6a83e5a64d589b6d8c5302fb36bb&#39;)">
+				                                        	（六）生物医药技术</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="5">二、新一代信息技术与区域发展战略 </td>
+				                                        	<td rowspan="1">（一）新一代信息技术与经济社会发展战略</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_8af0948fe7ee4bc6af5aad0aa9a63a7f&#39;)">
+				                                        	（一）新一代信息技术与经济社会发展战略</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（二）新一代信息技术与发达国家发展战略</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_564ecddcdc9148518f1211ebda28aba7&#39;)">
+				                                        	（二）新一代信息技术与发达国家发展战略</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（三）新一代信息技术与中国数字经济发展战略</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_f948ccfa8c6541ae931aaeb943bc406c&#39;)">
+				                                        	（三）新一代信息技术与中国数字经济发展战略</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（四）新一代信息技术与粤港澳大湾区经济社会发展战略</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_4789e0c180f74ae0a33e395b1ec179e1&#39;)">
+				                                        	（四）新一代信息技术与粤港澳大湾区经济社会发展战略</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（五）新一代信息技术与制造业高质量发展战略</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_15defbe2a0704f40b54eacbfb2f8a778&#39;)">
+				                                        	（五）新一代信息技术与制造业高质量发展战略</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="3">三、数字经济时代的制造业发展</td>
+				                                        	<td rowspan="1">（一）数字经济时代的制造业发展（上）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_80e6accad6db4b5487ca0ae27ed3154c&#39;)">
+				                                        	（一）数字经济时代的制造业发展（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（二）数字经济时代的制造业发展（中）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_a0c2734ce29f40509ed9d96bcca4e986&#39;)">
+				                                        	（二）数字经济时代的制造业发展（中）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（三）数字经济时代的制造业发展（下）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_9158cd348c97441a92b86d26c758c240&#39;)">
+				                                        	（三）数字经济时代的制造业发展（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="3">四、科技创新模式及科技孵化</td>
+				                                        	<td rowspan="1">（一）科技创新模式及科技孵化（上）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_0f171b4de6aa43278cb8143a307bd0c9&#39;)">
+				                                        	（一）科技创新模式及科技孵化（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（二）科技创新模式及科技孵化（中）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_8afaba91641c40f093b93a08bf55a1cc&#39;)">
+				                                        	（二）科技创新模式及科技孵化（中）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（三）科技创新模式及科技孵化（下）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_5ef993f37a144d2d8ee928a0b518065c&#39;)">
+				                                        	（三）科技创新模式及科技孵化（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="4">五、广东省技术创新现状与未来</td>
+				                                        	<td rowspan="1">（一）技术创新评价指标体系</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_34d1a5aea8904173972598f1b2398cba&#39;)">
+				                                        	（一）技术创新评价指标体系</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（二）广东省技术创新发展动态</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_c19164994248442b9bf14da451d0db81&#39;)">
+				                                        	（二）广东省技术创新发展动态</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（三）广东省企业技术创新的主要实现方式</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_8a37e1e6fda340a4987edf925ac4779c&#39;)">
+				                                        	（三）广东省企业技术创新的主要实现方式</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（四）广东省技术创新的未来方向思考</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_fedc253c266441f4a3fac0c391cbd180&#39;)">
+				                                        	（四）广东省技术创新的未来方向思考</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="3">六、科技创新的趋势和广东科技创新的发展</td>
+				                                        	<td rowspan="1">（一）科技创新的趋势和广东科技创新的发展（上）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_cbe2d349594b44f5aca74f3ac738e8aa&#39;)">
+				                                        	（一）科技创新的趋势和广东科技创新的发展（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（二）科技创新的趋势和广东科技创新的发展（中）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_6fea60d851cf4ec997cf233570f14014&#39;)">
+				                                        	（二）科技创新的趋势和广东科技创新的发展（中）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（三）科技创新的趋势和广东科技创新的发展（下）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_e8d6a19f66124955b0034f096b3ac8a9&#39;)">
+				                                        	（三）科技创新的趋势和广东科技创新的发展（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="9">七、广东省孵化育成科技政策解读</td>
+				                                        	<td rowspan="1">（一）广东省孵化育成政策解读与孵化服务案例（上）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_5a491b333fdf465da17096be72d18958&#39;)">
+				                                        	（一）广东省孵化育成政策解读与孵化服务案例（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（二）广东省孵化育成政策解读与孵化服务案例（中）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_881c310eb5374469bca0c6e9af152b20&#39;)">
+				                                        	（二）广东省孵化育成政策解读与孵化服务案例（中）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（三）广东省孵化育成政策解读与孵化服务案例（下）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_0704e28a2c204e01a094fb5155c8eb91&#39;)">
+				                                        	（三）广东省孵化育成政策解读与孵化服务案例（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（四）粤港澳青年孵化载体建设情况与港澳青年创业案例（上）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_c0f15f78c60b48b2877476b988abcbe6&#39;)">
+				                                        	（四）粤港澳青年孵化载体建设情况与港澳青年创业案例（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（五）粤港澳青年孵化载体建设情况与港澳青年创业案例（中）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_798ac2bb28f8437e8bbbf08313dc11e0&#39;)">
+				                                        	（五）粤港澳青年孵化载体建设情况与港澳青年创业案例（中）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（六）粤港澳青年孵化载体建设情况与港澳青年创业案例（下）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_f2ba31c51a7a404b94f184fc7bdabed5&#39;)">
+				                                        	（六）粤港澳青年孵化载体建设情况与港澳青年创业案例（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（七）广东省大学科技园建设情况及政策解读（上）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_44600192fa1146acaa76d5f6a8139029&#39;)">
+				                                        	（七）广东省大学科技园建设情况及政策解读（上）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（八）广东省大学科技园建设情况及政策解读（中）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_e32fcd65ada84bba9a39dbd4abe9240d&#39;)">
+				                                        	（八）广东省大学科技园建设情况及政策解读（中）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">（九）广东省大学科技园建设情况及政策解读（下）</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_95f375ecece54e6cb8f1cf5f33ba6410&#39;)">
+				                                        	（九）广东省大学科技园建设情况及政策解读（下）</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+		                    						<tr>
+				                                        	<td rowspan="1">八、考核</td>
+				                                        	<td rowspan="1">考核</td>
+				                                        <td>
+															<a href="https://jsglpt.gdedu.gov.cn/ncts/c_4e9f50e2756a4bf5ad1ca9696672681a/study/course/progess###" onclick="studyCourse(&#39;c_4e9f50e2756a4bf5ad1ca9696672681a&#39;,&#39;&#39;,&#39;a_2dbd7d2806214a8a93c99f601cbec045&#39;)">
+				                                        	考核</a></td>
+				                                        		<td><i class="u-ico-finish"></i></td>
+				                                    </tr>
+	                    </tbody>
+	                </table>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+	<script>
+		$(function(){
+			lightMenu('progess');
+			
+			$('#actNum').text('34');
+			$('#completeActNum').text('34');
+			var actNum = parseInt('34');
+			var completeActNum = parseInt('34');
+			actNum = (actNum == 0)?1:actNum;
+			var persent = ((completeActNum/actNum)*100).toFixed(1);
+			$('#progress').text(persent + '%');
+			$('#progressBar').css('width',persent+'%');
+			$('#progressBarCompleteActNum').text('已完成'+completeActNum);
+		});
+	</script>
+		</div>
+		<div id="footer">
+    <!--<div class="g-sxtfoot"><p>广东省继续教育协会版权所有</p><p>地址：广州市天河区天源路767号A栋301<span class="line">|</span>粤ICP备18031366号-1 <span class="line">|</span> 技术支持：广州昊誉信息科技有限公司</p></div>
+    -->
+    <div class="g-sxtfoot">
+        <p>版权所有：广东省教育厅教师继续教育指导中心 <span class="line">|</span>
+            地址：广州市东风东路723号
+        </p>
+        <!--<p>地址：广州市天河区天源路767号A栋301<span class="line">|</span>粤ICP备18031366号-1 <span class="line">|</span> 技术支持：广州昊誉信息科技有限公司</p>-->
+        <p>技术支持：广东第二师范学院  广州昊誉信息科技有限公司 <span class="line">|</span> 客服热线：400-998-9352 <span class="line">|</span> 粤ICP备09132871号-2</p>
+    </div>
+
+		</div>
+		<input type="hidden" id="loadDivId" value="content">
+		<div class="blackBg"></div>
+		<div class="blackBg1"></div>
+		<div class="whiteBg"></div>
+		<div class="ag-whitebg"></div>
+		<div class="ag-blackbg"></div>
+	</div>
+	<form id="downloadFileForm" action="https://jsglpt.gdedu.gov.cn/ncts/file/downloadFile.do" method="post" target="_blank">
+		<input type="hidden" name="id">
+		<input type="hidden" name="fileName">
+		<input type="hidden" name="fileRelations[0].type"> 
+		<input type="hidden" name="fileRelations[0].relation.id"> 
+	</form>
+	<form id="updateFileForm" target="_blank">
+		<input type="hidden" name="id">
+		<input type="hidden" name="fileName">
+	</form>
+	<form id="deleteFileRelationForm" target="_blank">
+		<input type="hidden" name="fileId">
+		<input type="hidden" name="relation.id">
+		<input type="hidden" name="type">
+	</form>
+	<form id="deleteFileInfoForm" target="_blank">
+		<input type="hidden" name="id">
+	</form>
+	<form id="studyCourseForm">
+		<input type="hidden" name="offsetTop">
+		<input type="hidden" name="goLastActivity">
+	</form>
+	<script>
+		function studyCourse(courseId, sectionId, activityId){
+			var url = '/ncts/study/course/'+courseId;
+			if(sectionId != null && sectionId != ''){
+				url = '/ncts/'+sectionId+'/study/course/'+courseId;
+				$('#studyCourseForm input[name="goLastActivity"]').val('N');
+			}
+			if(activityId != null && activityId != ''){
+				url = '/ncts/'+activityId+'/study/course/'+courseId;
+				$('#studyCourseForm input[name="goLastActivity"]').val('N');
+			}
+			$('#studyCourseForm').attr('action', url);
+			$('#studyCourseForm input[name="offsetTop"]').val($(document).scrollTop());
+			$('#studyCourseForm').submit();
+		}
+	</script>
+
+
+</div></div></body></html>
